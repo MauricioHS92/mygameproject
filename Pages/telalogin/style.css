@@ -1,0 +1,113 @@
+body{       /*config das fontes do body*/
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+.principal{     /*classe principal que eh pai das classes de containers*/
+    margin-top: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    z-index: 2;
+}
+.container{     /*classe container que eh pai das classes de input*/
+    width: 461px;
+    height: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: space-evenly;
+    
+    z-index: 2;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: -20px;
+    z-index: 2;
+}
+.input{
+    margin-right: 100px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.input input{    
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 2;
+}
+.input label{   
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 2;
+    font-style: italic;
+    
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    z-index: 2;
+}
+.base {
+    position: absolute;
+    width: 1216px;
+    height: 730px;
+    border-radius: 20px;
+}
+.inscreva-se{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 90px;
+    width: 500px;
+    height: 100px;
+    font-style: italic;
+}
+.anuncio{
+    margin-top: 700px;
+}
+.jg1{
+    margin-left: 0px;
+    width: 388px;
+    height: 484px;
+    background-color: black;
+}
+#img1{
+    margin-left: 0px;
+    width: 388px;
+    height: 484px;
+}
+.prjg1{
+    margin-left: 119px;
+    width: 158px;
+    height: 84px;
+    background-color: blue;
+}
+.jg2{
+    margin-top: -484px;
+    margin-left: 458px;
+    width: 388px;
+    height: 484px;
+    background-color: black;
+}
+.prjg2{
+    margin-left: 119px;
+    width: 158px;
+    height: 84px;
+    background-color: blue;
+}

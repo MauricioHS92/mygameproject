@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&family=Ropa+Sans&display=swap');
+
+html{
+    width: 1440px;
+    height: 3307px;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 2px groove red;
+    width: 1440px;
+    height: 3307px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+header {
+    width: 1440px;
+    height: 275px;
+    background-color: black;
+}
+
+main {
+    width: 1440px;
+    height: 2580px;
+    background: linear-gradient(180deg, #FFD760 0%, #B32424 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+footer {
+    width: 1440px;
+    height: 452px;
+    background-color: black;
+}
+
+.base {
+    background-color: #25262C;
+}
+.destaques {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.inscreva-se {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #FFD760;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.botao-voltar {    
+    width: 153px;
+    height: 41px;
+    background: rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.botao-salvar {
+    margin-top: 10px;
+    width: 153px;
+    height: 41px;
+    background: rgba(0, 255, 25, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.input label{
+    color: #FFD760;
+    text-shadow: white;
+}
