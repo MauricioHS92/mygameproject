@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+html{
+    width: 1440px;
+    height: 3307px;
+    font-family: 'Inter', sans-serif;
+}
+
+/*estilização do menu*/
+.nav-bar{
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color:#FFD760;
+    font-weight: bold;
+    border-top: none;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/*estilização dos botões do menu*/
+.fourth {
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+    background-position: 0;
+}
+
+/* estilo do botao fale-conosco e cadastro/login */
+.btn-three {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+}
+.btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(49, 43, 43, 0.1);
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 11px;
+}
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 11px;
+	transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}

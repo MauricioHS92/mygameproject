@@ -1,0 +1,180 @@
+/* Faixa preta do header*/
+.faixa {
+    background-color: #25262C;
+    margin-bottom: 2px;
+    height: 60px;
+}
+
+/* NOME DO SITE */
+.logo {
+    background-color: #25262C;
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+
+/* BARRA DE BUSCA */
+#txtBusca{
+    background-color:#ffffff;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height: 40px;
+    width: 300px;
+    border-radius: 12.2791px;
+    margin: 5px 30px 5px 30px;
+
+}
+
+#imagem-logo {
+    width: 174px;
+    height: 91px;
+    margin: 30px 32px 24px 114px;
+}
+
+/* FALE CONOSCO */
+
+.campo-ajuda{
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+    margin: 16px 30px 16px 30px;
+    height:50px;
+    width:170px;
+}
+
+#fale-conosco{
+    width: 147px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 19px 9px 19px 9px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#seta{
+    width: 27px;
+    height: 27px;
+    padding: 11px 9px 11px 9px;
+}
+
+/* CADASTRO/LOGIN */
+
+#boneco{
+    width: 27px;
+    height: 27px;
+    padding: 11px 9px 11px 9px;
+    
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+    margin: 16px 30px 16px 30px;
+    height:50px;
+    width:170px;
+}
+
+#login{
+    width: 147px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 13px 9px 15px 9px;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* CARRINHO DE COMPRAS */
+
+#carrinho{
+    background-color: #FFD760;
+    border-radius: 12.2791px;
+    margin: 16px 30px 16px 30px;
+    width: 50px;
+    height: 50px;    
+}
+
+/* FAIXA AMARELA */
+
+.linha-amarela{
+    border: solid 2px #FFD760;
+}
+
+/* MENU ESCOLHAS ESTILIZADO NO THEME PARA PODER REDUZIR CÓDIGO AQUI
+
+.fps{
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color:#FFD760;
+    font-weight: bold;
+    border-top: none;
+}
+
+.estrategia{
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color:#FFD760;
+    font-weight: bold;
+    border-top: none;
+}
+
+.esportes{
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color:#FFD760;
+    font-weight: bold;
+    border-top: none;
+}
+
+.outros{
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color:#FFD760;
+    font-weight: bold;
+    border-top: none;
+    margin-right: 10px;
+    
+}
+*/ 
+
+/*faixa amarela*/
+.segundafaixa{
+    background-color: #25262C;
+    margin-bottom: 2px;
+    height: 37px;
+}
+
+/* estilizacao do menu completo*/
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
