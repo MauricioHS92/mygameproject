@@ -1,13 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&family=Ropa+Sans&display=swap');
 
-html{
+.faixa {
+    background-color: #25262C;
+    margin-bottom: 2px;
+    height: 60px;
+}
+
+/* NOME DO SITE */
+.logo {
+    background-color: #25262C;
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+
+/* BARRA DE BUSCA */
+#txtBusca {
+    background-color: #ffffff;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 12.2791px;
+    margin: 5px 30px 5px 30px;
+
+}
+
+#imagem-logo {
+    width: 174px;
+    height: 91px;
+    margin: 30px 32px 24px 114px;
+}
+
+/* FALE CONOSCO */
+
+.campo-ajuda {
+
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+    margin: 16px 30px 16px 30px;
+    height: 50px;
+    width: 170px;
+}
+
+#fale-conosco {
+    width: 147px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 19px 9px 19px 9px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#seta {
+    width: 27px;
+    height: 27px;
+    padding: 11px 9px 11px 9px;
+}
+
+/* CADASTRO/LOGIN */
+
+#boneco {
+    width: 27px;
+    height: 27px;
+    padding: 11px 9px 11px 9px;
+
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+    margin: 16px 30px 16px 30px;
+    height: 50px;
+    width: 170px;
+}
+
+#login {
+    width: 147px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 13px 9px 15px 9px;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* CARRINHO DE COMPRAS */
+
+#carrinho {
+    background-color: #FFD760;
+    border-radius: 12.2791px;
+    margin: 16px 30px 16px 30px;
+    width: 50px;
+    height: 50px;
+}
+
+/* FAIXA AMARELA */
+
+.linha-amarela {
+    border: solid 2px #FFD760;
+}
+
+
+
+/*faixa amarela*/
+.segundafaixa {
+    background-color: #25262C;
+    margin-bottom: 2px;
+    height: 37px;
+}
+
+/* estilizacao do menu completo*/
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+html {
     width: 1440px;
     height: 3307px;
     font-family: 'Inter', sans-serif;
-}
-
-* {
     margin: 0;
     padding: 0;
 }
@@ -46,17 +168,20 @@ footer {
 .base {
     background-color: #25262C;
 }
+
 .destaques {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ropa Sans', sans-serif;
 }
+
 .inscreva-se {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ropa Sans', sans-serif;
     color: #FFD760;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.botao-voltar {    
+
+.botao-voltar {
     width: 153px;
     height: 41px;
     background: rgba(255, 0, 0, 0.5);
@@ -64,6 +189,7 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
+
 .botao-salvar {
     margin-top: 10px;
     width: 153px;
@@ -73,7 +199,87 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
-.input label{
+
+.input label {
     color: #FFD760;
     text-shadow: white;
+}
+
+/*estilização do menu*/
+.nav-bar {
+    border: solid 1px #000000;
+    padding: 10px 0px 0px 0px;
+    color: #ffffff;
+    width: 140px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #FFD760;
+    font-weight: bold;
+    border-top: none;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/*estilização dos botões do menu*/
+.fourth {
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.fourth:hover {
+    background-position: 0;
+}
+
+/* estilo do botao fale-conosco e cadastro/login */
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(49, 43, 43, 0.1);
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 11px;
+}
+
+.btn-three:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 11px;
+    transform: scale(1.2, 1.2);
+}
+
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
 }
