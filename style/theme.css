@@ -238,11 +238,17 @@ footer {
     background-position: 0;
 }
 
+.fourth a {
+	text-decoration: none;
+	color: #25262C;
+}
+
 /* estilo do botao fale-conosco e cadastro/login */
 .btn-three {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
+    cursor: pointer;
 }
 
 .btn-three::before {
