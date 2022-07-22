@@ -13,6 +13,7 @@
     height: 145px;
     display: flex;
     align-items: center;
+    padding-top: 100px;
 }
 
 /* BARRA DE BUSCA */
@@ -51,24 +52,26 @@
     height: 40px;
     color: #ffffff;
     display: flex;
-    justify-content: center;
-    padding: 19px 9px 19px 9px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding: 15px 9px 19px 9px;
     text-decoration: none;
     font-size: 13px;
+    
 }
 
 
 #seta {
-    width: 27px;
-    height: 27px;
+    width: 50px;
+    height: 50px;
     padding: 11px 9px 11px 9px;
 }
 
 /* CADASTRO/LOGIN */
 
 #boneco {
-    width: 27px;
-    height: 27px;
+    width: 50px;
+    height: 50px;
     padding: 11px 9px 11px 9px;
 
 }
@@ -88,7 +91,7 @@
     color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 13px 9px 15px 9px;
+    padding: 6px 9px 15px 9px;
     text-decoration: none;
     font-size: 13px;
     text-align: center;
@@ -108,6 +111,7 @@
 
 .linha-amarela {
     border: solid 2px #FFD760;
+    margin-top: 170px;
 }
 
 
@@ -124,6 +128,8 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    margin-bottom: 0px;
+    
 }
 
 html {
@@ -135,7 +141,7 @@ html {
 }
 
 body {
-    border: 2px groove red;
+    border: 2px groove red;  /*retirar border*/
     width: 1440px;
     height: 3307px;
     display: flex;
@@ -146,7 +152,7 @@ body {
 header {
     width: 1440px;
     height: 275px;
-    background-color: black;
+    background-color: #25262C;
 }
 
 main {
@@ -210,8 +216,8 @@ footer {
     border: solid 1px #000000;
     padding: 10px 0px 0px 0px;
     color: #ffffff;
-    width: 140px;
-    height: 26px;
+    width: 170px;
+    height: 50px;
     text-align: center;
     font-size: 15px;
     background-color: #FFD760;
