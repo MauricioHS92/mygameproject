@@ -1,0 +1,40 @@
+main {              /*Corpo principal da página*/
+  display: flex;
+  
+}
+
+.p {              /*Título da página*/
+  display: flex;
+  margin-left: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 100px;
+  margin-right: 968px;
+}
+
+.grade-de-jogos {              /*Section onde consta a primeira grade de jogos*/
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  width: 1350px;
+  margin-left: auto;
+}
+
+.jg {              /*Div dos jogos*/
+  margin: 222px, 968px, 1874px, 84px;
+  width: 388px;
+  height: 484px;
+}
+
+.img {             /*Imagens dos jogos.*/
+  margin-left: 0px;
+  width: 388px;
+  height: 484px;
+}
+
+.prjg {              /*Campo para preços e carrinhos de compras*/
+  margin-left: 119px;
+  width: 158px;
+  height: 84px;
+  font-size: large;
+}
