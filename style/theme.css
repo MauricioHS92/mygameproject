@@ -59,7 +59,7 @@
     padding: 15px 9px 19px 9px;
     text-decoration: none;
     font-size: 13px;
-    
+
 }
 
 
@@ -131,7 +131,7 @@
     justify-content: space-evenly;
     list-style-type: none;
     margin-bottom: 0px;
-    
+
 }
 
 html {
@@ -147,7 +147,8 @@ html {
 body {
     min-width: 1000px;
     max-width: 2000px;
-    border: 2px groove red;  /*retirar border*/
+    border: 2px groove red;
+    /*retirar border*/
     width: 100vw;
     height: 3307px;
     display: flex;
@@ -164,9 +165,7 @@ header {
 }
 
 main {
-    min-width: 1000px;
-    max-width: 2000px;
-    width: 100vw;
+    width: 1140px;
     height: 2580px;
     background: linear-gradient(180deg, #FFD760 0%, #B32424 100%);
     display: flex;
@@ -180,7 +179,7 @@ footer {
     max-width: 2000px;
     width: 100vw;
     height: 452px;
-    background-color: black;
+    background-color: #25262C;
 }
 
 .base {
@@ -198,6 +197,7 @@ footer {
     color: #FFD760;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .tenho-conta {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ropa Sans', sans-serif;
@@ -213,6 +213,7 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
+
 .botao-esqueci-a-senha {
     width: 153px;
     height: 41px;
@@ -231,6 +232,7 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
+
 .botao-continuar {
     margin-top: 10px;
     width: 153px;
@@ -240,6 +242,7 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
+
 .input label {
     color: #FFD760;
     text-shadow: white;
@@ -279,8 +282,8 @@ footer {
 }
 
 .fourth a {
-	text-decoration: none;
-	color: #25262C;
+    text-decoration: none;
+    color: #25262C;
 }
 
 /* estilo do botao fale-conosco e cadastro/login */
@@ -336,82 +339,62 @@ footer {
 .logo-rodape {
     width: 150px;
     height: 100px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    margin-left: -8%;
-    padding-top: 6%;
 }
 
-.box .box-1 .box-3 {
-    flex-grow: 0.25%;
-}
-
-.box {
+.box-1 {
     width: 250px;
     height: 170px;
-    margin: -50px 100px 5px 200px;
 }
 
 .sobre {
-    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+.titulos {
+    font-size: 20px;
+    color: white;
+}
+
+.desenvolvedores {
+    color: white;
+}
+
+.lista-desenvolvedores a {
+    text-decoration: none;
     color: white;
     font-size: 15px;
 }
 
-.titulos {
-    padding-left: 20px;
-    color: white;
-    font-size: 20px;
-}
-
-.box-1 {
-    margin: -170px 100px 5px 600px;
-    list-style: none;
-}
-
-.desenvolvedores {
-    list-style: none;
-    margin-left: 20px;
-    color: white;
-
-}
-.lista-desenvolvedores a{
-    text-decoration: none;
-    color: white;
-
-}
-
 .box-3 {
-    margin: -300px 100px 5px 1000px;
     width: 384px;
     height: 200px;
     display: inline-block;
-    
 }
 
 .logodh {
     width: 120px;
     height: 30px;
-    margin-left: 15px;
-    margin-top: -20px;
 }
 
 .redes-sociais {
-    margin-top: -80px;
-    margin-right: 35%;
-    margin-left: 35%;
-    align-items: center;
+    width: 400px;
+    height: 65px;
     border-radius: 10px;
     border: 1px solid;
     color: #FFFD76;
-    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icones-redessociais {
     display: flex;
     justify-content: space-around;
-    
 }
 
 .redes-sociais img {
-    width: 36, 76px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     margin-top: 12px;
 }
 
@@ -420,9 +403,12 @@ footer {
     font-size: 15px;
     width: 62px;
     height: 19px;
-    padding: 24px 9px 17.73px 5.51px;
+    margin: 18px 5px 35px 5.51px;
 }
 
 .rodape-total {
-    display: flexbox;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 114px 60px 114px;
 }
