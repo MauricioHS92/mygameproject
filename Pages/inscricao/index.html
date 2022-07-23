@@ -8,7 +8,7 @@
     <title>My New Game/Login/Inscreva-se/</title>
     <link rel="stylesheet" href="../../style/reset.css" />
     <link rel="stylesheet" href="../../style/theme.css" />
-    <link rel="stylesheet" href="../../pages/telaLogin/style.css" />
+    <link rel="stylesheet" href="../../pages/inscricao/style.css" />
 </head>
 
 <body>
@@ -28,23 +28,38 @@
                             <label for="email">E-mail: </label>
                             <input type="email" id="email" placeholder="digite seu e-mail" required />
                         </div>
-                        <div class="base2">
-                            <h1 class="tenho-conta">JA TENHO UMA CONTA</h1>
-                        </div>
-                        <input class="botao-continuar" type="button" value="Continuar" onCLick="history.forward()">
-                    </div>
-
-                    <div class="container">
                         <div class="input">
                             <label for="email">E-mail: </label>
-                            <input type="email" id="email" placeholder="digite seu e-mail" required />
+                            <input type="email" id="email" placeholder="digite seu e-mail novamente" required />
                         </div>
                         <div class="input">
                             <label for="password">Senha: </label>
                             <input type="password" id="password" placeholder="digite a senha" required />
-                        </div>                        
+                        </div>
+                        <div class="input">
+                            <label for="password">Senha: </label>
+                            <input type="password" id="password" placeholder="digite a senha novamente" required />
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="input">
+                            <label for="nome">Nome: </label>
+                            <input type="name" id="nome" placeholder="digite seu nome" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Digite seu CPF: </label>
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF - Apenas Números" required />
+                        </div>
+                        <div class="input">
+                            <label for="telefone">Telefone </label>
+                            <input type="password" id="telefone" maxlength="11" / placeholder="(xx) xxxxx-xxxx"
+                                required />
+                        </div>
+                        <!--<button type="submit">Enviar</button>-->
+                        <!--<button type="submit">Enviar</button>-->
                         <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
-                        <input class="botao-esqueci-a-senha" type="button" value="Esqueci a Senha" onClick="history.go(-1)">
+                        <input class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">
                     </div>
                     <div class="base">
                         <h1 class="inscreva-se">INSCREVA-SE</h1>

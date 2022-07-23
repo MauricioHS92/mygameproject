@@ -70,26 +70,8 @@ button{
     height: 730px;
     border-radius: 20px;
 }
-.base2 {
-    position: absolute;
-    display: flex;
-    width: 1216px;
-    height: 730px;
-    border-radius: 20px;
-}
 .inscreva-se{
     margin-top: 35px;
-    text-align: center;
-    font-size: 80px;
-    width: 500px;
-    height: 100px;
-    font-style: italic;
-}
-.tenho-conta{
-    margin-top: 3%;
-    margin-left: 73%;   
-    position: absolute;
-    display: flex;
     text-align: center;
     font-size: 80px;
     width: 500px;
