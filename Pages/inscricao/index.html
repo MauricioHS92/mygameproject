@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <header>
-        
+    <header>        
         <div class="faixa">
             <div class="logo">
                 <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
@@ -34,7 +33,6 @@
                     <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
                             alt="carrinho"> </a>
                 </div>
-
             </div>
         </div>
 
@@ -48,23 +46,21 @@
                     <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
                 </ul>
             </div>
-
         </div>
-
         </div>
 
     </header>
 
-    <main>                
-            
-                <div class="principal">
-                    <div class="container">
-                        <div class="base">
-                            <h1 class="inscreva-se">INSCREVA-SE</h1>
-                        </div>
-                        <div class="campo1">
-                        <div action="/pagina-que-recebe-dados" method="post">
-                        
+    <main>
+        <div class="principal">
+            <div class="container">
+                <div class="base">
+                    <h1 class="inscreva-se">INSCREVA-SE</h1>
+                </div>
+
+                <div class="campo1">
+                    
+                    <form action="/pagina-que-recebe-dados" method="post">
                         <div class="input">
                             <label for="email">E-mail: </label>
                             <input type="email" id="email" placeholder="digite seu e-mail" required />
@@ -101,46 +97,79 @@
                         <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
                         <input class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">
                     </div>
+                    </form>                    
                 </div>
-                    
-                </div>
-            </form>
-            
-        
-            <!--
-            <div class="grade-de-anuncio">
-                <div class="anuncio">
-                    <img class="img" src="../../assets/images/slider/eas-fifa22-gen5-se-crop-1080x1350_4vxz.png" alt="">
-                </div>
-                <div class="descricao-anuncio">
-                    <div>
-                        <h2>DESCRICAO:</h2>
-                        <br>
-                        <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, similique
-                            maiores aperiam debitis voluptates fuga nam illo facilis.</p>
-                    </div>
-                </div>
+
+                <div class="indicacao-jogos">
+                    <div class="jogos">
+                        <img class="img" src="../../assets/images/slider/eas-fifa22-gen5-se-crop-1080x1350_4vxz.png" alt="">
                 
-                <div class="anuncio">
-                    <img class="img"
-                        src="../../assets/images/slider/call-of-duty-modern-warfare-2-sera-disponible-le-28-octobre-2022-7049aea1.jpg" alt="">
-                </div>
-                <div class="descricao-anuncio">
-                    <div>
+                        <img class="img" src="../../assets/images/slider/call-of-duty-modern-warfare-2-sera-disponible-le-28-octobre-2022-7049aea1.jpg" alt="">
+                    </div>
+                    <div class="descricao-jogos">
+                        <div>
                         <h2>DESCRICAO:</h2>
                         <br>
                         <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, similique
                             maiores aperiam debitis voluptates fuga nam illo facilis.</p>
+                        </div>
+                        <div>
+                        <h2>DESCRICAO:</h2>
+                        <br>
+                        <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, similique
+                            maiores aperiam debitis voluptates fuga nam illo facilis.</p>
+                        </div>
                     </div>
                 </div>
-                -->
+            
             </div>
         
         
     </main>
 
     <footer>
-
+        <div class="rodape-total">
+            <div class="logo-rodape">
+                <img src="../../imagens/Icone Rodape.png" alt="logo-rodape">
+            </div>
+            <div class="box-1">
+                <h4 class="titulos">Sobre</h4>
+                <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
+                    Nemo
+                    error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
+            </div>
+            <div class="box-2">
+                <h4 class="titulos">Desenvolvedores</h4>
+                <ul class="desenvolvedores">
+                    <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">William</a></li>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h4 class="titulos">Escola Parceira</h4>
+                <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
+                        src="../../imagens/logodh.png" alt="Digital House"></a>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <div class="icones-redessociais">
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Facebook.png" alt="Icone Facebook">
+                </a>
+                <span class="textoredesocial">Facebook</span>
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Instagram.png" alt="Icone Instagram">
+                </a>
+                <span class="textoredesocial">Instagram</span>
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Youtube.png" alt="Icone Youtube">
+                </a>
+                <span class="textoredesocial">Youtube</span>
+            </div>
+        </div>
     </footer>
 </body>
 
