@@ -1,83 +1,81 @@
-body{       /*config das fontes do body*/
-    display: flex;
+body{      
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
-}
-.principal{     /*classe principal que eh pai das classes de containers*/
-    margin-top: -400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    z-index: 2;
-}
-.container{     /*classe container que eh pai das classes de input*/
-    width: 461px;
-    height: 365px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;    
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
-    z-index: 2;
-}
-.title{
-    display: flex;
     justify-content: center;
-    width: 100%;
-    height: 50px;
-    font-size: 25px;
-    margin-bottom: -20px;
-    z-index: 2;
+    padding: 0 30px;
 }
-.input{
-    margin-right: 100px;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    text-align: center;
-    z-index: 2;
-}
-.input input{    
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 6px;
-    z-index: 2;
-}
-.input label{   
-    display: flex;
-    font-size: 25px;
-    font-weight: bold;
-    z-index: 2;
-    font-style: italic;
-    
-}
-button{
-    width: 100px;
-    height: 40px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    z-index: 2;
-}
-.base {
-    position: absolute;
+
+.principal{     /*classe principal que eh pai das classes de containers*/
     width: 1216px;
     height: 730px;
-    border-radius: 20px;
+    background-color: #25262C;
+    margin: 249px 112px 0px 112px;
 }
 .inscreva-se{
-    margin-top: 35px;
-    text-align: center;
-    font-size: 80px;
-    width: 500px;
-    height: 100px;
-    font-style: italic;
+    width: 320px;
+    height: 120px;
+    font-size: 63px;
+    color: #FFD760;
+    margin: 51px 388px 0px 405px;
 }
+.campo1{
+    
+}
+.container{     /*classe container que eh pai das classes de input*/
+    
+}
+.container2{     /*classe container que eh pai das classes de input*/
+    margin: 24px 144px 0px 0px;
+}
+.input{
+    margin: 24px 21px 0px 192px;
+    width: 381px;
+    height: 61px
+}
+.input2{
+    margin: 24px 21px 0px 691px;
+    width: 381px;
+    height: 61px
+}
+.input input{    
+    width: 381px;
+    height: 61px
+}
+.input label{   
+    width: 381px;
+    height: 61px
+}
+.input2 input{    
+    width: 381px;
+    height: 61px
+}
+.input2 label{   
+    width: 381px;
+    height: 61px
+}
+.botao-voltar{
+    
+}
+.botao-salvar{
+
+}
+button{
+    
+}
+.base {
+    
+}
+
+/*
 .grade-de-anuncio{
     align-items: center;
     
@@ -115,3 +113,4 @@ h2 {
     font-weight: bold;
     font-size: 30px;
 }
+*/

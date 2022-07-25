@@ -13,17 +13,58 @@
 
 <body>
     <header>
+        
+        <div class="faixa">
+            <div class="logo">
+                <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
+                        alt="logo" /></a>
+                <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
+
+                <div class="campo-ajuda btn-three">
+                    <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
+                    <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
+                </div>
+
+                <div class="cadastro btn-three">
+                    <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
+                    <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
+                </div>
+
+                <div>
+                    <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
+                            alt="carrinho"> </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="linha-amarela"></div>
+        <div>
+            <div class="segundafaixa">
+                <ul class="menu">
+                    <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
 
     </header>
 
-    <main>
-        <section>
-            <form action="/pagina-que-recebe-dados" method="post">
+    <main>                
+            
                 <div class="principal">
                     <div class="container">
-                        <!--<div class="title">
-                            INSCREVA-SE
-                        </div>-->
+                        <div class="base">
+                            <h1 class="inscreva-se">INSCREVA-SE</h1>
+                        </div>
+                        <div class="campo1">
+                        <div action="/pagina-que-recebe-dados" method="post">
+                        
                         <div class="input">
                             <label for="email">E-mail: </label>
                             <input type="email" id="email" placeholder="digite seu e-mail" required />
@@ -40,33 +81,33 @@
                             <label for="password">Senha: </label>
                             <input type="password" id="password" placeholder="digite a senha novamente" required />
                         </div>
-                    </div>
+                        
 
-                    <div class="container">
-                        <div class="input">
+                    <div class="container2">
+                        <div class="input2">
                             <label for="nome">Nome: </label>
                             <input type="name" id="nome" placeholder="digite seu nome" required />
                         </div>
-                        <div class="input">
+                        <div class="input2">
                             <label for="text">Digite seu CPF: </label>
                             <input type="text" name="cpf" id="cpf" placeholder="CPF - Apenas Números" required />
                         </div>
-                        <div class="input">
+                        <div class="input2">
                             <label for="telefone">Telefone </label>
                             <input type="password" id="telefone" maxlength="11" / placeholder="(xx) xxxxx-xxxx"
                                 required />
                         </div>
-                        <!--<button type="submit">Enviar</button>-->
-                        <!--<button type="submit">Enviar</button>-->
+                        
                         <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
                         <input class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">
                     </div>
-                    <div class="base">
-                        <h1 class="inscreva-se">INSCREVA-SE</h1>
-                    </div>
+                </div>
+                    
                 </div>
             </form>
-
+            
+        
+            <!--
             <div class="grade-de-anuncio">
                 <div class="anuncio">
                     <img class="img" src="../../assets/images/slider/eas-fifa22-gen5-se-crop-1080x1350_4vxz.png" alt="">
@@ -92,8 +133,9 @@
                             maiores aperiam debitis voluptates fuga nam illo facilis.</p>
                     </div>
                 </div>
+                -->
             </div>
-        </section>
+        
         
     </main>
 
