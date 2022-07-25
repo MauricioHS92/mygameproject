@@ -1,0 +1,129 @@
+body{      
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.div-pai {                          /*Caixa Preta*/
+    display: inline-flex;
+    width: 1297px;
+    height: 732px;
+    background-color: #25262C;
+    margin: 100px 250px 0px 250px;
+}
+
+.paragrafo {                            /*Título dos dados*/
+    width: 320px;
+    height: 120px;
+    font-size: 63px;
+    color: #FFD760;
+    margin: 35px 67.5px 86px 58px; /*249px 72px 1599px 71px;*/
+    display: inline-flex;
+}
+
+.meus-dados {                           /*Campo dos meus dados*/
+    width: 381px;
+    height: 61px;
+    background-color: white;
+    margin: 0px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.meu-endereço {                         /*Campo do meu endereço*/
+    width: 381px;
+    height: 61px;
+    background-color: white;
+    margin: 25px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.historico-pedido {                         /*Campo do histórico de pedidos*/
+    width: 381px;
+    height: 61px;
+    background-color: white;
+    margin: 25px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.formulario {                           /*Caixa cinxa*/
+    width: 759px;
+    height: 633px;
+    background-color: #D9D9D9;
+    margin: 49.5px 48px 49.5px 48px;
+}
+
+.div-pai {                          /*Div pai*/
+    display: inline-flex;
+}
+
+
+
+.botao-salvar {                         /*Botão salvar*/
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #00FF19;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 136px;
+}
+
+.botao-voltar {                         /*Botão voltar*/
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #FF0000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    margin-left: 136px;
+}
+
+.indicacao-jogos{                           /*Div englobando os jogos e descrições*/
+    margin: 200px 0px 200px 500px;
+}    
+
+.jogos {                            /*Jogos*/
+    display: inline-flex;
+}
+.descricao-jogos {                          /*Div Descrição dos jogos*/
+    display: inline-flex;
+}
+h2 {                                /*Título das descrições*/
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    font-size: 30px;
+}
+.descricao {                            /*Conteudo da descrição dos jogos*/
+    width: 388px;
+    height: 383px;
+    background-color: #D9D9D9;
+    margin: 34px 54px 0px 0px;
+    text-align: left;
+    font-size: 30px;
+}
+.img{                               /*Imagem dos jogos*/
+    width: 388px;
+    height: 484px;
+    background-color: #25262C;
+    border-radius: 10px;
+    margin: 0px 54px 0px 0px;
+    margin-left: 0px;    
+}

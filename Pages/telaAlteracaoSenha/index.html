@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Game/Alteração de Senha/</title>
+    <link rel="stylesheet" href="../../style/reset.css" />
+    <link rel="stylesheet" href="../../style/theme.css" />
+    <link rel="stylesheet" href="../../pages/telaAlteracaoSenha/style.css" />
+</head>
+
+<body>
+    <header>
+
+        <div class="faixa">
+            <div class="logo">
+                <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
+                        alt="logo" /></a>
+                <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
+
+                <div class="campo-ajuda btn-three">
+                    <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
+                    <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
+                </div>
+
+                <div class="cadastro btn-three">
+                    <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
+                    <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
+                </div>
+
+                <div>
+                    <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
+                            alt="carrinho"> </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="linha-amarela"></div>
+        <div>
+            <div class="segundafaixa">
+                <ul class="menu">
+                    <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <form action="/pagina-que-recebe-dados" method="post">
+                <div class="principal">
+                    <div class="container">
+                        <!--<div class="title">
+                            INSCREVA-SE
+                        </div>-->
+                        <div class="input">
+                            <label for="password">Senha Atual: </label>
+                            <input type="password" id="senha" placeholder="digite sua senha atual" required />
+                        </div>
+                        
+                        <input class="botao-continuar" type="button" value="Confirmar" onCLick="history.forward()">
+                    </div> <!--Apagar este botão?-->
+
+                    <div class="container">
+                        <div class="input">
+                            <label for="newPasswordNome">Nova Senha: </label>
+                            <input type="password" id="newSenha" placeholder="digite sua nova senha" required/>
+                        </div>
+                        <div class="input">
+                            <label for="confirmNewPassword">Confirme sua nova senha: </label>
+                            <input type="password" id="confirmNewPassword" placeholder="confirme sua nova senha" required/>
+                        </div>                        
+                        
+                        <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
+                        <input class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">
+                    </div>
+                    <div class="base">
+                        <h1 class="inscreva-se">NOVA SENHA</h1>
+                    </div>
+                </div>
+            </form>
+
+            <section class="grade-de-anuncio">
+                <<div class="indicacao-jogos">
+                    <div class="jogos">
+                        <img class="img" src="../../assets/images/resident.png" alt="Resident Evil">
+                
+                        <img class="img" src="../../assets/images/thelastofus.png" alt="The Las Of Us">
+                    </div>
+                    <div class="descricao-jogos">
+                        <div>
+                        <h2>DESCRICAO:</h2>
+                        <br>
+                        <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, similique
+                            maiores aperiam debitis voluptates fuga nam illo facilis.</p>
+                        </div>
+                        <div>
+                        <h2>DESCRICAO:</h2>
+                        <br>
+                        <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, similique
+                            maiores aperiam debitis voluptates fuga nam illo facilis.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="rodape-total">
+            <div class="logo-rodape">
+                <img src="../../imagens/Icone Rodape.png" alt="logo-rodape">
+            </div>
+            <div class="box-1">
+                <h4 class="titulos">Sobre</h4>
+                <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
+                    Nemo
+                    error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
+            </div>
+            <div class="box-2">
+                <h4 class="titulos">Desenvolvedores</h4>
+                <ul class="desenvolvedores">
+                    <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">William</a></li>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h4 class="titulos">Escola Parceira</h4>
+                <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
+                        src="../../imagens/logodh.png" alt="Digital House"></a>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <div class="icones-redessociais">
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Facebook.png" alt="Icone Facebook">
+                </a>
+                <span class="textoredesocial">Facebook</span>
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Instagram.png" alt="Icone Instagram">
+                </a>
+                <span class="textoredesocial">Instagram</span>
+                <a target="#" href="#">
+                    <img src="../../imagens/Icone Youtube.png" alt="Icone Youtube">
+                </a>
+                <span class="textoredesocial">Youtube</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+    <!--
+    <main>
+        <section>            
+            <form action="/pagina-que-recebe-dados" method="post">
+                <div class="principal">
+                    <div class="container">                        
+                        
+                        <div class="input">
+                            <label for="password">Senha Atual: </label>
+                            <input type="password" id="senha" placeholder="digite sua senha" required/>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="input">
+                            <label for="newPasswordnome">Nova Senha: </label>
+                            <input type="password" id="newSenha" placeholder="digite sua nova senha" required/>
+                        </div>
+                        <div class="input">
+                            <label for="confirmNewPassword">Confirme sua nova senha: </label>
+                            <input type="password" id="confirmNewPassword" placeholder="Confirme sua nova senha" required/>
+                        </div>                        
+                        
+                        <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
+                        <input class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">
+                    </div>
+                    <div class="base">
+                        <h1 class="inscreva-se">NOVA SENHA</h1>
+                    </div>
+                </div>
+            </form>
+        <div class="grade-de-jogos1">
+            <div class="anuncio">
+            <div class="jg1">
+                <img id="img1" src="../../assets/images/slider/eas-fifa22-gen5-se-crop-1080x1350_4vxz.png" alt="">
+                <div class="prjg1">
+                </div>
+            </div>
+            <div class="jg2">
+                <img id="img1" src="../../assets/images/slider/call-of-duty-modern-warfare-2-sera-disponible-le-28-octobre-2022-7049aea1.jpg" alt="">
+                <div class="prjg2">
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+-->

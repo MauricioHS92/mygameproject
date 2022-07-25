@@ -1,0 +1,118 @@
+body{      
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+.principal{     /*classe principal e pai das containers (Posicionamento do Quadrado preto)*/
+    margin-top: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    z-index: 2;
+    margin: 200px 0px 0px 0px;
+}
+.container{     /*classe container que eh pai das classes de input(Conteúdo do quadrado preto)*/
+    width: 461px;
+    height: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: space-evenly;
+    
+    z-index: 2;
+}
+
+.input{                         /*Botões*/
+    width: 313px; /*Era 200px*/
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.input input{                           /*Caixas de digitação*/
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 2;
+}
+.input label{                           /*Títulos das caixas de digitação*/
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 2;
+    font-style: italic;
+    
+}
+
+.base {
+    position: absolute;                         /*Quadrado Preto*/
+    width: 1216px;
+    height: 730px;
+    border-radius: 20px;
+}
+
+.inscreva-se{                           /*Título*/
+    margin-top: 35px;
+    text-align: center;
+    font-size: 80px;
+    width: 500px;
+    height: 100px;
+    font-style: italic;
+}
+
+.grade-de-anuncio{                          /*Posicionamento da grade*/
+    align-items: center;
+    display: flex;
+    margin-top: 500px;
+}
+
+.indicacao-jogos {                          /*Div englobando os jogos e descrições*/
+    margin: 0px 0px 200px 250px;
+}
+
+.jogos {                                /*Jogos*/
+    display: inline-flex;
+}
+
+.descricao-jogos {                          /*Div Descrição dos jogos*/
+    display: inline-flex;
+}
+
+h2 {                            /*Título das descrições*/
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.descricao {                            /*Conteudo da descrição dos jogos*/
+    width: 388px;
+    height: 383px;
+    background-color: #D9D9D9;
+    margin: 34px 54px 0px 0px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.img {                          /*Imagem dos jogos*/
+    width: 388px;
+    height: 484px;
+    background-color: #25262C;
+    border-radius: 10px;
+    margin: 0px 54px 0px 0px;
+    margin-left: 0px;
+}
