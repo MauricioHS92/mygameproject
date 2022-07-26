@@ -1,0 +1,142 @@
+
+.div-pai {
+    width: 1297px;
+    height: 732px;
+    background-color: #25262C;
+    margin: 249px 71px 0px 71px;
+}
+
+.paragrafo {
+    width: 320px;
+    height: 120px;
+    font-size: 63px;
+    color: #FFD760;
+    margin: 35px 67.5px 86px 58px;
+    display: inline-flex;
+
+}
+
+.meus-dados {
+    width: 381px;
+    height: 61px;
+    background-color: white;
+    margin: 25px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.meu-endereço {
+    width: 381px;
+    height: 61px;
+    background-color: white;
+    margin: 25px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.historico-pedido {
+    width: 381px;
+    height: 61px;
+    background-color: #FFD760;
+    margin: 0px 48px 25px 48px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.paragrafos-perfilusuario {
+    padding-top: 22px;
+    padding-top: 22px;
+    font-size: 15px;
+}
+
+.formulario {
+    width: 759px;
+    height: 633px;
+    background-color: #D9D9D9;
+    margin: 49.5px 48px 49.5px 48px;
+    border-radius: 45px;
+   
+}
+
+.div-pai {
+    display: inline-flex;
+}
+
+.formulario .campos-formulario {
+    width: 450px;
+    height: 50px;
+    margin: 25px 116px 0px 116px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+}
+
+.botao-voltar {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #FF0000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    margin-left: 136px;
+}
+
+.botao-salvar {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #00FF19;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.jogos-1 {
+    width: 388px;
+    height: 484px;
+    background-color: #25262C;
+    border-radius: 10px;
+    margin: 331px 54px 0px 305px;
+}
+
+.jogos-2 {
+    width: 388px;
+    height: 484px;
+    background-color: #25262C;
+    border-radius: 10px;
+    margin: 331px 0px 0px 0px;
+}
+
+.descricao-jogos1 {
+    width: 388px;
+    height: 383px;
+    background-color: #D9D9D9;
+    margin: 34px 54px 0px 305px;
+}
+
+.descricao-jogos2 {
+    width: 388px;
+    height: 383px;
+    background-color: #D9D9D9;
+    margin: 34px 0px 0px 0px;
+}
+
+.jogos {
+    display: inline-flex;
+}
+
+.descricao-jogos {
+    display: inline-flex;
+
+}
+
+
