@@ -7,6 +7,8 @@
     background-color: #25262C;
     margin-bottom: 2px;
     height: 60px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* NOME DO SITE */
@@ -139,8 +141,6 @@ html {
 }
 
 body {    
-    border: 2px groove red;
-    /*retirar border*/
     width: 100%;
 }
 

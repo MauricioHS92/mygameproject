@@ -22,7 +22,7 @@ main {
 }
 
 .base {
-    margin: 51px 388px 0px 405px;
+    margin: 51px 405px 602px 388px;
 }
 
 .inscreva-se {
@@ -30,6 +30,12 @@ main {
     height: 120px;
     font-size: 63px;
     color: #FFD760;
+}
+
+.campo1 {
+    width: 1216px;
+    height: 730px;
+    margin: -600px 0px 0px -70px;
 }
 
 .container2 {
@@ -113,5 +119,5 @@ h2 {
 }
 
 .indicacao-jogos {
-    margin: 200px;
+    margin: 1312px 305px 784px 747px;
 }
