@@ -14,13 +14,10 @@ main {
     padding: 0px 30px;
 }
 .principal{     /*classe principal e pai das containers (Posicionamento do Quadrado preto)*/
-    margin-top: -400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    z-index: 2;
-    margin: 200px 0px 0px 0px;
+    width: 1216px;
+    height: 730px;
+    background-color: #25262C;
+    margin: 249px 112px 1601px 190px;
 }
 .container{     /*classe container que eh pai das classes de input(Conteúdo do quadrado preto)*/
     width: 461px;
@@ -34,35 +31,41 @@ main {
     z-index: 2;
 }
 
-.input{                         /*Botões*/
-    width: 313px; /*Era 200px*/
-    height: 60px;
-    font-size: 20px;
-    text-align: center;
-    z-index: 2;
-}
-.input input{                           /*Caixas de digitação*/
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 6px;
-    z-index: 2;
-}
-.input label{                           /*Títulos das caixas de digitação*/
-    display: flex;
-    font-size: 25px;
-    font-weight: bold;
-    z-index: 2;
-    font-style: italic;
+.input {
+    margin: 24px 192px;
+    width: 381px;
+    height: 61px;
     
 }
 
-.base {
-    position: absolute;                         /*Quadrado Preto*/
-    width: 1216px;
-    height: 730px;
-    border-radius: 20px;
+.input2 {
+    margin: 24px 691px;
+    width: 381px;
+    height: 61px
+}
+/* comecar a copia aqui*/
+.input input {
+    margin: -20px 0px 0px 0px;
+    width: 381px;
+    height: 61px
+}
+
+.input label {
+    margin: -200px 0px -20px 0px;
+    width: 381px;
+    height: 61px
+}
+
+.input2 input {
+    margin: -200px 0px 0px 0px;
+    width: 381px;
+    height: 61px
+}
+
+.input2 label {
+    margin: 0px 0px -20px 0px;
+    width: 381px;
+    height: 61px
 }
 
 .inscreva-se{                           /*Título*/
@@ -74,14 +77,9 @@ main {
     font-style: italic;
 }
 
-.grade-de-anuncio{                          /*Posicionamento da grade*/
-    align-items: center;
-    display: flex;
-    margin-top: 500px;
-}
-
-.indicacao-jogos {                          /*Div englobando os jogos e descrições*/
-    margin: 0px 0px 200px 250px;
+.indicacao-jogos {
+    margin: -1430px 620px 500px 700px;
+    
 }
 
 .jogos {                                /*Jogos*/
@@ -89,7 +87,7 @@ main {
 }
 
 .descricao-jogos {                          /*Div Descrição dos jogos*/
-    display: inline-flex;
+    display: flex;
 }
 
 h2 {                            /*Título das descrições*/
