@@ -46,7 +46,8 @@ main {
 .input {
     margin: 24px 192px;
     width: 381px;
-    height: 61px
+    height: 61px;
+    
 }
 
 .input2 {
@@ -54,27 +55,31 @@ main {
     width: 381px;
     height: 61px
 }
-
+/* comecar a copia aqui*/
 .input input {
+    margin: -20px 0px 0px 0px;
     width: 381px;
     height: 61px
 }
 
 .input label {
+    margin: 0px 0px -20px 0px;
     width: 381px;
     height: 61px
 }
 
 .input2 input {
+    margin: -20px 0px 0px 0px;
     width: 381px;
     height: 61px
 }
 
 .input2 label {
+    margin: 0px 0px -20px 0px;
     width: 381px;
     height: 61px
 }
-
+/* terminar a copia aqui*/
 .botao-voltar {
     margin: 27px 100px 100px 800px;
 }
@@ -117,7 +122,7 @@ h2 {
     margin: 0px 54px 0px 0px;
     margin-left: 0px;
 }
-
+/* comecar a copia aqui*/
 .indicacao-jogos {
-    margin: 1312px 305px 784px 747px;
+    margin: 0px 0px 0px 150px;
 }
