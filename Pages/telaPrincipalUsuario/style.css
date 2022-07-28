@@ -100,8 +100,10 @@ main {
 }    
 
 .jogos {                            /*Jogos*/
-    display: inline-flex;
+    display: flex;
+    background-color: #FF0000;
 }
+
 .descricao-jogos {                          /*Div Descrição dos jogos*/
     display: inline-flex;
 }
@@ -126,4 +128,15 @@ h2 {                                /*Título das descrições*/
     border-radius: 10px;
     margin: 0px 54px 0px 0px;
     margin-left: 0px;    
+}
+
+.indicacao-jogos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 30vh;
+    width: 50%;
+    background-color: deeppink;
+    align-items: center;
+    justify-content: space-around;
 }
