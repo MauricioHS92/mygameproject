@@ -6,14 +6,11 @@
     margin: 249px 71px 0px 71px;
 }
 
-.paragrafo {
-    width: 320px;
-    height: 120px;
-    font-size: 63px;
+.paragrafo{
+    font-size: 60px;
     color: #FFD760;
     margin: 35px 67.5px 86px 58px;
     display: inline-flex;
-
 }
 
 .meus-dados {
@@ -56,7 +53,7 @@
     width: 759px;
     height: 633px;
     background-color: #D9D9D9;
-    margin: 49.5px 48px 49.5px 48px;
+    margin: 49.5px 48px 49.5px 10px;
     border-radius: 45px;
    
 }
@@ -139,4 +136,12 @@
 
 }
 
+.img-indicacaojogos{
+    width: 388px;
+    height: 484px;
+}
+
+.indicacao-jogos{
+    padding-bottom: 367px;
+}
 

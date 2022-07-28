@@ -359,10 +359,6 @@ footer {
 
 .redes-sociais {
     width: 400px;
-    height: 65px;
-    border-radius: 10px;
-    border: 1px solid;
-    color: #FFFD76;
     margin-left: auto;
     margin-right: auto;
 }
@@ -383,13 +379,13 @@ footer {
     font-size: 15px;
     width: 62px;
     height: 19px;
-    margin: 18px 5px 35px 5.51px;
+    margin: 18px 5px 0px 5.51px;
 }
 
 .rodape-total {
-    width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0px 114px 60px 114px;
+    margin: 0px 110px 0px 110px;
     padding-top: 60px;
 }
