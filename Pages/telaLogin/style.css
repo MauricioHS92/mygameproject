@@ -24,6 +24,7 @@ main {
 
 .base {
     margin: 51px 388px 0px 230px;
+    
 }
 
 .inscreva-se {
@@ -33,12 +34,16 @@ main {
     color: #FFD760;
 }
 
-.base2 {
-    margin: -300px 388px 0px 805px;
+.tenho-conta{
     width: 320px;
     height: 120px;
     font-size: 63px;
+    text-align: center;
     color: #FFD760;
+}
+
+.base2 {
+    margin: -300px 388px 0px 805px;
 }
 
 .container2 {
@@ -47,33 +52,37 @@ main {
 }
 
 .input {
-    margin: 24px 192px;
+    margin: 24px 100px;
     width: 381px;
     height: 61px
 }
 
 .input2 {
-    margin: 24px 691px;
+    margin: 24px 600px;
     width: 381px;
     height: 61px
 }
 
 .input input {
+    margin: -20px 0px 0px 0px;
     width: 381px;
     height: 61px
 }
 
 .input label {
+    margin: 0px 0px -20px 0px;
     width: 381px;
     height: 61px
 }
 
 .input2 input {
+    margin: -20px 0px 0px 0px;
     width: 381px;
     height: 61px
 }
 
 .input2 label {
+    margin: 0px 0px -20px 0px;
     width: 381px;
     height: 61px
 }
@@ -124,5 +133,5 @@ h2 {
 }
 
 .indicacao-jogos {
-    margin: 500px 0px 0px 200px;
+    margin: 390px 0px 0px 150px;
 }
