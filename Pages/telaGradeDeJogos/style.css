@@ -1,6 +1,6 @@
 body{       /*config das fontes do body*/
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
