@@ -1,26 +1,29 @@
 
 .div-pai {
+    display: inline-flex;
     width: 1297px;
     height: 732px;
     background-color: #25262C;
-    margin: 100px 71px 100px 71px;
+    margin: 100px 50px 100px 50px
 }
 
-.paragrafo{
-    font-size: 50px;
+.perfil-usuario h1{
+    font-size: 60px;
     color: #FFD760;
     margin: 35px 67.5px 86px 58px;
     display: inline-flex;
+
 }
 
 .meus-dados {
     width: 381px;
     height: 61px;
     background-color: white;
-    margin: 25px 48px 25px 48px;
+    margin: 25px 48px 0px 48px;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+    cursor: pointer;
 }
 
 .meu-endereço {
@@ -31,6 +34,7 @@
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+    cursor: pointer;
 }
 
 .historico-pedido {
@@ -41,6 +45,7 @@
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+    cursor: pointer;
 }
 
 .paragrafos-perfilusuario {
@@ -53,19 +58,16 @@
     width: 759px;
     height: 633px;
     background-color: #D9D9D9;
-    margin: 49.5px 48px 49.5px 10px;
+    margin: 49.5px 49.5px 49.5px 10px;
     border-radius: 45px;
    
 }
 
-.div-pai {
-    display: inline-flex;
-}
 
 .formulario .campos-formulario {
     width: 450px;
-    height: 50px;
-    margin: 25px 116px 0px 116px;
+    height: 60px;
+    margin: 0px 116px 0px 116px;
     text-align: center;
     font-size: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -83,6 +85,7 @@
     border: none;
     outline: none;
     margin-left: 136px;
+    cursor: pointer;
 }
 
 .botao-salvar {
@@ -95,5 +98,6 @@
     border: none;
     outline: none;
     margin-left: 10px;
+    cursor: pointer;
 }
 
