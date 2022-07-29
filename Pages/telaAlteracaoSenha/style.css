@@ -17,18 +17,16 @@ main {
     width: 1216px;
     height: 730px;
     background-color: #25262C;
-    margin: 249px 112px 1601px 112px;
+    margin: 160px 112px 160px 112px;
 }
 .container{     /*classe container que eh pai das classes de input(Conteúdo do quadrado preto)*/
     width: 461px;
     height: 365px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;    
-    align-items: center;
-    justify-content: space-evenly;
+    margin: 0px 0px 0px 0px;
+    flex-direction: column;   
     
-    z-index: 2;
+    justify-content: space-evenly;
 }
 
 .input {
