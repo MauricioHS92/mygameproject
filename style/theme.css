@@ -382,9 +382,8 @@ footer {
 }
 
 .rodape-total {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0px 110px 0px 110px;
+    margin: 0px 110px 0px 300px;
     padding-top: 60px;
 }

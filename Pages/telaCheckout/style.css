@@ -28,9 +28,9 @@
 
 .lista-global{
     display: flex;
-   flex-direction: column;
-   align-items: stretch;
-   margin-left: 500px; 
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 500px; 
 }
 
 .list-items-name{

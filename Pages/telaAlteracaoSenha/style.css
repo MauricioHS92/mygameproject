@@ -17,7 +17,7 @@ main {
     width: 1216px;
     height: 730px;
     background-color: #25262C;
-    margin: 249px 112px 1601px 190px;
+    margin: 249px 112px 1601px 112px;
 }
 .container{     /*classe container que eh pai das classes de input(Conteúdo do quadrado preto)*/
     width: 461px;
