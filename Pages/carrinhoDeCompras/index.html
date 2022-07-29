@@ -1,130 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My New Game - Meu carrinho</title>
     <link rel="stylesheet" href="../../style/reset.css" />
     <link rel="stylesheet" href="../../style/theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../pages/home/style.css" />
-    </head>
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../pages/carrinhoDeCompras/style.css" />
+</head>
 
-    
-    <body>
-        <header>
-            <div class="faixa">
-                <div class="logo">
-                    <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
-                            alt="logo" /></a>
-                    <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
-    
-                    <div class="campo-ajuda btn-three">
-                        <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
-                        <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
-                    </div>
-    
-                    <div class="cadastro btn-three">
-                        <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
-                        <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
-                    </div>
-    
-                    <div>
-                        <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
-                                alt="carrinho"> </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="linha-amarela"></div>
-            <div>
-                <div class="segundafaixa">
-                    <ul class="menu">
-                        <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </header>
 
-        <main>
-            <div class="principal">
-            <section class="carrinho-compras">
+<body>
+    <header>
+        <div class="faixa">
+            <div class="logo">
+                <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
+                        alt="logo" /></a>
+                <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
+
+                <div class="campo-ajuda btn-three">
+                    <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
+                    <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
+                </div>
+
+                <div class="cadastro btn-three">
+                    <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
+                    <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
+                </div>
+
                 <div>
+                    <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
+                            alt="carrinho"> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha-amarela"></div>
+        <div>
+            <div class="segundafaixa">
+                <ul class="menu">
+                    <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
+                    <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="principal">
+            <div class="carrinho-de-compras">
+                <div class="paragrafo">
                     <h1>CARRINHO DE COMPRAS</h1>
+                </div>
+                <div class="meu-carrinho">
+                    <P class="paragrafos-meucarrinho">Meu Carrinho</P>
+                </div>
+                <div class="voltar">
+                    <p class="paragrafos-meucarrinho">Voltar pra Home</P>
+                </div>
+
+            </div>
+            <div class="pedidos">
+                <div class="carrinho">
+                    <form action="rota que será processada" method="método GET ou POST">
+                        <label for="pedido"></label>
+                        <input class="campos-produtos" type="text" name="numerodopedido" id="Produto1"
+                            placeholder="Produto1">
+
+                            <label for="pedido"></label>
+                        <input class="campos-quantidade" type="text" name="valordopedido" id="Quantidade1"
+                            placeholder="Quantidade1">
+
+                            <label for="pedido"></label>
+                        <input class="campos-valores" type="text" name="datadopedido" id="valoritem1"
+                            placeholder="Valor Item1">
+
+                            <label for="pedido"></label>
+                            <input class="campos-produtos" type="text" name="numerodopedido" id="Produto2"
+                                placeholder="Produto2">
+
+                                <label for="pedido"></label>
+                            <input class="campos-quantidade" type="text" name="valordopedido" id="Quantidade2"
+                                placeholder="Quantidade2">
+
+                                <label for="pedido"></label>
+                            <input class="campos-valores" type="text" name="datadopedido" id="valoritem2"
+                                placeholder="Valor Item2">
+
+                                <label for="pedido"></label>
+                                <input class="campos-produtos" type="text" name="numerodopedido" id="Produto3"
+                                    placeholder="Produto3">      
+
+                                <label for="pedido"></label>
+                                <input class="campos-quantidade" type="text" name="valordopedido" id="Quantidade3"
+                                    placeholder="Quantidade3">
+
+                                <label for="pedido"></label>
+                                <input class="campos-valores" type="text" name="datadopedido" id="valoritem3"
+                                    placeholder="Valor Item3">
+
+                        <br><br>
+
+                        <label for="pedido"></label>
+                        <input class="campos-produtos" type="text" name="datadopedido" id="calcularfrete"
+                            placeholder="Calcular Frete">
+
+                            <label for="pedido"></label>
+                                <input class="campos-frete" type="text" name="datadopedido" id="valorfrete"
+                                    placeholder="Valore Frete">
+
+                                    <br>
+
+                                    <label for="pedido"></label>
+                                <input class="campos-total" type="text" name="datadopedido" id="total"
+                                    placeholder="Total">
+
+                        <button class="botao-continuar-compra" type="submit">Comprar mais</button>
+                        <button class="botao-finalizar-compra" type="submit">Finalizar compra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--
+        <div class="carrinho-compras">
+            <h1>CARRINHO DE COMPRAS</h1>
+
+            <div class="campo-esquerda">
                 <div class="links">
                     <div class="meu-carrinho">Meu carrinho</div>
                     <div class="voltar">Voltar para home...</div>
                 </div>
+            </div>
 
-                <div class="produto1">
-                    <div id="item1">Item 1</div>
-                    <div id="qtd1">Qtd...</div>
-                </div>
+            <div class="produto1">
+                <div id="item1">Item 1</div>
+                <div id="qtd1">Qtd...</div>
+            </div>
 
-                <div class="produto2">
-                    <div id="item2">Item 2</div>
-                    <div id="qtd2">Qtd...</div>
-                </div>
+            <div class="produto2">
+                <div id="item2">Item 2</div>
+                <div id="qtd2">Qtd...</div>
+            </div>
 
-                <div class="produto3">  
-                    <div id="item3">Item 3</div>
-                    <div id="qtd3">Qtd...</div>
-                </div>
-                
-            </section>
+            <div class="produto3">
+                <div id="item3">Item 3</div>
+                <div id="qtd3">Qtd...</div>
+            </div>
+            <button class="botao-continuar-compra" type="submit">Comprar mais</button>
+            <button class="botao-finalizar-compra" type="submit">Finalizar compra</button>
         </div>
-        </main>
+    -->
 
-        <footer>
-            <div class="rodape-total">
-                <div class="logo-rodape">
-                    <img src="../../assets/images/imagensFooter/Icone Rodape.png" alt="logo-rodape">
-                </div>
-                <div class="box-1">
-                    <h4 class="titulos">Sobre</h4>
-                    <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
-                        Nemo
-                        error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
-                </div>
-                <div class="box-2">
-                    <h4 class="titulos">Desenvolvedores</h4>
-                    <ul class="desenvolvedores">
-                        <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
-                        <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
-                        <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
-                        <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
-                        <li class="lista-desenvolvedores"><a href="#">William</a></li>
-                    </ul>
-                </div>
-                <div class="box-3">
-                    <h4 class="titulos">Escola Parceira</h4>
-                    <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
-                            src="../../assets/images/imagensFooter/logodh.png" alt="Digital House"></a>
-                </div>
+    </main>
+
+    <footer>
+        <div class="rodape-total">
+            <div class="logo-rodape">
+                <img src="../../assets/images/imagensFooter/Icone Rodape.png" alt="logo-rodape">
             </div>
-            <div class="redes-sociais">
-                <div class="icones-redessociais">
-                    <a target="#" href="#">
-                        <img src="../../assets/images/imagensFooter/Icone Facebook.png" alt="Icone Facebook">
-                    </a>
-                    <span class="textoredesocial">Facebook</span>
-                    <a target="#" href="#">
-                        <img src="../../assets/images/imagensFooter/Icone Instagram.png" alt="Icone Instagram">
-                    </a>
-                    <span class="textoredesocial">Instagram</span>
-                    <a target="#" href="#">
-                        <img src="../../assets/images/imagensFooter/Icone Youtube.png" alt="Icone Youtube">
-                    </a>
-                    <span class="textoredesocial">Youtube</span>
-                </div>
+            <div class="box-1">
+                <h4 class="titulos">Sobre</h4>
+                <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
+                    Nemo
+                    error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
             </div>
-        </footer>
-        
-    </body>
+            <div class="box-2">
+                <h4 class="titulos">Desenvolvedores</h4>
+                <ul class="desenvolvedores">
+                    <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
+                    <li class="lista-desenvolvedores"><a href="#">William</a></li>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h4 class="titulos">Escola Parceira</h4>
+                <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
+                        src="../../assets/images/imagensFooter/logodh.png" alt="Digital House"></a>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <div class="icones-redessociais">
+                <a target="#" href="#">
+                    <img src="../../assets/images/imagensFooter/Icone Facebook.png" alt="Icone Facebook">
+                </a>
+                <span class="textoredesocial">Facebook</span>
+                <a target="#" href="#">
+                    <img src="../../assets/images/imagensFooter/Icone Instagram.png" alt="Icone Instagram">
+                </a>
+                <span class="textoredesocial">Instagram</span>
+                <a target="#" href="#">
+                    <img src="../../assets/images/imagensFooter/Icone Youtube.png" alt="Icone Youtube">
+                </a>
+                <span class="textoredesocial">Youtube</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
