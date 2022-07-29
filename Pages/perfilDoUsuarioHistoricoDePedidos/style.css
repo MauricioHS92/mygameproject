@@ -3,7 +3,7 @@
     width: 1297px;
     height: 732px;
     background-color: #25262C;
-    margin: 249px 71px 0px 71px;
+    margin: 100px 71px 100px 71px;
 }
 
 .paragrafo{
@@ -95,53 +95,5 @@
     border: none;
     outline: none;
     margin-left: 10px;
-}
-
-.jogos-1 {
-    width: 388px;
-    height: 484px;
-    background-color: #25262C;
-    border-radius: 10px;
-    margin: 331px 54px 0px 305px;
-}
-
-.jogos-2 {
-    width: 388px;
-    height: 484px;
-    background-color: #25262C;
-    border-radius: 10px;
-    margin: 331px 0px 0px 0px;
-}
-
-.descricao-jogos1 {
-    width: 388px;
-    height: 383px;
-    background-color: #D9D9D9;
-    margin: 34px 54px 0px 305px;
-}
-
-.descricao-jogos2 {
-    width: 388px;
-    height: 383px;
-    background-color: #D9D9D9;
-    margin: 34px 0px 0px 0px;
-}
-
-.jogos {
-    display: inline-flex;
-}
-
-.descricao-jogos {
-    display: inline-flex;
-
-}
-
-.img-indicacaojogos{
-    width: 388px;
-    height: 484px;
-}
-
-.indicacao-jogos{
-    padding-bottom: 367px;
 }
 
