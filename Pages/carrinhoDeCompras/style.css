@@ -1,3 +1,15 @@
 .topo {
     color: white;
 }
+.campo1 {
+    width: 1216px;
+    height: 730px;
+    margin: -600px 0px 0px -70px;
+}
+.principal {
+    /*classe principal que eh pai das classes de containers*/
+    width: 1216px;
+    height: 730px;
+    background-color: #25262C;
+    margin: 160px 112px 160px 112px;
+}

@@ -28,7 +28,16 @@ main {
     
     justify-content: space-evenly;
 }
-
+.campo1{
+    margin: 300px 0px 0px 200px;
+}
+h2{
+    margin: 51px 388px 0px 230px;
+    width: 320px;
+    height: 120px;
+    font-size: 50px;
+    color: #FFD760;
+}
 .input {
     margin: 24px 192px;
     width: 381px;
@@ -65,7 +74,13 @@ main {
     width: 381px;
     height: 61px
 }
+.botao-salvar {
+    margin: 27px 0px 0px 300px;
+}
 
+.botao-voltar{
+    margin: 27px 0px 0px 300px;
+}
 .inscreva-se{                           /*Título*/
     margin-top: 35px;
     text-align: center;

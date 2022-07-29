@@ -9,29 +9,51 @@
     <link rel="stylesheet" href="../../style/theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../pages/home/style.css" />
     </head>
 
     
     <body>
         <header>
-            <!-- verificar se e necessario o uso de divs p/ os links -->
-            <div class="topo">
-                <h1>MEU GAME USADO</h1>
-                <div class="central-ajuda">Precisa de ajuda? <br>Fale conosco</a></div> 
-                <div class="login-cadastro">Faça seu login <br>ou cadastre-se</a></div>
-                <img src="">
+            <div class="faixa">
+                <div class="logo">
+                    <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
+                            alt="logo" /></a>
+                    <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
+    
+                    <div class="campo-ajuda btn-three">
+                        <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
+                        <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
+                    </div>
+    
+                    <div class="cadastro btn-three">
+                        <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
+                        <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
+                    </div>
+    
+                    <div>
+                        <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
+                                alt="carrinho"> </a>
+                    </div>
+                </div>
             </div>
-            <div class="marcas">
-                <div class="playstation">PLAYSTATION</div>
-                <div class="nintendo">NINTENDO</div>
-                <div class="microsoft">MICROSOFT</div>
-                <div class="jogos">JOGOS</div>
+    
+            <div class="linha-amarela"></div>
+            <div>
+                <div class="segundafaixa">
+                    <ul class="menu">
+                        <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
+                        <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
+                        <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
+                        <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
+                    </ul>
+                </div>
             </div>
-           
+            </div>
         </header>
 
         <main>
+            <div class="principal">
             <section class="carrinho-compras">
                 <div>
                     <h1>CARRINHO DE COMPRAS</h1>
@@ -56,17 +78,51 @@
                 </div>
                 
             </section>
+        </div>
         </main>
 
         <footer>
-            <div class="marca">MEU GAME USADO</div>
-            <div class="marcas-parceiras">marcas-parceiras</div>
-            <div class="social-media">
-                <img src="../../assets/images/imagensFooter/Icone Facebook.png">
-                <img src="../../assets/images/imagensFooter/Icone Instagram.png">
-                <img src="../../assets/images/imagensFooter/Icone Youtube.png">
-
-
+            <div class="rodape-total">
+                <div class="logo-rodape">
+                    <img src="../../assets/images/imagensFooter/Icone Rodape.png" alt="logo-rodape">
+                </div>
+                <div class="box-1">
+                    <h4 class="titulos">Sobre</h4>
+                    <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
+                        Nemo
+                        error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
+                </div>
+                <div class="box-2">
+                    <h4 class="titulos">Desenvolvedores</h4>
+                    <ul class="desenvolvedores">
+                        <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
+                        <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
+                        <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
+                        <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
+                        <li class="lista-desenvolvedores"><a href="#">William</a></li>
+                    </ul>
+                </div>
+                <div class="box-3">
+                    <h4 class="titulos">Escola Parceira</h4>
+                    <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
+                            src="../../assets/images/imagensFooter/logodh.png" alt="Digital House"></a>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <div class="icones-redessociais">
+                    <a target="#" href="#">
+                        <img src="../../assets/images/imagensFooter/Icone Facebook.png" alt="Icone Facebook">
+                    </a>
+                    <span class="textoredesocial">Facebook</span>
+                    <a target="#" href="#">
+                        <img src="../../assets/images/imagensFooter/Icone Instagram.png" alt="Icone Instagram">
+                    </a>
+                    <span class="textoredesocial">Instagram</span>
+                    <a target="#" href="#">
+                        <img src="../../assets/images/imagensFooter/Icone Youtube.png" alt="Icone Youtube">
+                    </a>
+                    <span class="textoredesocial">Youtube</span>
+                </div>
             </div>
         </footer>
         
