@@ -25,14 +25,18 @@ h1{
 
 .formulario{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #FFD760;
     padding-top: 25px;
     height: 60px;
 }
 
 #name{
-    margin-bottom: 5px;
+    width: 250px;
+}
+
+#email{
+    width: 250px;
 }
 
 .textarea{

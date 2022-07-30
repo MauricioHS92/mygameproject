@@ -15,7 +15,6 @@
 
 <body>
     <header>
-
         <div class="faixa">
             <div class="logo">
                 <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
@@ -61,20 +60,18 @@
             <div class="div-pai">
                 <div class="div-principal">
                     <h1>Fale Conosco</h1>
-                    <table class="formulario">
-                        <tr>
-                        <td>Nome:</td>
-                        <td><input type="text" name="nome" size="40" id="name"> <br /></td>
-                        </tr>
-                        <tr>
-                        <td>Email:</td>
-                        <td><input type="text" name="email" size="40" id="email"> <br /></td>
-                        </tr>
-                    </table>
+                    <form class="formulario" method="método GET ou POST">
+                        <div class="name">
+                            <label for="name">Nome: </label>
+                            <input type="text" id="name" placeholder="Digite seu nome" required/>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email: </label>
+                            <input type="text" id="email" placeholder="Digite seu email" required/>
+                        </div>
+                    </form>
                     <textarea maxlength="1000" minlength="30" placeholder="Escreva Aqui..." class="textarea"></textarea>
-                    <button class="send">
-                        <p>Enviar</p>
-                    </button>
+                    <input class="send" type="button" value="Enviar">
 
                 </div>
                 
