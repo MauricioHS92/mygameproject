@@ -15,6 +15,7 @@
 .checkout-pai {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -23,7 +24,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: flex-end; */
     width: 1200px;
     height: 550px;
     background-color: #25262C;
@@ -32,237 +32,13 @@
     border-radius: 45px;
 };
 
-div .itens {
-    width:300px;
-    height: 35vh;
+.itens {
+    width:500px;
+    height: 45vh;
     background-color:white;
-    align-self: flex-start;
+    box-shadow: 0px 2px 2px white
 };
 
-.linha1, .linha2, .linha3 {
-    align-self:flex-start;
+.imagens {
     background-color: white;
-}
-/* .linha1 {
-    align-items: flex-end;
-    background-color: white;
-} */
-
-
-/* AREA CHECKOUT */
-
-.lista-global{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-left: 500px; 
-}
-
-.list-items-name{
-    margin-left: 25px;
-    margin-top: 50px;
-}
-
-#jogo{
-    width: 300px;
-    height: 50px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    text-align: center;
-    margin-left: 15px;
-}
-
-.add-del{
-    margin: -182px 0px 0px 380px;
-}
-
-#add-del{
-    width: 100px;
-    height: 50px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
-.valor-item{
-    margin: -182px 0px 0px 500px;
-}
-
-#valor{
-    width: 100px;
-    height: 50px;
-    background-color: #FFFFFF;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.trash{
-    width: 0px;
-    height: 0px;
-}
-#icone-delete1{
-    width: 30px;
-    margin: -335px 0px 10px 615px;
-    cursor: pointer;
-}
-
-#icone-delete2{
-    width: 30px;
-    cursor: pointer;
-    margin: -120px 0px 10px 615px;
-}
-
-#icone-delete3{
-    width: 30px;
-    cursor: pointer;
-    margin: -300px 0px 10px 615px;
-}
-
-/* BOTÃO TOTAL E VOLTAR */
-
-.total-return{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-}
-.total {
-    width: 200px;
-    height: 60px;
-    background-color: #FFFFFF;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 15px;
-}
-
-.confirm {
-    width: 150px;
-    height: 30px;
-    background-color: #18c021;
-    margin: 15px 0px 15px 25px;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    padding-top: 3px;
-    border: none;
-    cursor: pointer;
-}
-
-.return {
-    width: 80px;
-    height: 30px;
-    background-color: #f73a3a;
-    margin: 0px 0px 25px 60px;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    padding-top: 3px;
-    border: none;
-    cursor: pointer;
-}
-
-/* AREA PIX */
-
-.area-pix{
-    width: 420px;
-    height: 500px;
-    background-color: #25262C;
-    mix-blend-mode: hard-light;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin: 15px 0px 15px 0px;
-}
-
-.title-pix{
-    width: 350px;
-    height: 50px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 34px 55px 0px 55px;
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    font-size: 25px;
-}
-
-.qr-code{
-    margin: 34px 55px 0px 55px;
-    width: 300px;
-    height: 300px;
-}
-
-.title-scan{
-    width: 350px;
-    height: 50px;
-    background: #FFD760;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    margin: 20px;
-    padding-top: 3px;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.botao-voltar {
-    margin: 27px 100px 100px 800px;
-}
-
-.botao-salvar {
-    margin: 27px 0px 0px 800px;
-}
-
-.jogos {
-    display: inline-flex;
-}
-
-.descricao-jogos {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-h1{
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 35px 0px 30px 0px;
-}
-
-h2 {
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.descricao {
-    width: 388px;
-    height: 300px;
-    background-color: #D9D9D9;
-    margin: 34px 54px 0px 0px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-
-}
-
-.img {
-    width: 388px;
-    height: 484px;
-    background-color: #25262C;
-    border-radius: 10px;
-    margin: 0px 54px 0px 0px;
-    margin-left: 0px;
-}
-
+};
