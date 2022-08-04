@@ -6,53 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My New Game - Home/</title>
-    <link rel="stylesheet" href="../../style/reset.css" />
-    <link rel="stylesheet" href="../../style/theme.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../pages/home/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
 </head>
 
 <body>
-        <header>        
-            <div class="faixa">
-                <div class="logo">
-                    <a href="#"><img id="imagem-logo" title="My New Game" src="../../assets/images/logo.png"
-                            alt="logo" /></a>
-                    <input type="text" id="txtBusca" title="Buscar" placeholder="Buscar..." />
-    
-                    <div class="campo-ajuda btn-three">
-                        <a href="#" id="fale-conosco" title="Fale Conosco">Fale Conosco</a>
-                        <img id="seta" src="../../assets/images/seta-ajuda.png" alt="seta">
-                    </div>
-    
-                    <div class="cadastro btn-three">
-                        <img id="boneco" src="../../assets/images/boneco.png" alt="boneco">
-                        <a href="#" id="login" title="Cadastre-se ou faça login">Cadastre-se ou <br> faça login</a>
-                    </div>
-    
-                    <div>
-                        <a href="#"> <img id="carrinho" title="Carrinho" src="../../assets/images/carrinho.png"
-                                alt="carrinho"> </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="linha-amarela"></div>
-            <div>
-                <div class="segundafaixa">
-                    <ul class="menu">
-                        <li class="nav-bar fourth"><a href="#" title="FPS">FPS</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Estratégia">Estratégia</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Esportes">Esportes</a></li>
-                        <li class="nav-bar fourth"><a href="#" title="Outros">Outros</a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-    
-
-    </header>
+    <%- include('./partials/header') %>
 
     <main>
         <section class="carrossel">
@@ -64,14 +26,14 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/slider/MWII-002-REVEAL-TOUT.jpg"
+                        <img class="d-block w-100" src="/assets/images/slider/MWII-002-REVEAL-TOUT.jpg"
                             alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/145789246.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="/assets/images/slider/145789246.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/CoDMW.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/assets/images/slider/CoDMW.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -93,14 +55,14 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/slider/bbb39b32133020f19ac62350a9507551.jpg"
+                        <img class="d-block w-100" src="/assets/images/slider/bbb39b32133020f19ac62350a9507551.jpg"
                             alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/riseQhfcMJ.webp" alt="Second slide">
+                        <img class="d-block w-100" src="/assets/images/slider/riseQhfcMJ.webp" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/riderwallpapersden.com_rise-of-the-tomb-raider-lara-croft-bear_1920x1080.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/assets/images/slider/riderwallpapersden.com_rise-of-the-tomb-raider-lara-croft-bear_1920x1080.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -122,14 +84,14 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/slider/fffclickwallpapers-fifa22-jogos-fullhd-img5.jpg"
+                        <img class="d-block w-100" src="/assets/images/slider/fffclickwallpapers-fifa22-jogos-fullhd-img5.jpg"
                             alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/FFFIFA-22-1.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="/assets/images/slider/FFFIFA-22-1.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/slider/FIFA-22 (1).jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/assets/images/slider/FIFA-22 (1).jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -143,50 +105,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="rodape-total">
-            <div class="logo-rodape">
-                <img src="../../assets/images/imagensFooter/Icone Rodape.png" alt="logo-rodape">
-            </div>
-            <div class="box-1">
-                <h4 class="titulos">Sobre</h4>
-                <p class="sobre">doloremque. Perferendis voluptatum officia aspernatur voluptates ut, voluptatem animi.
-                    Nemo
-                    error perferendis sint recusandae ipsam tempore iure quod vitae temporibus.</p>
-            </div>
-            <div class="box-2">
-                <h4 class="titulos">Desenvolvedores</h4>
-                <ul class="desenvolvedores">
-                    <li class="lista-desenvolvedores"><a href="#">Bruno</a></li>
-                    <li class="lista-desenvolvedores"><a href="#">Felipe</a></li>
-                    <li class="lista-desenvolvedores"><a href="#">Guilherme</a></li>
-                    <li class="lista-desenvolvedores"><a href="#">Maurício</a></li>
-                    <li class="lista-desenvolvedores"><a href="#">William</a></li>
-                </ul>
-            </div>
-            <div class="box-3">
-                <h4 class="titulos">Escola Parceira</h4>
-                <a href="https://www.linkedin.com/school/digital-house-brasil/"><img class="logodh"
-                        src="../../assets/images/imagensFooter/logodh.png" alt="Digital House"></a>
-            </div>
-        </div>
-        <div class="redes-sociais">
-            <div class="icones-redessociais">
-                <a target="#" href="#">
-                    <img src="../../assets/images/imagensFooter/Icone Facebook.png" alt="Icone Facebook">
-                </a>
-                <span class="textoredesocial">Facebook</span>
-                <a target="#" href="#">
-                    <img src="../../assets/images/imagensFooter/Icone Instagram.png" alt="Icone Instagram">
-                </a>
-                <span class="textoredesocial">Instagram</span>
-                <a target="#" href="#">
-                    <img src="../../assets/images/imagensFooter/Icone Youtube.png" alt="Icone Youtube">
-                </a>
-                <span class="textoredesocial">Youtube</span>
-            </div>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
+
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
