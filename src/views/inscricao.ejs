@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Game/Login/Inscreva-se/</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style/theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/inscricao.css" />
+</head>
+
+<body>
+    
+    <%- include('./partials/header') %>
+
+    <main>
+        <div class="principal">
+            <div class="container">
+                <div class="base">
+                    <h1 class="inscreva-se">INSCREVA-SE</h1>
+                </div>
+
+                <div>
+                    <section class="campo1">
+                    <form class="flexwrap" action="/pagina-que-recebe-dados" method="post">
+                    <div class="flexdirectioncolumn">
+                        <div class="input">
+                            <label for="email">E-mail: </label>
+                            <input type="email" id="email" placeholder="digite seu e-mail" required />
+                        </div>
+                        <div class="input">
+                            <label for="email">E-mail: </label>
+                            <input type="email" id="email" placeholder="digite seu e-mail novamente" required />
+                        </div>
+                        <div class="input">
+                            <label for="password">Senha: </label>
+                            <input type="password" id="password" placeholder="digite a senha" required />
+                        </div>
+                        <div class="input">
+                            <label for="password">Senha: </label>
+                            <input type="password" id="password" placeholder="digite a senha novamente" required />
+                        </div>
+                    </div>
+
+                    <div class="container2">
+                        <div class="input2">
+                            <label for="nome">Nome: </label>
+                            <input type="name" id="nome" placeholder="digite seu nome" required />
+                        </div>
+                        <div class="input2">
+                            <label for="text">Digite seu CPF: </label>
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF - Apenas Números" required />
+                        </div>
+                        <div class="input2">
+                            <label for="telefone">Telefone </label>
+                            <input type="password" id="telefone" maxlength="11" placeholder="(xx) xxxxx-xxxx"
+                                required />
+                        </div>
+                        
+                        <a href="http://127.0.0.1:5500/pages/inscricao/index.html"><button class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">Salvar</button></a>
+                        <a href="http://127.0.0.1:5500/pages/home/index.html"><button class="botao-voltar" type="button" value="Voltar" onClick="history.go(-1)">Voltar</button></a>
+                    </div>
+                    </form>  
+                </section>                  
+                </div>
+            </div>
+        
+        
+    </main>
+
+    <%- include('./partials/footer') %>
+
+</body>
+
+</html>
