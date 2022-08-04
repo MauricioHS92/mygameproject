@@ -37,4 +37,10 @@ router.get('/telaCheckout',(req, res) => {
 router.get('/telaPrincipalUsuario',(req, res) => {
   res.render('telaPrincipalUsuario');
 });
+
+router.get('/carrinhoDeCompras',(req, res) => {
+  res.render('carrinhoDeCompras');
+});
+
+
 module.exports = router;
