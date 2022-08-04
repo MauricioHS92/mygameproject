@@ -34,4 +34,7 @@ router.get('/telaCheckout',(req, res) => {
   res.render('telaCheckout');
 });
 
+router.get('/telaPrincipalUsuario',(req, res) => {
+  res.render('telaPrincipalUsuario');
+});
 module.exports = router;
