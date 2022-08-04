@@ -26,4 +26,8 @@ router.get('/telaGradeDeJogos',(req, res) => {
   res.render('telaGradeDeJogos');
 });
 
+router.get('/telaCheckout',(req, res) => {
+  res.render('telaCheckout');
+});
+
 module.exports = router;
