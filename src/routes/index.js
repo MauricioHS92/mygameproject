@@ -22,5 +22,8 @@ router.get('/faleConosco',(req, res) => {
   res.render('faleConosco');
 });
 
+router.get('/telaGradeDeJogos',(req, res) => {
+  res.render('telaGradeDeJogos');
+});
 
 module.exports = router;
