@@ -10,6 +10,14 @@ router.get('/perfilDoUsuarioHistoricoDePedidos',(req, res) => {
   res.render('perfilDoUsuarioHistoricoDePedidos');
 });
 
+router.get('/perfilDoUsuarioMeuEndereço',(req, res) => {
+  res.render('perfilDoUsuarioMeuEndereço');
+});
+
+router.get('/perfilDoUsuarioMeusDados',(req, res) => {
+  res.render('perfilDoUsuarioMeusDados');
+});
+
 router.get('/faleConosco',(req, res) => {
   res.render('faleConosco');
 });
