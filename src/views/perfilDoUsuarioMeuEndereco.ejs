@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Game/Perfil do Usuario/Meu Endereco/</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/perfilDoUsuarioMeuEndereco.css" />
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+    <main>
+        <div class="div-pai">
+            <div class="perfil-usuario">
+                <h1>PERFIL DO USUÁRIO</h1>
+            <div class="buttons">
+                 <a href="file:///C:/Users/Barros/Desktop/mygameproject/Pages/perfilDoUsuarioMeusDados/index.html"><button class="meus-dados" placeholder="Meus dados">Meus Dados</button></a>
+                <a href="file:///C:/Users/Barros/Desktop/mygameproject/Pages/perfilDoUsuarioMeuEndereco/index.html"><button class="meu-endereço" placeholder="Meu endereço"> Meu endereço</button>
+                <a href="file:///C:/Users/Barros/Desktop/mygameproject/Pages/perfilDoUsuarioHistoricoDePedidos/index.html"><button class="historico-pedido" placeholder="Histórico de pedidos"> Histórico de pedidos</button></a>                
+            </div>
+        </div>
+            <div class="formulario">
+                <div class="area-cadastro">
+                    <form action="rota que será processada" method="método GET ou POST">
+                        <label for="endereco"></label>
+                        <input class="campos-formulario" type="text" name="rua" id="rua"
+                            placeholder="Digite o nome da rua">
+
+                        <label for="endereco"></label>
+                        <input class="campos-formulario" type="text" name="numero" id="numero"
+                            placeholder="Digite o número na residência">
+
+                        <label for="endereco"></label>
+                        <input class="campos-formulario" type="text" name="bairro" id="bairro"
+                            placeholder="Digite o nome do bairro">
+
+                        <label for="endereco"></label>
+                        <input class="campos-formulario" type="cidade" name="cidade" id="cidade"
+                            placeholder="Digite a cidade">
+
+                        <label for="cep"></label>
+                        <input class="campos-formulario" type="cep" name="cep" id="cep" placeholder="Digite o CEP">
+
+                        <br><br>
+
+                        <button class="botao-voltar" type="submit">Voltar</button>
+                        <button class="botao-salvar" type="submit">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>    
+
+</body>
+
+</html>
