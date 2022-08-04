@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Game/Perfil do Usuario/Historico de Pedido</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/perfilDoUsuarioHistoricoDePedidos.css" />
+</head>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main>
+        <div class="div-pai">
+            <div class="perfil-usuario">
+                    <h1>PERFIL DO USUÁRIO</h1>
+                <div class="buttons">
+                     <a href="#"><button class="meus-dados" placeholder="Meus dados">Meus Dados</button></a>
+                    <a href="#"><button class="meu-endereço" placeholder="Meu endereço"> Meu endereço</button>
+                    <a href="#"><button class="historico-pedido" placeholder="Histórico de pedidos"> Histórico de pedidos</button></a>                
+                </div>
+            </div>
+            <div class="formulario">
+                <div class="area-cadastro">
+                    <form action="rota que será processada" method="método GET ou POST">
+                        <label for="pedido"></label>
+                        <input class="campos-formulario" type="text" name="numerodopedido" id="numerodopedido"
+                            placeholder="Numero do pedido">
+
+                        <label for="pedido"></label>
+                        <input class="campos-formulario" type="text" name="valordopedido" id="valordopedido"
+                            placeholder="Digite o número na residência">
+
+                        <label for="pedido"></label>
+                        <input class="campos-formulario" type="text" name="datadopedido" id="datadopedido"
+                            placeholder="Digite o nome do bairro">
+
+                        <br><br>
+
+                        <a href="#"><button class="botao-voltar" type="submit">Voltar</button></a>
+                       <a href="#"><button class="botao-salvar" type="submit">Salvar</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %> 
+
+</body>
+
+</html>
