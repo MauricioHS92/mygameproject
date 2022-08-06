@@ -36,9 +36,10 @@
 
 .itens {
     background-color: rgb(207, 196, 196);
+    border-radius: 30px;
     width: 800px;
-    height: 60vh;
-    margin-top: 80px;
+    height: 70vh;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -92,11 +93,32 @@
     height: auto; */
 }
 
-/* .itens {
+.botoes {
+    align-self: center;
+    margin-top: 50px;
+}
+
+#botao-pedido1, #botao-pedido2, #botao-pedido3 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:500px;
-    height: 45vh;
-    background-color:white;
-}; */
+    justify-content: space-around;
+}
+
+.total {
+    background: white;
+    width: 250px;
+    height: 5vh;
+    text-align: center;
+}
+
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.voltar button {
+    background-color: rgba(197, 178, 6, 0.945);
+    width: 190px;
+    height: 30px;
+    margin-top: 10px;
+}
