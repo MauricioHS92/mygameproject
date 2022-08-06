@@ -45,11 +45,18 @@
     align-self: center;
 }
 
-.linha1, .linha2, .linha3 {
+.linha1 {
     display: inline-flex;
     justify-content: space-around;
     margin-top: 20px;
-    
+    align-items:baseline;
+}
+
+.linha2, .linha3 {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    align-items:baseline;
 }
 
 #item1, #item2, #item3 {
