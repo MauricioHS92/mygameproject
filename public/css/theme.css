@@ -381,3 +381,130 @@ footer {
     margin: 0px 110px 0px 300px;
     padding-top: 60px;
 }
+
+/*Media queries */
+
+@media  screen and (max-width: 480px) {
+
+    /* Header*/
+
+    header{
+        height: 333px;
+    }
+
+    .segundafaixa{
+        margin-top: 200px;
+    }
+
+    .faixa{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #imagem-logo{
+        width: 140px;
+        height: 80px;
+        margin: -100px 0px 0px 0px;
+    }
+
+    #seta {
+        display: none;
+    }
+
+    #fale-conosco{
+        display: none;
+    }
+
+    #txtBusca {
+        width: 190px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .campo-ajuda{
+        display:none;
+    }
+
+    #carrinho{
+        width: 40px;
+        height: 40px;
+        padding:0px;
+        margin:0px;
+
+    }
+
+    /*Footer */
+
+    .logo-rodape {
+        width: 150px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box-1 {
+        display:none;
+    }
+    
+    .sobre {
+        display:none;
+    }
+    
+    .titulos {
+        display:none;
+    }
+    
+    .desenvolvedores {
+        display:none;
+    }
+    
+    .lista-desenvolvedores a {
+        display:none;
+    }
+    
+    .box-3 {
+        display:none;
+    }
+    
+    .logodh {
+        width: 120px;
+        height: 30px;
+    }
+    
+    .redes-sociais {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .icones-redessociais {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 25px;
+        border: 1px solid #FFD760;
+        padding: 0px 0px 4px 0px;
+        border-radius: 5px;
+    }
+    
+    .redes-sociais img {
+        width: 35px;
+        height: 35px;
+        margin-top: 12px;
+    }
+    
+    .textoredesocial {
+        color: white;
+        font-size: 15px;
+        width: 62px;
+        height: 19px;
+        margin: 18px 5px 0px 5.51px;
+    }
+    
+    .rodape-total {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 30px;
+    }
+
+}
