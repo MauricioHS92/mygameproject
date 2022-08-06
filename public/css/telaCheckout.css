@@ -13,9 +13,11 @@
     
 }; */
 
-.checkout-pai {
-    /* display: flex; */
-    
+.checkout-pai{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item-list-checkout {
@@ -40,29 +42,47 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-self: center;
 }
 
 .linha1, .linha2, .linha3 {
     display: inline-flex;
     justify-content: space-around;
     margin-top: 20px;
-    height: 5vh;
+    
 }
 
 #item1, #item2, #item3 {
     background-color: white;
     width: 300px;
+    height: 5vh;
     
 }
 
 #botao-pedido1, #botao-pedido2, #botao-pedido3 {
     background-color: white;
     width: 70px;
+    height: 5vh;
 }
 
 #valor-item1, #valor-item2, #valor-item3 {
     background-color: white;
     width: 100px;
+    height: 5vh;
+}
+
+#jogo1, #jogo2, #jogo3{
+    width: 70px;
+    height: 10vh;
+}
+
+#jogo1 img, #jogo2 img, #jogo3 img {
+    width: 70px;
+    height: 100vh;
+    max-width: 100px;
+    max-height: 100px;
+    /* width: auto;
+    height: auto; */
 }
 
 /* .itens {
