@@ -38,10 +38,10 @@
     border-radius: 30px;
     width: 800px;
     height: 70vh;
-    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-self: center;
 }
 
 .pix {
