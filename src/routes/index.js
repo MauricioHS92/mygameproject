@@ -14,8 +14,8 @@ router.get('/perfilDoUsuarioHistoricoDePedidos',(req, res) => {
   res.render('perfilDoUsuarioHistoricoDePedidos');
 });
 
-router.get('/perfilDoUsuarioMeuEndereço',(req, res) => {
-  res.render('perfilDoUsuarioMeuEndereço');
+router.get('/perfilDoUsuarioMeuEndereco',(req, res) => {
+  res.render('perfilDoUsuarioMeuEndereco');
 });
 
 router.get('/perfilDoUsuarioMeusDados',(req, res) => {
@@ -44,6 +44,10 @@ router.get('/carrinhoDeCompras',(req, res) => {
 
 router.get('/telaLogin',(req, res) => {
   res.render('telaLogin');
+});
+
+router.get('/telaDeJogo',(req, res) => {
+  res.render('telaDeJogo');
 });
 
 

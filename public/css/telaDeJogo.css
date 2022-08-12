@@ -5,22 +5,22 @@
 
 .container {
     width: 1297px;
-    height: 732px;        
+    height: 732px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('../../assets/images/459654.jpg');
+    background-image: url('/assets/images/459654.jpg');
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.40);
-    
+
 }
 
-.painel{
+.painel {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.campo-btns {    
+.campo-btns {
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -65,7 +65,7 @@ p {
     font-weight: 500;
 }
 
-.bloco-contador{
+.bloco-contador {
     display: flex;
     align-items: center;
     align-self: center;
