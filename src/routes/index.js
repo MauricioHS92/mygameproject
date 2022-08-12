@@ -50,5 +50,9 @@ router.get('/telaDeJogo',(req, res) => {
   res.render('telaDeJogo');
 });
 
+router.get('/telaAlteracaoSenha',(req, res) => {
+  res.render('telaAlteracaoSenha');
+});
+
 
 module.exports = router;
