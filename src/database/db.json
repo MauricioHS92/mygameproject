@@ -1,0 +1,24 @@
+{
+  "usuarios": [
+    {
+      "id": "8be0976d-d581-4d1b-9135-3a5db47c0a7f",
+      "email": "sdf@asdf",
+      "confirmarEmail": "dasf@sdf",
+      "senha": "6516",
+      "confirmarSenha": "",
+      "nome": "Mauricio",
+      "cpf": "453",
+      "telefone": "(51) 99527-"
+    },
+    {
+      "id": "71c4283e-3cd9-4f9a-95df-8cd1da40d22e",
+      "email": "123@456.com",
+      "confirmarEmail": "gdf@5213.com",
+      "senha": "sdfsdf",
+      "confirmarSenha": "",
+      "nome": "sdfsdf",
+      "cpf": "hj",
+      "telefone": "(51) 99527-"
+    }
+  ]
+}
