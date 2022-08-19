@@ -6,7 +6,6 @@ router.get('/home',(req, res) => {
   res.render('home');
 });
 
-
 router.get('/perfilDoUsuarioHistoricoDePedidos',(req, res) => {
   res.render('perfilDoUsuarioHistoricoDePedidos');
 });
@@ -19,9 +18,6 @@ router.get('/perfilDoUsuarioMeusDados',(req, res) => {
   res.render('perfilDoUsuarioMeusDados');
 });
 
-router.get('/faleConosco',(req, res) => {
-  res.render('faleConosco');
-});
 
 router.get('/telaGradeDeJogos',(req, res) => {
   res.render('telaGradeDeJogos');
