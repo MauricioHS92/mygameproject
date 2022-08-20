@@ -1,11 +1,11 @@
-const faleConoscoController = {
+const contatoController = {
     formularioFaleConosco: (req, res) => {
         res.render('faleConosco');
     },
 
     enviar: (req, res) => {
-        const form = req.body;
+        const formFc = req.body;
     }
 }
 
-module.exports = faleConoscoController;
+module.exports = contatoController;
