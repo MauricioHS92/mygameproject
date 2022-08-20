@@ -255,19 +255,22 @@ h1 {
 
 #voltar form {
     height: auto;
-    width: 100px;
-    text-align: center;
+    width: 100%;
     padding: 10px;
    
 }
 
 #voltar button {
     height: auto;
-    width: 100px;
+    width: 100%;
     border-radius: 12px;
-    text-align: center;
     padding-top: 10px;
 }
+
+#comprar-mais button p, #finalizar-compra button p, #voltar button p  {
+    color: black;
+}
+
 
 /*      CAIXA DE ITENS      */
 
