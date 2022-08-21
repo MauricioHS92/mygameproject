@@ -26,13 +26,13 @@
 
                 <div class="campo1">
                     
-                    <form action="/pagina-que-recebe-dados" method="post">
+                    <form action="/login/enter" method="post">
                         <div class="input">
                             <label for="email">E-mail: </label>
-                            <input type="email" id="email" placeholder="digite seu e-mail" required />
+                            <input type="email" id="email" placeholder="digite seu e-mail" name="email" required />
                         </div>
                         <div>
-                            <input class="botao-continuar" type="button" value="Continuar" onCLick="history.forward()">
+                            <button class="botao-continuar" type="submit" value="Continuar">Continuar</button>
                         </div>
                         
 
@@ -42,14 +42,14 @@
                         </div>
                         <div class="input2">
                             <label for="email">E-mail: </label>
-                            <input type="email" id="email" placeholder="digite seu e-mail" required />
+                            <input type="email" id="email" placeholder="digite seu e-mail" name="email" required />
                         </div>
                         <div class="input2">
                             <label for="password">Senha: </label>
-                            <input type="password" id="password" placeholder="digite a senha" required />
+                            <input type="password" id="password" placeholder="digite a senha" name="senha" required />
                         </div>
-                        <input class="botao-salvar" type="button" value="Salvar" onCLick="history.forward()">
-                        <input class="botao-esqueci-a-senha" type="button" value="Esqueci a Senha" onClick="history.go(-1)">
+                        <button class="botao-salvar" type="submit" value="Entrar">Entrar</button>
+                        <input class="botao-esqueci-a-senha" type="button" value="Esqueci a Senha">
                     
                     </form>                    
                 </div>

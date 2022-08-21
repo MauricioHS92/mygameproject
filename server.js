@@ -8,6 +8,7 @@ const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
 const carrinhoDeComprasRouter = require('./src/routes/carrinhoDeCompras');
+const loginRouter = require('./src/routes/login');
 
 
 const app = express();
@@ -27,6 +28,7 @@ app.use('/usuarios', usuariosRouter);
 app.use('/contato', contatoRouter);
 app.use('/home', indexRouter);
 app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
+app.use('/login', loginRouter);
 
 
 // catch 404 and forward to error handler
