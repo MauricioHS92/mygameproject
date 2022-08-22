@@ -1,6 +1,6 @@
 const carrinhoDeComprasController = {
     index: (req, res) => {
-        res.render('/carrinhoDeCompras')
+        res.render('carrinhoDeCompras')
     }
 };
 
