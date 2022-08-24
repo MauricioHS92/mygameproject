@@ -14,7 +14,12 @@ const usuario = {
             ...usuarioDados,
         });        
         writeToDb()
-    } 
+    },
+    
+    findById: (id) => {
+        const user = db.usuarios.find(user => user.id === id);
+        return user;
+    }
 }
 
 module.exports = usuario;

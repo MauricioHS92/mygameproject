@@ -5,6 +5,7 @@ main{
 }
 
 .div-pai {
+    
     display: flex;
     flex-wrap: wrap;
     background-color: #25262C;
