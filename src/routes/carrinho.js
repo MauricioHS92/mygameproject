@@ -5,6 +5,7 @@ const carrinhoDeComprasController = require('../controllers/carrinhoDeComprasCon
 
 //rota para carrinho de compras usando o controller
 router.get('/carrinhoDeCompras', carrinhoDeComprasController.index);
+router.get('/carrinhoDeCompras', carrinhoDeComprasController.finalizarCompra);
 
 module.exports = router;
 

@@ -7,7 +7,6 @@ const logger = require('morgan');
 const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
-const carrinhoDeComprasRouter = require('./src/routes/carrinho');
 const loginRouter = require('./src/routes/login');
 const checkoutRouter = require('./src/routes/checkout');
 const telaJogoRouter = require('./src/routes/telaGame');
@@ -28,10 +27,10 @@ app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/contato', contatoRouter);
 app.use('/home', indexRouter);
-app.use('/carrinho', carrinhoDeComprasRouter);
 app.use('/login', loginRouter);
 app.use('/checkout', checkoutRouter);
 app.use('/telaGame', telaJogoRouter);
+app.use('/telaCheckout', checkoutRouter);
 
 
 // catch 404 and forward to error handler

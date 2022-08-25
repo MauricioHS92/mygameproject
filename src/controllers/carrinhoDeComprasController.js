@@ -1,6 +1,9 @@
 const carrinhoDeComprasController = {
     index: (req, res) => {
-        res.render('carrinhoDeCompras')
+        res.render('carrinhoDeCompras');
+    },
+    finalizarCompra: (req, res) => {
+        res.redirect('/carrinhoDeCompras/telaCheckout');
     }
 };
 
