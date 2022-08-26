@@ -31,9 +31,9 @@ router.get('/telaPrincipalUsuario',(req, res) => {
   res.render('telaPrincipalUsuario');
 });
 
-router.get('/carrinhoDeCompras',(req, res) => {
-  res.render('carrinhoDeCompras');
-});
+// router.get('/carrinhoDeCompras',(req, res) => {
+//   res.render('carrinhoDeCompras');
+// });
 
 
 

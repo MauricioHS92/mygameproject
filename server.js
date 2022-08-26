@@ -33,7 +33,7 @@ app.use('/login', loginRouter);
 app.use('/checkout', checkoutRouter);
 app.use('/telaGame', telaJogoRouter);
 app.use('/telaCheckout', checkoutRouter);
-app.use('/carrinho', carrinhoDeComprasRouter);
+app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
 
 
 // catch 404 and forward to error handler

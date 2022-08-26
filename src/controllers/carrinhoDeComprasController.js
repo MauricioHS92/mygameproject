@@ -3,7 +3,7 @@ const carrinhoDeComprasController = {
         res.render('carrinhoDeCompras');
     },
     finalizarCompra: (req, res) => {
-        res.redirect('/carrinhoDeCompras/telaCheckout');
+        res.redirect('/checkout');
     }
 };
 

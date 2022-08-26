@@ -52,5 +52,32 @@
       "email": ["sad@dsa.com", "ass@da.com"],
       "senha": "65056"
     }
+  ], 
+  "jogos": [
+    {
+      "id": "usdhuisdfh",
+      "imagem": "crash.png",
+      "nome": "ajhdsiodjas",
+      "genero": "ação",
+      "preco": "8484",
+      "descricao":"udshudshusdhih"
+    },
+    {
+      "id": "ufdhufdh",
+      "imagem": "fifa.png",
+      "nome": "fffff",
+      "genero": "ação",
+      "preco": "524",
+      "descricao":"gfggfgf"
+    }
+    ,
+    {
+      "id": "rtrtrtr",
+      "imagem": "mk11.png",
+      "nome": "dddd",
+      "genero": "ação",
+      "preco": "25",
+      "descricao":"ssas"
+    }
   ]
 }
