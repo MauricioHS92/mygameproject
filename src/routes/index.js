@@ -19,9 +19,9 @@ router.get('/perfilDoUsuarioMeusDados',(req, res) => {
 });
 
 
-router.get('/telaGradeDeJogos',(req, res) => {
-  res.render('telaGradeDeJogos');
-});
+// router.get('/telaGradeDeJogos',(req, res) => {
+//   res.render('telaGradeDeJogos');
+// });
 
 router.get('/telaCheckout',(req, res) => {
   res.render('telaCheckout');
