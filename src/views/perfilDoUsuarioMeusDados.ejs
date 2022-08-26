@@ -38,28 +38,19 @@
                     <div class="area-cadastro">
                         <form action="rota que será processada" method="método GET ou POST">
                             <label for="nome"></label>
-                            <input class="campos-formulario" type="text" name="nome" id="nome"
-                                placeholder="Digite seu nome completo">
+                            <input class="campos-formulario" value="<%= user.nome %>" type="text" name="nome" id="nome"
+                                placeholder="Nome Usuário">
                             <label for="cpf"></label>
-                            <input class="campos-formulario" type="text" name="cpf" id="cpf"
-                                placeholder="Digite seu CPF">
+                            <input class="campos-formulario" value="<%= user.cpf %>" type="text" name="cpf" id="cpf"
+                                placeholder="CPF Usuário">
                             <label for="telefone"></label>
-                            <input class="campos-formulario" type="text" name="telefone" id="telefone"
-                                placeholder="Digite seu telefone">
+                            <input class="campos-formulario" value="<%= user.telefone %>" type="text" name="telefone" id="telefone"
+                                placeholder="Telefone Usuário">
                             <label for="email"></label>
-                            <input class="campos-formulario" type="email" name="email" id="email"
-                                placeholder="Digite seu e-mail">
-                            <label for="email"></label>
-                            <input class="campos-formulario" type="email" name="email" id="email"
-                                placeholder="Confirme seu e-mail">
-                            <label for="senha"></label>
-                            <input class="campos-formulario" type="password" name="senha" id="senha"
-                                placeholder="Crie uma senha">
-                            <label for="senha"></label>
-                            <input class="campos-formulario" type="password" name="senha" id="senha"
-                                placeholder="Confirme sua senha">
+                            <input class="campos-formulario" value="<%= user.email %>"  type="email" name="email" id="email"
+                                placeholder="E-mail Usuário">
                             <br><br>
-                            <button class="botao-voltar" type="submit">Voltar</button>
+                            <button class="botao-voltar"> Voltar</button>
                             <button class="botao-salvar" type="submit">Salvar</button>
                         </form>
                     </div>
