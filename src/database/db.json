@@ -57,27 +57,91 @@
     {
       "id": "usdhuisdfh",
       "imagem": "crash.png",
-      "nome": "ajhdsiodjas",
-      "genero": "ação",
-      "preco": "8484",
+      "nome": "Crash Bandicoot Nsane trilogy",
+      "genero": "Aventura",
+      "preco": "180.9",
       "descricao":"udshudshusdhih"
     },
     {
       "id": "ufdhufdh",
       "imagem": "fifa.png",
-      "nome": "fffff",
-      "genero": "ação",
-      "preco": "524",
+      "nome": "Fifa 22",
+      "genero": "Esportes",
+      "preco": "200.9",
       "descricao":"gfggfgf"
-    }
-    ,
+    },
+
     {
       "id": "rtrtrtr",
       "imagem": "mk11.png",
-      "nome": "dddd",
-      "genero": "ação",
-      "preco": "25",
+      "nome": "Mortal Kombat 11",
+      "genero": "Luta",
+      "preco": "149.9",
       "descricao":"ssas"
+    },
+  
+    {
+      "id": "gfygeygyg",
+      "imagem": "granturisomo.png",
+      "nome": "Gran Turismo 7",
+      "genero": "Corrida",
+      "preco": "390.9",
+      "descricao":"gyagsy"
+    },
+
+    {
+      "id": "gfygeygyg",
+      "imagem": "cod.png",
+      "nome": "Call Of Duty Modern Warfare 2",
+      "genero": "FPS",
+      "preco": "350.9",
+      "descricao":"gyagsy"
+    },
+
+    {
+      "id": "gfygeygyg",
+      "imagem": "godofwar.png",
+      "nome": "God Of War Ragnarok",
+      "genero": "Ação",
+      "preco": "270.9",
+      "descricao":"gyagsy"
+    },
+
+    {
+      "id": "gfygeygyg",
+      "imagem": "gtav.png",
+      "nome": "Grand Theft Auto V",
+      "genero": "Ação",
+      "preco": "210.9",
+      "descricao":"gyagsy"
+    },
+
+    {
+      "id": "gfygeygyg",
+      "imagem": "resident.png",
+      "nome": "Resident Evil 4",
+      "genero": "Ação",
+      "preco": "220.9",
+      "descricao":"gyagsy"
+    },
+
+    {
+      "id": "gfygeygyg",
+      "imagem": "thelastofus.png",
+      "nome": "The Last of US part II",
+      "genero": "Ação",
+      "preco": "250.9",
+      "descricao":"gyagsy"
+    },
+
+    
+    {
+      "id": "gfygeygyg",
+      "imagem": "thelastofus.png",
+      "nome": "The Last of US part II",
+      "genero": "Ação",
+      "preco": "250.9",
+      "descricao":"gyagsy"
     }
   ]
 }
