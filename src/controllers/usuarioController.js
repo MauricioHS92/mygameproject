@@ -14,8 +14,13 @@ const usuarioController = {
 
     meusDados: (req, res) => {
         const { id } = req.params;
-        const user = usuario.findById(id);
-        res.render('perfilDoUsuarioMeusDados', { user });
+        const userDados = usuario.findById(id);
+        res.render('perfilDoUsuarioMeusDados', { userDados });
+    },
+    meuEndereco: (req, res) => {
+        const { id } = req.params;
+        const userEndereco = usuario.findById(id);
+        res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
     }
 }
 

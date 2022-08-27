@@ -8,4 +8,6 @@ router.post('/create', usuarioController.create);
 
 router.get('/meusDados/:id', usuarioController.meusDados);
 
+router.get('/meuEndereco/:id', usuarioController.meuEndereco);
+
 module.exports = router;
