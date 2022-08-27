@@ -11,7 +11,7 @@ const loginRouter = require('./src/routes/login');
 const checkoutRouter = require('./src/routes/checkout');
 const telaJogoRouter = require('./src/routes/telaGame');
 const carrinhoDeComprasRouter = require('./src/routes/carrinho');
-const gradeDeJogosRouter = require('./src/routes/gradeDeJogos');
+const jogosRouter = require('./src/routes/jogos');
 const { use } = require('./src/routes/index');
 
 const app = express();
@@ -35,7 +35,7 @@ app.use('/checkout', checkoutRouter);
 app.use('/telaGame', telaJogoRouter);
 app.use('/telaCheckout', checkoutRouter);
 app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
-app.use('/gradeDeJogos', gradeDeJogosRouter);
+app.use('/jogos', jogosRouter);
 
 
 // catch 404 and forward to error handler

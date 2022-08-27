@@ -19,87 +19,16 @@
     <main>
       <div class="div-principal">
         <h1 class="p">PLAY</h1>
-
-        <section class="grade-de-jogos">
+        <% jogos.map(jogo => { %>
           <div class="jg">
-            <img class="img" src="/assets/images/cod.png" alt="Call Of Duty Modern Warfare2">
+            <img class="img" src="/assets/images/<%=jogo.imagem%>" alt="<%=jogo.nome%>">
             <div class="prjg">
-              <span>R$350,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De compra">
-            </div>
-          </div>
-
-
-          <div class="jg">
-            <img class="img" src="/assets/images/crash.png" alt="Crash Bandicoot Trilogia">
-            <div class="prjg">
-              <span>R$180,90</span>
+              <span><%=jogo.preco %></span>
               <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
             </div>
           </div>
-
-          <div class="jg">
-            <img class="img" src="/assets/images/fifa.png" alt="Fifa 2022">
-            <div class="prjg">
-              <span>R$200,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-        </section>
-
-        <section class="grade-de-jogos">
-          <div class="jg">
-            <img class="img" src="/assets/images/godofwar.png" alt="God Of War Ragnarok">
-            <div class="prjg">
-              <span>R$270,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-          <div class="jg">
-            <img class="img" src="/assets/images/granturisomo.png" alt="Gran Turismo 7">
-            <div class="prjg">
-              <span>R$390,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-          <div class="jg">
-            <img class="img" src="/assets/images/gtav.png" alt="GTA 5">
-            <div class="prjg">
-              <span>R$210,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-        </section>
-
-        <section class="grade-de-jogos">
-          <div class="jg">
-            <img class="img" src="/assets/images/mk11.png" alt="Mortal Kombat 11">
-            <div class="prjg">
-              <span>R$149,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-          <div class="jg">
-            <img class="img" src="/assets/images/resident.png" alt="Resident Evil 4">
-            <div class="prjg">
-              <span>R$220,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-
-          <div class="jg">
-            <img class="img" src="/assets/images/thelastofus.png" alt="The Last Of Us">
-            <div class="prjg">
-              <span>R$250,90</span>
-              <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
-            </div>
-          </div>
-        </section>
+          <% }) %>
+                  
       </div>
     </main>
 
