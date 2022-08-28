@@ -4,10 +4,10 @@ const session = require('express-session');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+//const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 
 const privateRoutes = require('./src/routes/private.routes');
 const publicRoutes = require('./src/routes/public.routes');
-const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
@@ -44,7 +44,7 @@ app.use(session({
 app.use('/', publicRoutes);
 // Utiliza o middleware userIsAuthenticated para verificar se o usuário está logado
 // O middleware será executado para todas as rotas abaixo
-app.use(userIsAuthenticated);
+//app.use(userIsAuthenticated);
 // Rotas privadas
 app.use('/', privateRoutes);
 

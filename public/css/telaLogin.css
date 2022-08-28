@@ -92,6 +92,9 @@ main {
 .botao-esqueci-a-senha{
     margin: 27px 0px 0px 800px;
 }
+.botao-entrar{
+    margin: 27px 0px 0px 800px;
+}
 
 .jogos {
     display: inline-flex;

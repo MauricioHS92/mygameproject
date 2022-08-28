@@ -8,7 +8,7 @@ const loginController = {
     enter: (req, res) => {
         const loginUser = req.body;
         loginModel.enter(loginUser)
-        res.redirect('/login/telaLogin');
+        res.redirect('/login/restrito');
     }
 }
 

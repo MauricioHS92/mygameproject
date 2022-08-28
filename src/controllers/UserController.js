@@ -3,7 +3,7 @@
 // (Ex: cadastro, atualização, exclusão)
 // ========================================================
 
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 
 const User = require('../models/User');
 
@@ -16,7 +16,7 @@ const UserController = {
     const { email, senha } = req.body;
 
     // Faz a criptografia da senha
-    const hash = bcrypt.hashSync(senha, saltRounds);
+    //const hash = bcrypt.hashSync(senha, saltRounds);
     
     // Chama a model para criar um novo usuário
     // Passando o email e a senha criptografada
