@@ -1,9 +1,13 @@
 const createError = require('http-errors');
 const express = require('express');
+const session = require('express-session');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+const privateRoutes = require('./src/routes/private.routes');
+const publicRoutes = require('./src/routes/public.routes');
+const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
@@ -25,6 +29,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Define o uso de sessões
+app.use(session({
+  secret: 'asd7394asdjs83_asd&&ad#f@50gmdualg89674ahfpa',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+      secure: false
+  }
+}));
+
+// Rotas públicas
+app.use('/', publicRoutes);
+// Utiliza o middleware userIsAuthenticated para verificar se o usuário está logado
+// O middleware será executado para todas as rotas abaixo
+app.use(userIsAuthenticated);
+// Rotas privadas
+app.use('/', privateRoutes);
 
 app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
