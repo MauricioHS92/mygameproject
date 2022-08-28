@@ -58,6 +58,7 @@ app.use('/telaGame', telaJogoRouter);
 app.use('/telaCheckout', checkoutRouter);
 app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
 app.use('/jogos', jogosRouter);
+app.use('/salvar', jogosRouter);
 
 
 // catch 404 and forward to error handler

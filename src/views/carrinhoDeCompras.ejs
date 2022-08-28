@@ -31,14 +31,16 @@
                 </div>
                 <div class="right">
                         <div class="linha1">
-                            <div id="produto1">Produto 1</div>
+                            <% jogos.map(jogo => { %>
+                            <div id="produto1"><%=jogo.nome%></div>
                             <div id="quantidade1">Quantidade 1</div>
-                            <div id="valor-item1">Valor item 1</div>
+                            <div id="valor-item1"><%=jogo.preco%></div>
                             <div id="lixeira1">
                                 <form action="" method="">
                                     <button type="submit"><img src="/assets/images/trash.png" id="icone-lixeira1"></button>
                                 </form>
                             </div>
+                            <% }) %>
                         </div>
                         <div class="linha2">
                             <div id="produto2">Produto 2</div>

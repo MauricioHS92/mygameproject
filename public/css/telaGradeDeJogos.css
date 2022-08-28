@@ -14,6 +14,10 @@ main {
   padding: 0 30px;
 }
 
+.div-principal {
+  flex-wrap: wrap;
+}
+
 .p {              /*Título da página*/
   display: flex;
   margin-left: 100px;
@@ -35,17 +39,18 @@ main {
   margin: 222px, 968px, 1874px, 84px;
   width: 388px;
   height: 484px;
+  flex-wrap: wrap;
 }
-
-.img {             /*Imagens dos jogos.*/
+/*Imagens dos jogos.*/
+.img {             
   margin-left: 0px;
-  width: 388px;
-  height: 484px;
+  width: 30px;
+  height: 40px;
 }
-
-.prjg {              /*Campo para preços e carrinhos de compras*/
+ /*Campo para preços e carrinhos de compras*/
+/* .prjg {             
   margin-left: 119px;
   width: 158px;
   height: 84px;
   font-size: large;
-}
+} */
