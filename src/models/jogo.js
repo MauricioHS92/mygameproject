@@ -10,6 +10,10 @@ const jogo = {
     findAll: () => {    //função sem parametro pq traz todos os jogos
         const jogos = db.jogos;
         return jogos;
+    },
+    findByName: (nome) => {
+        const jogoAdd = db.jogos.find(jogo => jogo.nome === nome);
+        return jogoAdd;
     }
 }
 

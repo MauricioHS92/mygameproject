@@ -7,10 +7,11 @@ const jogosController =  {
         const jogos = jogo.findAll();
         res.render('telaGradeDeJogos', {jogos});
     },
-    selecionarJogo: (req, res) =>{
-        const jogoSelecionado = jogo.findById();
+    salvarJogo: (req, res) =>{
+        const jogoAdicionado = jogo.finByName(); 
+        console.log({jogoAdicionado});
 
-        console.log(req.body);
+        // console.log(req.body);
         // res.render('carrinhoDeCompras', {jogos});
     }
 }
