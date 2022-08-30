@@ -49,16 +49,16 @@ app.use('/', publicRoutes);
 app.use('/', privateRoutes);
 
 app.use('/', indexRouter);
-app.use('/usuarios', usuariosRouter);
-app.use('/contato', contatoRouter);
 app.use('/home', indexRouter);
 app.use('/login', loginRouter);
-app.use('/checkout', checkoutRouter);
-app.use('/telaGame', telaJogoRouter);
-app.use('/telaCheckout', checkoutRouter);
-app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
+app.use('/usuarios', usuariosRouter);
 app.use('/jogos', jogosRouter);
+app.use('/telaGame', telaJogoRouter);
 app.use('/salvar', jogosRouter);
+app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
+app.use('/telaCheckout', checkoutRouter);
+app.use('/checkout', checkoutRouter);
+app.use('/contato', contatoRouter);
 
 
 // catch 404 and forward to error handler

@@ -3,7 +3,7 @@
 // (Ex: login, logout)
 // ========================================================
 
-//const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
 const User = require('../models/User');
 
@@ -22,7 +22,7 @@ const UserController = {
     }
 
     // Verifica se a senha informada é a mesma que a senha criptografada no db
-    //const senhaValida = bcrypt.compareSync(senha, usuario.senha);
+    const senhaValida = bcrypt.compareSync(senha, usuario.senha);
 
     // Verifica se a senha é válida
     if (!senhaValida) {
