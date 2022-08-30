@@ -8,10 +8,13 @@ const jogosController =  {
         res.render('telaGradeDeJogos', {jogos});
     },
     selecionarJogo: (req, res) =>{
-        const jogoSelecionado = jogo.findById();
-
-        console.log(req.body);
-        // res.render('carrinhoDeCompras', {jogos});
+        const {id} = req.params;
+        const jogoSelecionado = jogo.findById(id);
+        res.render('jogos', {jogoSelecionado});
+        //console.log(jogoSelecionado());
+        //console.log(jogoSelecionado)
+        //console.log(req.body);
+        //res.render('carrinhoDeCompras', {jogos});
     }
 }
 
