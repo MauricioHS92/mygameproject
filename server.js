@@ -6,15 +6,15 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 //const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 
-const privateRoutes = require('./src/routes/private.routes');
+//const privateRoutes = require('./src/routes/private.routes');
 const publicRoutes = require('./src/routes/public.routes');
 const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
 const loginRouter = require('./src/routes/login');
-const checkoutRouter = require('./src/routes/checkout');
+const compraRouter = require('./src/routes/checkout');
 const telaJogoRouter = require('./src/routes/telaGame');
-const carrinhoDeComprasRouter = require('./src/routes/carrinho');
+const carrinhoRouter = require('./src/routes/carrinho');
 const jogosRouter = require('./src/routes/jogos');
 const { use } = require('./src/routes/index');
 
@@ -46,7 +46,7 @@ app.use('/', publicRoutes);
 // O middleware será executado para todas as rotas abaixo
 //app.use(userIsAuthenticated);
 // Rotas privadas
-app.use('/', privateRoutes);
+//app.use('/', privateRoutes);
 
 app.use('/', indexRouter);
 app.use('/home', indexRouter);
@@ -55,9 +55,9 @@ app.use('/usuarios', usuariosRouter);
 app.use('/jogos', jogosRouter);
 app.use('/telaGame', telaJogoRouter);
 app.use('/salvar', jogosRouter);
-app.use('/carrinhoDeCompras', carrinhoDeComprasRouter);
-app.use('/telaCheckout', checkoutRouter);
-app.use('/checkout', checkoutRouter);
+app.use('/carrinho', carrinhoRouter);
+app.use('/telaCheckout', compraRouter);
+app.use('/checkout', compraRouter);
 app.use('/contato', contatoRouter);
 
 

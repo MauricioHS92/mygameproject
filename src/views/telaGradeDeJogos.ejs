@@ -21,7 +21,9 @@
         <h1 class="p">PLAY</h1>
         <% jogos.map(jogo => { %>
           <div class="jg">
-            <img class="img" src="/assets/images/<%=jogo.imagem%>" alt="<%=jogo.nome%>">
+            <a href="/telaDeJogo/<%=jogo.id%>">
+              <img class="img" src="/assets/images/<%=jogo.imagem%>" alt="<%=jogo.nome%>">
+            </a>
             <div class="prjg">
               <span><%=jogo.preco %></span>
               <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">

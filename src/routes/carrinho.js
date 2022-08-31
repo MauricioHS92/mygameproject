@@ -1,11 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const carrinhoDeComprasController = require('../controllers/carrinhoDeComprasController');
+const carrinhoController = require('../controllers/carrinhoController');
 
-//rota para carrinho de compras usando o controller
-router.get('/', carrinhoDeComprasController.index);
-router.get('/carrinhoDeCompras', carrinhoDeComprasController.finalizarCompra);
+router.get('/', carrinhoController.index);
 
 module.exports = router;
-

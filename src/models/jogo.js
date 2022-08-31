@@ -1,5 +1,5 @@
 const fs = require('fs'); 
-const db = require('../database/db.json'); //importando o banco dde dados
+const db = require('../database/db.json'); //importando o banco de dados
 
 
 const jogo = {
