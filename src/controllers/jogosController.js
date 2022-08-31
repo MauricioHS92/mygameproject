@@ -8,17 +8,9 @@ const jogosController =  {
         res.render('telaGradeDeJogos', {jogos});
     },
 
-    salvarJogo: (req, res) =>{
-        const jogoAdicionado = jogo.finByName(); 
-        console.log({jogoAdicionado});
-    },
-        // console.log(req.body);
-        // res.render('carrinhoDeCompras', {jogos});
-
     selecionarJogo: (req, res) =>{
-        const {id} = req.params;
-        const jogoSelecionado = jogo.findById(id);
-        res.render('jogos', {jogoSelecionado});
+        const jogoSelecionado = jogo.findById();
+        res.redirect('telaGame', {jogoSelecionado});
         //console.log(jogoSelecionado());
         //console.log(jogoSelecionado)
         //console.log(req.body);
