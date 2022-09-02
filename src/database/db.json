@@ -40,57 +40,99 @@
       "nome": "felipe",
       "email": "felipesaints94@gmail.com",
       "mensagem": "343434343434aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3"
+    },
+    {
+      "id": "0f9d97bf-638b-4c0d-a3b1-b70dc950d5b0",
+      "nome": "felipe",
+      "email": "felipesaints94@gmail.com",
+      "mensagem": "alskalskaalskalskaalskalskaalskalskaalskalska"
+    },
+    {
+      "id": "448e020a-b3a7-4201-bc59-9f8d447c30e4",
+      "nome": "felipe",
+      "email": "felipesaints94@gmail.com",
+      "mensagem": "alskalskaalskalskaalskalskaalskalskaalskalska123"
     }
   ],
   "login": [
     {
       "id": "ea87dd7f-2937-4817-846d-d27ff44206c1",
-      "email": ["sasd@sdgs.com", "asasd@gfhjg.com"],
+      "email": [
+        "sasd@sdgs.com",
+        "asasd@gfhjg.com"
+      ],
       "senha": "assad"
     },
     {
       "id": "9e566272-ba88-40f1-90c0-232894a1a536",
-      "email": ["sad@dsa.com", "ass@da.com"],
+      "email": [
+        "sad@dsa.com",
+        "ass@da.com"
+      ],
       "senha": "65056"
     },
     {
       "id": "0f635161-4d48-41a8-9d42-92efdb037000",
-      "email": ["hansenmailper@gmail.com", "hansenmailper@gmail.com"],
+      "email": [
+        "hansenmailper@gmail.com",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "adfsd"
     },
     {
       "id": "5e293c06-d285-473c-9ead-b188778a18d3",
-      "email": ["hansenmailper@gmail.com", "hansenmailper@gmail.com"],
+      "email": [
+        "hansenmailper@gmail.com",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "sdff"
     },
     {
       "id": "dbb8363e-d62d-4fd9-83db-3c9b96cc29aa",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "sgfddsfg"
     },
     {
       "id": "47fd4343-e43a-49e9-9a2f-1a34cb4f7721",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "fgdfg"
     },
     {
       "id": "c72cfbec-5d57-49bc-a340-0f1181df13c2",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "fdgdfg"
     },
     {
       "id": "d6121b83-db48-4c54-a2fc-4304fd5828c0",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "dasdas"
     },
     {
       "id": "b51bfcc7-6a64-4c39-ad2f-4f0bc3919912",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "1651561"
     },
     {
       "id": "2f1872e9-4b2c-4834-b7c3-04b927b11202",
-      "email": ["", "hansenmailper@gmail.com"],
+      "email": [
+        "",
+        "hansenmailper@gmail.com"
+      ],
       "senha": "fghfgh"
     }
   ],
@@ -100,7 +142,7 @@
       "imagem": "crash.png",
       "nome": "Crash Bandicoot Nsane trilogy",
       "genero": "Aventura",
-      "preco": 180.90,
+      "preco": 180.9,
       "descricao": "udshudshusdhih"
     },
     {
@@ -108,7 +150,7 @@
       "imagem": "fifa.png",
       "nome": "Fifa 22",
       "genero": "Esportes",
-      "preco": 200.90,
+      "preco": 200.9,
       "descricao": "gfggfgf"
     },
     {
@@ -116,7 +158,7 @@
       "imagem": "mk11.png",
       "nome": "Mortal Kombat 11",
       "genero": "Luta",
-      "preco": 149.90,
+      "preco": 149.9,
       "descricao": "ssas"
     },
     {
@@ -124,7 +166,7 @@
       "imagem": "granturisomo.png",
       "nome": "Gran Turismo 7",
       "genero": "Corrida",
-      "preco": 390.90,
+      "preco": 390.9,
       "descricao": "gyagsy"
     },
     {
@@ -132,7 +174,7 @@
       "imagem": "cod.png",
       "nome": "Call Of Duty Modern Warfare 2",
       "genero": "FPS",
-      "preco": 350.90,
+      "preco": 350.9,
       "descricao": "gyagsy"
     },
     {
@@ -140,7 +182,7 @@
       "imagem": "godofwar.png",
       "nome": "God Of War Ragnarok",
       "genero": "Ação",
-      "preco": 270.90,
+      "preco": 270.9,
       "descricao": "gyagsy"
     },
     {
@@ -148,7 +190,7 @@
       "imagem": "gtav.png",
       "nome": "Grand Theft Auto V",
       "genero": "Ação",
-      "preco": 210.90,
+      "preco": 210.9,
       "descricao": "gyagsy"
     },
     {
@@ -156,7 +198,7 @@
       "imagem": "resident.png",
       "nome": "Resident Evil 4",
       "genero": "Ação",
-      "preco": 220.90,
+      "preco": 220.9,
       "descricao": "gyagsy"
     },
     {
@@ -164,7 +206,7 @@
       "imagem": "thelastofus.png",
       "nome": "The Last of US part II",
       "genero": "Ação",
-      "preco": 250.90,
+      "preco": 250.9,
       "descricao": "gyagsy"
     },
     {
@@ -172,7 +214,7 @@
       "imagem": "thelastofus.png",
       "nome": "The Last of US part II",
       "genero": "Ação",
-      "preco": 250.90,
+      "preco": 250.9,
       "descricao": "gyagsy"
     }
   ]
