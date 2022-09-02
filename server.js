@@ -54,7 +54,6 @@ app.use('/login', loginRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/jogos', jogosRouter);
 app.use('/telaGame', telaJogoRouter);
-app.use('/salvar', jogosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/telaCheckout', compraRouter);
 app.use('/checkout', compraRouter);

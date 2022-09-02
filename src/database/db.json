@@ -100,7 +100,7 @@
       "imagem": "crash.png",
       "nome": "Crash Bandicoot Nsane trilogy",
       "genero": "Aventura",
-      "preco": "180.9",
+      "preco": 180.90,
       "descricao": "udshudshusdhih"
     },
     {
@@ -108,7 +108,7 @@
       "imagem": "fifa.png",
       "nome": "Fifa 22",
       "genero": "Esportes",
-      "preco": "200.9",
+      "preco": 200.90,
       "descricao": "gfggfgf"
     },
     {
@@ -116,7 +116,7 @@
       "imagem": "mk11.png",
       "nome": "Mortal Kombat 11",
       "genero": "Luta",
-      "preco": "149.9",
+      "preco": 149.90,
       "descricao": "ssas"
     },
     {
@@ -124,7 +124,7 @@
       "imagem": "granturisomo.png",
       "nome": "Gran Turismo 7",
       "genero": "Corrida",
-      "preco": "390.9",
+      "preco": 390.90,
       "descricao": "gyagsy"
     },
     {
@@ -132,7 +132,7 @@
       "imagem": "cod.png",
       "nome": "Call Of Duty Modern Warfare 2",
       "genero": "FPS",
-      "preco": "350.9",
+      "preco": 350.90,
       "descricao": "gyagsy"
     },
     {
@@ -140,7 +140,7 @@
       "imagem": "godofwar.png",
       "nome": "God Of War Ragnarok",
       "genero": "Ação",
-      "preco": "270.9",
+      "preco": 270.90,
       "descricao": "gyagsy"
     },
     {
@@ -148,7 +148,7 @@
       "imagem": "gtav.png",
       "nome": "Grand Theft Auto V",
       "genero": "Ação",
-      "preco": "210.9",
+      "preco": 210.90,
       "descricao": "gyagsy"
     },
     {
@@ -156,7 +156,7 @@
       "imagem": "resident.png",
       "nome": "Resident Evil 4",
       "genero": "Ação",
-      "preco": "220.9",
+      "preco": 220.90,
       "descricao": "gyagsy"
     },
     {
@@ -164,7 +164,7 @@
       "imagem": "thelastofus.png",
       "nome": "The Last of US part II",
       "genero": "Ação",
-      "preco": "250.9",
+      "preco": 250.90,
       "descricao": "gyagsy"
     },
     {
@@ -172,7 +172,7 @@
       "imagem": "thelastofus.png",
       "nome": "The Last of US part II",
       "genero": "Ação",
-      "preco": "250.9",
+      "preco": 250.90,
       "descricao": "gyagsy"
     }
   ]

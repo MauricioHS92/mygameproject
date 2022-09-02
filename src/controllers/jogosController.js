@@ -1,5 +1,4 @@
 const jogo = require('../models/jogo');
-const jogos = require('../database/db.json');
 
 const jogosController =  {
 
@@ -9,8 +8,10 @@ const jogosController =  {
     },
 
     selecionarJogo: (req, res) =>{
-        const jogoSelecionado = jogo.findById();
-        res.redirect('telaGame', {jogoSelecionado});
+        const {id} = req.params;
+        const jogoSelecionado = jogo.findById(id);
+        res.render('telaDeJogo', {jogoSelecionado});
+
         //console.log(jogoSelecionado());
         //console.log(jogoSelecionado)
         //console.log(req.body);

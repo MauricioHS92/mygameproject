@@ -5,6 +5,6 @@ const jogosController = require('../controllers/jogosController');
 
 router.get('/', jogosController.trazerJogos);
 //rota que irá receber os jogos
-router.get('/telaDeJogo/:id', jogosController.selecionarJogo);
+router.get('/:id', jogosController.selecionarJogo);
 
 module.exports = router;
