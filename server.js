@@ -12,7 +12,8 @@ const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
 const contatoRouter = require('./src/routes/contato');
 const loginRouter = require('./src/routes/login');
-const comprasRouter = require('./src/routes/checkout');
+const checkoutRouter = require('./src/routes/checkout');
+const carrinhoRouter = require('./src/routes/carrinho');
 const jogosRouter = require('./src/routes/jogos');
 const { use } = require('./src/routes/index');
 
@@ -51,7 +52,8 @@ app.use('/home', indexRouter);
 app.use('/login', loginRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/jogos', jogosRouter);
-app.use('/meuCarrinho', comprasRouter);
+app.use('/carrinho', carrinhoRouter);
+app.use('/checkout', checkoutRouter);
 app.use('/contato', contatoRouter);
 
 
