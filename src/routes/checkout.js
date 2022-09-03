@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const compraController = require('../controllers/compraController');
+const comprasController = require('../controllers/comprasController');
 
-router.get('/', compraController.checkout);
+router.get('/', comprasController.carrinho);
+// router.get('/', comprasController.checkout);
+
 
 module.exports = router;
 

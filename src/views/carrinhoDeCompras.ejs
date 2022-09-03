@@ -31,16 +31,14 @@
                 </div>
                 <div class="right">
                         <div class="linha1">
-                            <% jogos.map(jogo => { %>
-                            <div id="produto1"><%=jogo.nome%></div>
+                            <div id="produto1"></div>
                             <div id="quantidade1">Quantidade 1</div>
-                            <div id="valor-item1"><%=jogo.preco%></div>
+                            <div id="valor-item1"></div>
                             <div id="lixeira1">
                                 <form action="" method="">
                                     <button type="submit"><img src="/assets/images/trash.png" id="icone-lixeira1"></button>
                                 </form>
                             </div>
-                            <% }) %>
                         </div>
                         <div class="linha2">
                             <div id="produto2">Produto 2</div>
@@ -72,7 +70,7 @@
                         <div class="linha6">
                             <div id="comprar-mais">
                                 <button type="button">
-                                    <a class="button" href="/telaDeJogo">
+                                    <a class="button" href="">
                                         <p>Continuar comprando</p>
                                     </a>  
                                 </button>
@@ -81,7 +79,7 @@
                         <div class="linha7">
                             <div id="finalizar-compra">
                                     <button type="button">
-                                        <a class="button" href="/checkout">
+                                        <a class="button" href="">
                                             <p>Finalizar Compra</p>
                                         </a>
                                     </button>   
