@@ -9,7 +9,7 @@ const usuarioController = {
     create: (req, res) => {
         const usuarioDados = req.body;
         usuario.create(usuarioDados)
-        res.redirect('/usuarios/inscricao')
+        res.redirect('/usuarios')
     },
 
     meusDados: (req, res) => {
