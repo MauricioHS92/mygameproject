@@ -26,12 +26,12 @@
               <img class="img" src="/assets/images/<%=jogo.imagem%>" alt="<%=jogo.nome%>">
             </a>
             <div class="prjg">
-              <span><%=jogo.preco %></span>
+              <span>R$<%=jogo.preco %></span>
               <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
             </div>
-            <form action="/jogos/salvar " method="POST">
+            <!-- <form action="/jogos/salvar " method="POST">
               <button type="submit" name="<%=jogo.nome%>">Adicionar ao carrinho</button>
-            </form>
+            </form> -->
             
           </div>
           <% }) %>

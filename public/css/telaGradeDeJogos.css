@@ -22,6 +22,10 @@ body{       /*config das fontes do body*/
   width:auto;
 }
 
+.prjg img{
+  width: 20px;
+}
+
 .p {              /*Título da página*/
   display: flex;
   margin-left: 100px;
@@ -31,24 +35,16 @@ body{       /*config das fontes do body*/
   margin-right: 968px;
 }
 
-.grade-de-jogos {              /*Section onde consta a primeira grade de jogos*/
-  display: flex;
-  justify-content: space-between;
-  height: 600px;
-  width: 1350px;
-  margin-left: auto;
-}
 
-.jg a {              /*Div dos jogos*/
-  margin: 222px, 968px, 1874px, 84px;
-  width: auto;
-  height: 30vh;
-  flex-wrap: wrap;
-}
+
 /*Imagens dos jogos.*/
 .img {             
   width: auto;
   height: 40vh;
+}
+
+.jg {
+  margin-bottom: 5%;
 }
  /*Campo para preços e carrinhos de compras*/
 /* .prjg {             
