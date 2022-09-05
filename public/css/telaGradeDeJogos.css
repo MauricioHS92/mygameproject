@@ -1,21 +1,25 @@
 body{       /*config das fontes do body*/
   justify-content: center;
-  
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
 }
 
-main {
-  display: flex;
+/* main {
   align-items: center;
   justify-content: center;
   padding: 0 30px;
-}
+} */
 
 .div-principal {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prjg {
+  width:auto;
 }
 
 .p {              /*Título da página*/
@@ -35,17 +39,16 @@ main {
   margin-left: auto;
 }
 
-.jg {              /*Div dos jogos*/
+.jg a {              /*Div dos jogos*/
   margin: 222px, 968px, 1874px, 84px;
-  width: 388px;
-  height: 484px;
+  width: auto;
+  height: 30vh;
   flex-wrap: wrap;
 }
 /*Imagens dos jogos.*/
 .img {             
-  margin-left: 0px;
-  width: 30px;
-  height: 40px;
+  width: auto;
+  height: 40vh;
 }
  /*Campo para preços e carrinhos de compras*/
 /* .prjg {             
