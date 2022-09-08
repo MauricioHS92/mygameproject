@@ -7,4 +7,7 @@ router.get('/', jogosController.trazerJogos);
 //rota que irá receber os jogos
 router.get('/:id', jogosController.selecionarJogo);
 
+//rota que levará o usuário a lista de jogos
+router.get('/genero/:name', jogosController.listarJogos);
+
 module.exports = router;

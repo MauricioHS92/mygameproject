@@ -11,11 +11,29 @@ const jogosController =  {
         const {id} = req.params;
         const jogoSelecionado = jogo.findById(id);
         res.render('telaDeJogo', {jogoSelecionado});
+    },
 
-        //console.log(jogoSelecionado());
-        //console.log(jogoSelecionado)
-        //console.log(req.body);
-        //res.render('carrinhoDeCompras', {jogos});
+    listarJogos: (req, res) =>{
+        const {name} = req.params.name;
+        if({name} == "estrategia"){
+            let listaDeJogos = jogo.estrategia()
+            console.log('Olá' + listaDeJogos)
+            // res.render('telaGradeDeJogos', {listaDeJogos})
+        }
+        // if({name} == "esportes"){
+        //     let listaDeJogos = jogo.esportes()
+        //     res.render('telaGradeDeJogos', {listaDeJogos})
+        // }
+        // if({name} == "fps"){
+        //     let listaDeJogos = jogo.fps()
+        //     res.render('telaGradeDeJogos', {listaDeJogos})
+        // }
+        // if({name} == "outros"){
+        //     let listaDeJogos = jogo.outros()
+        //     res.render('telaGradeDeJogos', {listaDeJogos})
+        // }
+
+        
     }
 }
 

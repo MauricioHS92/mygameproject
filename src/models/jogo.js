@@ -17,6 +17,26 @@ const jogo = {
         const jogos = db.jogos;
         return jogos;
     },
+    esportes: () => {
+        const jogosEsportes = db.jogos.filter(function(atributo){
+            return atributo.genero == 'esportes'
+        })
+    },
+    estrategia: () => {
+        const jogosEstrategia = db.jogos.filter(function(atributo){
+            return atributo.genero == 'estrategia'
+        })
+    },
+    outros: () => {
+        const jogosOutros = db.jogos.filter(function(atributo){
+            return atributo.genero == 'outros'
+        })
+    },
+    fps: () => {
+        const jogosFps = db.jogos.filter(function(atributo){
+            return atributo.genero == 'fps'
+        })
+    }
 }
 
 

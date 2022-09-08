@@ -249,7 +249,7 @@
             "id": "usdhuisdfh",
             "imagem": "crash.png",
             "nome": "Crash Bandicoot Nsane trilogy",
-            "genero": "Aventura",
+            "genero": "estrategia",
             "preco": 180.9,
             "descricao": "udshudshusdhih"
         },
@@ -257,7 +257,7 @@
             "id": "ufdhufdh",
             "imagem": "fifa.png",
             "nome": "Fifa 22",
-            "genero": "Esportes",
+            "genero": "esportes",
             "preco": 200.9,
             "descricao": "gfggfgf"
         },
@@ -265,7 +265,7 @@
             "id": "rtrtrtr",
             "imagem": "mk11.png",
             "nome": "Mortal Kombat 11",
-            "genero": "Luta",
+            "genero": "esportes",
             "preco": 149.9,
             "descricao": "ssas"
         },
@@ -273,7 +273,7 @@
             "id": "gfygeygyg",
             "imagem": "granturisomo.png",
             "nome": "Gran Turismo 7",
-            "genero": "Corrida",
+            "genero": "esportes",
             "preco": 390.9,
             "descricao": "gyagsy"
         },
@@ -281,7 +281,7 @@
             "id": "gfygeygyg",
             "imagem": "cod.png",
             "nome": "Call Of Duty Modern Warfare 2",
-            "genero": "FPS",
+            "genero": "fps",
             "preco": 350.9,
             "descricao": "gyagsy"
         },
@@ -289,7 +289,7 @@
             "id": "gfygeygyg",
             "imagem": "godofwar.png",
             "nome": "God Of War Ragnarok",
-            "genero": "Ação",
+            "genero": "fps",
             "preco": 270.9,
             "descricao": "gyagsy"
         },
@@ -297,7 +297,7 @@
             "id": "gfygeygyg",
             "imagem": "gtav.png",
             "nome": "Grand Theft Auto V",
-            "genero": "Ação",
+            "genero": "outros",
             "preco": 210.9,
             "descricao": "gyagsy"
         },
@@ -305,7 +305,7 @@
             "id": "gfygeygyg",
             "imagem": "resident.png",
             "nome": "Resident Evil 4",
-            "genero": "Ação",
+            "genero": "outros",
             "preco": 220.9,
             "descricao": "gyagsy"
         },
@@ -313,7 +313,7 @@
             "id": "gfygeygyg",
             "imagem": "thelastofus.png",
             "nome": "The Last of US part II",
-            "genero": "Ação",
+            "genero": "outros",
             "preco": 250.9,
             "descricao": "gyagsy"
         },
@@ -321,7 +321,7 @@
             "id": "gfygeygyg",
             "imagem": "thelastofus.png",
             "nome": "The Last of US part II",
-            "genero": "Ação",
+            "genero": "estrategia",
             "preco": 250.9,
             "descricao": "gyagsy"
         }
