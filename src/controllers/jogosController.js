@@ -14,12 +14,12 @@ const jogosController =  {
     },
 
     listarJogos: (req, res) =>{
-        const {name} = req.params.name;
-        if({name} == "estrategia"){
-            let listaDeJogos = jogo.estrategia()
-            console.log('Olá' + listaDeJogos)
+        const {nomeDoJogo} = req.params;
+        if({nomeDoJogo} == "esportes"){
+            let listaDeJogos = jogo.esportes()
             // res.render('telaGradeDeJogos', {listaDeJogos})
         }
+        console.log('Olá' + listaDeJogos)
         // if({name} == "esportes"){
         //     let listaDeJogos = jogo.esportes()
         //     res.render('telaGradeDeJogos', {listaDeJogos})
@@ -32,8 +32,6 @@ const jogosController =  {
         //     let listaDeJogos = jogo.outros()
         //     res.render('telaGradeDeJogos', {listaDeJogos})
         // }
-
-        
     }
 }
 

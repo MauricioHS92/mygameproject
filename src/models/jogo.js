@@ -14,26 +14,26 @@ const jogo = {
     },
 
     findAll: () => {    //função sem parametro pq traz todos os jogos
-        const jogos = db.jogos;
+        let jogos = db.jogos;
         return jogos;
     },
     esportes: () => {
-        const jogosEsportes = db.jogos.filter(function(atributo){
+        let jogosEsportes = jogos.filter(function(atributo){
             return atributo.genero == 'esportes'
         })
     },
     estrategia: () => {
-        const jogosEstrategia = db.jogos.filter(function(atributo){
+        const jogosEstrategia = jogos.filter(function(atributo){
             return atributo.genero == 'estrategia'
         })
     },
     outros: () => {
-        const jogosOutros = db.jogos.filter(function(atributo){
+        const jogosOutros = jogos.filter(function(atributo){
             return atributo.genero == 'outros'
         })
     },
     fps: () => {
-        const jogosFps = db.jogos.filter(function(atributo){
+        const jogosFps = jogos.filter(function(atributo){
             return atributo.genero == 'fps'
         })
     }

@@ -14,6 +14,7 @@ const contatoRouter = require('./src/routes/contato');
 const loginRouter = require('./src/routes/login');
 const comprasRouter = require('./src/routes/compras');
 const jogosRouter = require('./src/routes/jogos');
+const methodOverride = require('method-override');
 const { use } = require('./src/routes/index');
 
 const app = express();
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
 // Define o uso de sessões
 app.use(session({

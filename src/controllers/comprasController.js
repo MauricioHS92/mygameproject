@@ -5,7 +5,13 @@ const comprasController = {
     carrinho: (req, res) => {
         res.render('carrinhoDeCompras');
     },
+
+    deletarJogo: (req, res) => {
+        res.send('Você deletou o jogo: ');
+    }
 };
+
+
 
 module.exports = comprasController;
 

@@ -8,6 +8,8 @@ router.get('/', jogosController.trazerJogos);
 router.get('/:id', jogosController.selecionarJogo);
 
 //rota que levará o usuário a lista de jogos
-router.get('/genero/:name', jogosController.listarJogos);
+router.get('/genero', jogosController.listarJogos);
+
+
 
 module.exports = router;
