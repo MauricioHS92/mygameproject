@@ -1,3 +1,5 @@
+const {jogos} = require('../../models'); 
+
 const comprasController = {
     checkout: (req, res) => {
         res.render('telaCheckout');

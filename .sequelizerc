@@ -1,0 +1,11 @@
+//importando o modulo path
+const path = require('path');
+
+//em seguida vamos exportar o database.js
+module.exports = {
+    'config': path.resolve('config', 'database.js'),
+
+    //importando o models com as config do sequelize
+    //por padrão, ele pega o arquivo index.js
+    'models': path.resolve('models')
+}
