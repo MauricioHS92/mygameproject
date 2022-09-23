@@ -1,7 +1,7 @@
 //
 module.exports = (sequelize, DataType) => {
     //criar uma const jogos e retornar o nome do nosso model
-    const jogos = sequelize.define('jogos', {
+    const Jogo = sequelize.define('Jogo', {
         //abaixo as colunas e suas configurações
         id_jogo: {
             type: DataType.INTEGER,
@@ -14,6 +14,9 @@ module.exports = (sequelize, DataType) => {
         imagem: DataType.STRING,
         descricao: DataType.STRING
     },{
-        timeStamps: false
+        tableName: 'jogos',
+        timestamps: false
     })
+
+    return Jogo
 }

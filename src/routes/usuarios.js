@@ -21,7 +21,7 @@ const multerDiskStorage = multer.diskStorage({
  const upload = multer({ storage: multerDiskStorage });
 
 router.get('/', usuarioController.formularioCriacao);
-router.post('/create', upload.single('avatar'), usuarioController.create);
+router.post('/create', usuarioController.create);
 
 router.get('/meusDados/:id', usuarioController.meusDados);
 

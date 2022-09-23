@@ -24,4 +24,34 @@ router.post('/login', AuthController.login);
 // Rota para cadastrar um novo usuário
 router.post('/cadastro', UserController.create);
 
+
+//ROTAS PARA JOGOS
+const jogosController = require('../controllers/jogosController');
+
+router.get('/', jogosController.trazerJogos);
+//rota que irá receber os jogos
+router.get('/:id', jogosController.selecionarJogo);
+
+//rota que levará o usuário a lista de jogos
+router.get('/genero', jogosController.listarJogos);
+
+
+
+//ROTA PARA FALE CONOSCO
+const contatoController = require('../controllers/contatoController');
+
+
+router.get('/', contatoController.formularioFaleConosco);
+router.post('/enviar', contatoController.enviar);
+
+
+
+
+
+
+
+
+
+
+
 module.exports = router;

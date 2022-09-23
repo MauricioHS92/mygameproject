@@ -3,9 +3,9 @@
 const config = {
     username: 'root',
     password: '',
-    database: 'PI', //o nome do banco que foi criado no mysql
+    database: 'pi', //o nome do banco que foi criado no mysql
     host: 'localhost',
     dialect: 'mysql' 
 }
 
-module.expórts = config;
+module.exports = config;

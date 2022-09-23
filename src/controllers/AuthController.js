@@ -5,15 +5,15 @@
 
 const bcrypt = require('bcrypt');
 
-const User = require('../models/User');
+const {User} = require('../../models');
 
 const UserController = {
-  login: (req, res) => {
+  login: async (req, res) => {
     // Pega os dados do usuário do corpo da requisição
     const { email, senha } = req.body;
 
     // Chama a model para buscar um usuário pelo email
-    const usuario = User.findByEmail(email);
+    const usuario = await User.findOne({ where: { email: email }});
 
     // Verifica se o usuário existe
     if (!usuario) {
