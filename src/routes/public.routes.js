@@ -10,6 +10,9 @@ const router = express.Router();
 // (Usuários não logados)
 // ======================
 
+//Rota para renderizar o formulario de inscricao
+router.get('/inscricao', UserController.formularioCriacao);
+
 // Renderiza a página inicial de login
 // Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado
 router.get('/', AuthController.renderLogin);

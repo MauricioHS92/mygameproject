@@ -6,11 +6,11 @@ const usuarioController = {
         res.render('inscricao');
     },
 
-    create: (req, res) => {
-        const usuarioDados = req.body;
-        usuario.create(usuarioDados)
-        res.redirect('/usuarios')
-    },
+    //create: (req, res) => {
+        //const usuarioDados = req.body;
+        //usuario.create(usuarioDados)
+        //res.redirect('/inscricao')
+    //},
 
     meusDados: (req, res) => {
         const { id } = req.params;

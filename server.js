@@ -42,15 +42,14 @@ app.use(session({
 app.use('/', publicRoutes);
 // Utiliza o middleware userIsAuthenticated para verificar se o usuário está logado
 // O middleware será executado para todas as rotas abaixo
-app.use(userIsAuthenticated);
+//app.use(userIsAuthenticated);
 // Rotas privadas
-app.use('/', privateRoutes);
+//app.use('/', privateRoutes);
 
 app.use('/', indexRouter);
 app.use('/home', indexRouter);
 app.use('/login', loginRouter);
-app.use('/usuarios', usuariosRouter);
-app.use('/jogos', jogosRouter);
+app.use('/inscricao', usuariosRouter);
 app.use('/compras', comprasRouter);
 
 

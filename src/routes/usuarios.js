@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const usuarioController = require('../controllers/usuarioController')
+const UserController = require('../controllers/UserController')
 const multer = require('multer');
 const path = require('path');
 const multerDiskStorage = multer.diskStorage({
@@ -20,8 +21,8 @@ const multerDiskStorage = multer.diskStorage({
  //finalmente a função que recebera os dados e passar para o storage usar o destination e o filename
  const upload = multer({ storage: multerDiskStorage });
 
-router.get('/', usuarioController.formularioCriacao);
-router.post('/create', usuarioController.create);
+router.get('/inscricao', UserController.formularioCriacao);
+router.post('/create', UserController.create);
 
 router.get('/meusDados/:id', usuarioController.meusDados);
 

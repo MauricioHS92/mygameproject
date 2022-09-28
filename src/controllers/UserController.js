@@ -3,29 +3,38 @@
 // (Ex: cadastro, atualização, exclusão)
 // ========================================================
 
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 
-const {User} = require('../../models');
+const { User } = require("../../models");
 
 const saltRounds = 10;
 
 const UserController = {
-  create: async(req, res) => {
+  formularioCriacao: (req, res) => {
+    res.render("inscricao");
+  },
+
+  create: async (req, res) => {
     console.log(req.body);
     // Pega os dados do usuário do corpo da requisição
-    const { email, senha, nome, cpf, foto_usuario, telefone  } = req.body;
+    const { email, senha, nome, cpf, foto_usuario, telefone } = req.body;
 
     // Faz a criptografia da senha
     const hash = bcrypt.hashSync(senha, saltRounds);
-    
+
     // Chama a model para criar um novo usuário
     // Passando o email e a senha criptografada
-    await User.create({ email: email, senha: hash, nome: nome, cpf: cpf,
-    foto_usuario: foto_usuario, telefone: telefone  });
+    await User.create({
+      email: email,
+      senha: hash,
+      nome: nome,
+      cpf: cpf,
+      foto_usuario: foto_usuario,
+      telefone: telefone,
+    });
 
-    
     // Redireciona para a página de login
-    res.redirect('/');
+    res.redirect("/inscricao");
   },
 
   renderFormCadastro: (req, res) => {
@@ -33,12 +42,12 @@ const UserController = {
     // Ou seja, se existe uma sessão para o usuário
     if (req.session.user != undefined) {
       // Se estiver logado, redireciona para a página restrita
-      return res.redirect('/restrito');
+      return res.redirect("/restrito");
     }
-    
+
     // Renderiza a página de cadastro de usuário
-    return res.render('formCadastro');
-  }
-}
+    return res.render("formCadastro"); //Talvez seja correto colocar a pagina "inscricao" <<<<<<<<<<<<<<<<<
+  },
+};
 
 module.exports = UserController;
