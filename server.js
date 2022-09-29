@@ -49,7 +49,7 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/home', indexRouter);
 app.use('/login', loginRouter);
-app.use('/inscricao', usuariosRouter);
+app.use('/', usuariosRouter);
 app.use('/', comprasRouter);
 
 

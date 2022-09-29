@@ -15,21 +15,19 @@ const UserController = {
   },
 
   create: async (req, res) => {
-    console.log(req.body);
     // Pega os dados do usuário do corpo da requisição
-    const { email, senha, nome, cpf, foto_usuario, telefone } = req.body;
+    const { email, senha, nome, cpf, telefone } = req.body;
 
     // Faz a criptografia da senha
     const hash = bcrypt.hashSync(senha, saltRounds);
 
     // Chama a model para criar um novo usuário
     // Passando o email e a senha criptografada
-    await User.create({
+      await User.create({
       email: email,
       senha: hash,
       nome: nome,
       cpf: cpf,
-      foto_usuario: foto_usuario,
       telefone: telefone,
     });
 
