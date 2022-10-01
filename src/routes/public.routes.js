@@ -36,7 +36,7 @@ router.get('/', jogosController.trazerJogos);
 router.get('/:id', jogosController.selecionarJogo);
 
 //rota que levará o usuário a lista de jogos
-router.get('/genero', jogosController.listarJogos);
+// router.get('/genero', jogosController.listarJogos);
 
 
 

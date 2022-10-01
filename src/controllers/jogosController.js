@@ -1,25 +1,30 @@
-const jogo = require('../models/jogo');
+const {Jogo} = require('../../models');
 
 const jogosController =  {
 
-    trazerJogos: (req, res) =>{
-        const jogos = jogo.findAll();
+     trazerJogos: async (req, res) => {
+       try {
+        const jogos = await Jogo.findAll();
         res.render('telaGradeDeJogos', {jogos});
+       } catch(error) {
+        console.log(error)
+       }
+        
     },
 
-    selecionarJogo: (req, res) =>{
+    selecionarJogo: (req, res) => {
         const {id} = req.params;
-        const jogoSelecionado = jogo.findById(id);
+        const jogoSelecionado = Jogo.findById(id);
         res.render('telaDeJogo', {jogoSelecionado});
-    },
+    }}
 
     listarJogos: (req, res) =>{
-        const {nomeDoJogo} = req.params;
-        if({nomeDoJogo} == "esportes"){
-            let listaDeJogos = jogo.esportes()
-            // res.render('telaGradeDeJogos', {listaDeJogos})
-        }
-        console.log('Olá' + listaDeJogos)
+        // const {nomeDoJogo} = req.params;
+        // if({nomeDoJogo} == "esportes"){
+        //     let listaDeJogos = Jogo.esportes()
+        //     // res.render('telaGradeDeJogos', {listaDeJogos})
+        // }
+        // console.log('Olá' + listaDeJogos)
         // if({name} == "esportes"){
         //     let listaDeJogos = jogo.esportes()
         //     res.render('telaGradeDeJogos', {listaDeJogos})
@@ -31,8 +36,7 @@ const jogosController =  {
         // if({name} == "outros"){
         //     let listaDeJogos = jogo.outros()
         //     res.render('telaGradeDeJogos', {listaDeJogos})
-        // }
-    }
-}
+        }
+
 
 module.exports = jogosController;
