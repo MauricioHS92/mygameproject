@@ -1,6 +1,7 @@
 module.exports = (sequelize, DataType) => {
     //criar uma const jogos e retornar o nome do nosso model
-    const Usuario = sequelize.define('Usuario', {
+    //const User sera usada no controller
+    const User = sequelize.define('User', {
         //abaixo as colunas e suas configurações
         id_usuario: {
             type: DataType.INTEGER,
@@ -19,5 +20,5 @@ module.exports = (sequelize, DataType) => {
         timestamps: false
     })
 
-    return Usuario
+    return User
 };
