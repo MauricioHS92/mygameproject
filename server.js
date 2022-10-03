@@ -10,7 +10,6 @@ const logger = require('morgan');
 const publicRoutes = require('./src/routes/public.routes');
 const indexRouter = require('./src/routes/index');
 const usuariosRouter = require('./src/routes/usuarios');
-const loginRouter = require('./src/routes/login');
 const comprasRouter = require('./src/routes/compras');
 const methodOverride = require('method-override');
 const { use } = require('./src/routes/index');
@@ -38,17 +37,15 @@ app.use(session({
   }
 }));
 
-// Rotas públicas
-// app.use('/', publicRoutes);
+
 // Utiliza o middleware userIsAuthenticated para verificar se o usuário está logado
 // O middleware será executado para todas as rotas abaixo
 //app.use(userIsAuthenticated);
 // Rotas privadas
 //app.use('/', privateRoutes);
-
+app.use('/', publicRoutes);
 app.use('/', indexRouter);
 app.use('/home', indexRouter);
-app.use('/login', loginRouter);
 app.use('/', usuariosRouter);
 app.use('/', comprasRouter);
 

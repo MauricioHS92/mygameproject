@@ -15,7 +15,7 @@ router.get('/inscricao', UserController.formularioCriacao);
 
 // Renderiza a página inicial de login
 // Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado
-router.get('/', AuthController.renderLogin);
+router.get('/login', AuthController.formularioLogin);
 
 // Renderiza a página de cadastro de usuário
 // Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado
