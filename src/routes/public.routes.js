@@ -31,7 +31,8 @@ router.post('/cadastro', UserController.create);
 //ROTAS PARA JOGOS
 const jogosController = require('../controllers/jogosController');
 
-router.get('/', jogosController.trazerJogos);
+router.get('/jogos', jogosController.trazerJogos);
+router.get('/jogos/:id', jogosController.escolherJogo);
 //rota que irá receber os jogos
 //router.get('/:id', jogosController.selecionarJogo);
 
@@ -41,11 +42,11 @@ router.get('/', jogosController.trazerJogos);
 
 
 //ROTA PARA FALE CONOSCO
-const contatoController = require('../controllers/contatoController');
+// const contatoController = require('../controllers/contatoController');
 
 
-router.get('/', contatoController.formularioFaleConosco);
-router.post('/enviar', contatoController.enviar);
+// router.get('/', contatoController.formularioFaleConosco);
+// router.post('/enviar', contatoController.enviar);
 
 
 

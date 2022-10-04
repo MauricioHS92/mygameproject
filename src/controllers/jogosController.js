@@ -10,17 +10,17 @@ const jogosController = {
             console.log(error)
         }
 
-    }
+    },
 
-    /*selecionarJogo: async (req, res) => {
-        try {
-            const { id } = await req.params;
-            const jogoSelecionado = await Jogo.findById(id);
-            res.render('telaDeJogo', { jogoSelecionado });
-        } catch (error) {
-            console.log(error)
+    //Criando método de selecionar jogo
+    escolherJogo: async (req, res) => {
+        try{
+            const {id} = req.params;
+            const jogo = await Jogo.findById(id);
+            res.render('telaDeJogo', {jogo});
+        } catch ( error ) {
+            console.log( error )
         }
     }
-}*/
 }
 module.exports = jogosController;

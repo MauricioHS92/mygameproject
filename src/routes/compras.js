@@ -15,7 +15,7 @@ router.delete('/carrinhoDeCompras/deletar', comprasController.deletarJogo);
 //rota para mostrar os jogos na grade de jogos
 router.get('/jogos', jogosController.trazerJogos);
 //rota para renderizar em uma tela individual o jogo escolhido
-router.get('/jogos/:id', jogosController.selecionarJogo);
+//router.get('/jogos/:id', jogosController.selecionarJogo);
 
 module.exports = router;
 
