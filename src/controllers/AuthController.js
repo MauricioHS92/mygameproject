@@ -24,7 +24,8 @@ const UserController = {
       // Verifica se o usuário existe
       if (!usuario) {
         // Se não existir, renderiza a página de login com erro
-        return res.render('login', { error: 'Email ou senha inválidos' })
+        // return res.render('telaLogin', { error: 'Email ou senha inválidos' })
+        res.send("Email ou senha inválido")
       }
 
       // Verifica se a senha informada é a mesma que a senha criptografada no db
@@ -33,15 +34,18 @@ const UserController = {
       // Verifica se a senha é válida
       if (!senhaValida) {
         // Se a senha for inválida, renderiza a página de login com erro
-        return res.render('login', { error: 'Email ou senha inválidos' })
+        // return res.render('telaLogin', { error: 'Email ou senha inválidos' })
+        res.send("Email ou senha inválido")
+      }else{
+        console.log('Login deu certo')
       }
 
       // Se o email e a senha forem válidos, cria uma sessão para o usuário
       // Salvando o email e o id do usuário na sessão
-      req.session.user = { email: usuario.email, id: usuario.id };
+      // req.session.user = { email: usuario.email, id: usuario.id };
 
       // Redireciona para a página restrita
-      return res.redirect('/restrito');
+      // return res.redirect('/restrito');
     } catch(error) {
       console.log(error)
     }
