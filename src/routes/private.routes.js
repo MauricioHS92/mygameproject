@@ -1,4 +1,5 @@
 const express = require('express');
+const UserController = require('../controllers/AuthController');
 
 const AuthController = require('../controllers/AuthController');
 
@@ -27,7 +28,7 @@ router.delete('/checkout/deletar', comprasController.deletarJogo);
 router.delete('/carrinhoDeCompras/deletar', comprasController.deletarJogo);
 
 
-
+//router.get('/login', AuthController.login)
 
 
 module.exports = router;

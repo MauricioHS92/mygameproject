@@ -7,6 +7,9 @@ const bcrypt = require("bcrypt");
 
 const { User } = require("../../models");
 
+const usuario = require('../models/usuario')
+
+
 const saltRounds = 10;
 
 const UserController = {
@@ -32,10 +35,22 @@ const UserController = {
     });
 
     // Redireciona para a página de login
-    res.redirect("/inscricao");
+    res.redirect("/login");
   },
 
-  renderFormCadastro: (req, res) => {
+    meusDados: (req, res) => {
+      const { id } = req.params;
+      const userDados = usuario.findById(id);
+      res.render('perfilDoUsuarioMeusDados', { userDados });
+  },
+    meuEndereco: (req, res) => {
+      const { id } = req.params;
+      const userEndereco = usuario.findById(id);
+      res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
+  },
+
+  //verificar essa funcao com a existente no authcontroller <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+/*renderFormCadastro: (req, res) => {
     // Verifica se o usuário está logado
     // Ou seja, se existe uma sessão para o usuário
     if (req.session.user != undefined) {
@@ -45,7 +60,7 @@ const UserController = {
 
     // Renderiza a página de cadastro de usuário
     return res.render("formCadastro"); //Talvez seja correto colocar a pagina "inscricao" <<<<<<<<<<<<<<<<<
-  },
+  },*/
 };
 
 module.exports = UserController;

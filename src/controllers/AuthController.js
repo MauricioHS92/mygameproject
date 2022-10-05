@@ -3,42 +3,42 @@
 // (Ex: login, logout)
 // ========================================================
 
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 
-const { User } = require('../../models');
+const { User } = require("../../models");
 
 const UserController = {
   //renderiza a tela de login
   formularioLogin: (req, res) => {
-    res.render('telaLogin');
+    res.render("telaLogin");
   },
 
   login: async (req, res) => {
     try {
       // Pega os dados do usuário do corpo da requisição
-      const { email, senha } = req.body
+      const { email, senha } = req.body;
 
       // Chama a model para buscar um usuário pelo email
-      const usuario = await User.findOne({ where: { email: email } })
+      const usuario = await User.findOne({ where: { email: email } });
 
       // Verifica se o usuário existe
       if (!usuario) {
         // Se não existir, renderiza a página de login com erro
-        // return res.render('telaLogin', { error: 'Email ou senha inválidos' })
-        res.send("Email ou senha inválido")
+        return res.render("telaLogin", { error: "Email ou senha inválidos" });
+        //res.send("Email ou senha inválido")
       }
 
       // Verifica se a senha informada é a mesma que a senha criptografada no db
-      const senhaValida = await User.findOne({ where: { senha: senha } })
+      const senhaValida = await User.findOne({ where: { senha: senha } });
 
       // Verifica se a senha é válida
       if (!senhaValida) {
         // Se a senha for inválida, renderiza a página de login com erro
-        // return res.render('telaLogin', { error: 'Email ou senha inválidos' })
-        res.send("Email ou senha inválido")
-      }else{
-        console.log('Login deu certo')
+        return res.render("telaLogin", { error: "Email ou senha inválidos" });
+        // res.send("Email ou senha inválido")
       }
+      //console.log('Login deu certo')
+      
 
       // Se o email e a senha forem válidos, cria uma sessão para o usuário
       // Salvando o email e o id do usuário na sessão
@@ -46,40 +46,38 @@ const UserController = {
 
       // Redireciona para a página restrita
       // return res.redirect('/restrito');
-    } catch(error) {
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
-  
+    return res.render("telaPrincipalUsuario");
   },
-
 
   logout: (req, res) => {
     // Destroi a sessão do usuário
     req.session.destroy();
 
     // Redireciona para a página inicial
-    return res.redirect('/');
+    return res.redirect("/");
   },
-
 
   renderLogin: (req, res) => {
     // Verifica se o usuário está logado
     // Ou seja, se existe uma sessão para o usuário
     if (req.session.user != undefined) {
       // Se estiver logado, redireciona para a página restrita
-      return res.redirect('/restrito');
+      return res.redirect("/restrito");
     }
 
     // Renderiza a página de login
-    return res.render('login', { error: null });
+    return res.render("login", { error: null });
   },
 
   renderAreaRestrita: (req, res) => {
     // Busca o usuário na sessão
     const user = req.session.user;
     // Renderiza a página restrita passando os dados do usuário logado
-    return res.render('areaRestrita', { user });
-  }
-}
+    return res.render("areaRestrita", { user });
+  },
+};
 
 module.exports = UserController;

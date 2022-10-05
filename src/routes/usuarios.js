@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const usuarioController = require('../controllers/usuarioController')
 const UserController = require('../controllers/UserController')
 const multer = require('multer');
 const path = require('path');
@@ -24,8 +23,8 @@ const multerDiskStorage = multer.diskStorage({
 router.get('/inscricao', UserController.formularioCriacao);
 router.post('/create', UserController.create);
 
-router.get('/meusDados/:id', usuarioController.meusDados);
+router.get('/meusDados/:id', UserController.meusDados);
 
-router.get('/meuEndereco/:id', usuarioController.meuEndereco);
+router.get('/meuEndereco/:id', UserController.meuEndereco);
 
 module.exports = router;
