@@ -49,18 +49,6 @@ const UserController = {
       res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
   },
 
-  //verificar essa funcao com a existente no authcontroller <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-/*renderFormCadastro: (req, res) => {
-    // Verifica se o usuário está logado
-    // Ou seja, se existe uma sessão para o usuário
-    if (req.session.user != undefined) {
-      // Se estiver logado, redireciona para a página restrita
-      return res.redirect("/restrito");
-    }
-
-    // Renderiza a página de cadastro de usuário
-    return res.render("formCadastro"); //Talvez seja correto colocar a pagina "inscricao" <<<<<<<<<<<<<<<<<
-  },*/
-};
+ };
 
 module.exports = UserController;

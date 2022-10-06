@@ -52,32 +52,13 @@ const UserController = {
     return res.render("telaPrincipalUsuario");
   },
 
-  logout: (req, res) => {
+  //logout: (req, res) => {
     // Destroi a sessão do usuário
-    req.session.destroy();
+    //req.session.destroy();
 
     // Redireciona para a página inicial
-    return res.redirect("/");
-  },
-
-  renderLogin: (req, res) => {
-    // Verifica se o usuário está logado
-    // Ou seja, se existe uma sessão para o usuário
-    if (req.session.user != undefined) {
-      // Se estiver logado, redireciona para a página restrita
-      return res.redirect("/restrito");
-    }
-
-    // Renderiza a página de login
-    return res.render("login", { error: null });
-  },
-
-  renderAreaRestrita: (req, res) => {
-    // Busca o usuário na sessão
-    const user = req.session.user;
-    // Renderiza a página restrita passando os dados do usuário logado
-    return res.render("areaRestrita", { user });
-  },
+    //return res.redirect("/");
+  //}
 };
 
 module.exports = UserController;
