@@ -43,8 +43,8 @@ app.use(session({
 //app.use(userIsAuthenticated);
 // Rotas privadas
 //app.use('/', privateRoutes);
-app.use('/', publicRoutes);
 app.use('/', indexRouter);
+app.use('/', publicRoutes);
 app.use('/home', indexRouter);
 app.use('/', usuariosRouter);
 app.use('/', comprasRouter);

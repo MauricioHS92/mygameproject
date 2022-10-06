@@ -50,6 +50,12 @@ id_compras int not null,
 foreign key(id_compras) references compras(id_compra)
 );
 
+create table contato(
+id_contato int not null auto_increment primary key,
+nome varchar(45) not null,
+email varchar(45) not null,
+msg varchar(500) not null
+);
 
 
 

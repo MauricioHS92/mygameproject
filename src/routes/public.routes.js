@@ -44,11 +44,12 @@ router.get('/jogos/:id', jogosController.escolherJogo);
 
 
 //ROTA PARA FALE CONOSCO
-// const contatoController = require('../controllers/contatoController');
+ const contatoController = require('../controllers/contatoController');
 
 
-// router.get('/', contatoController.formularioFaleConosco);
-// router.post('/enviar', contatoController.enviar);
+ router.get('/faleconosco', contatoController.formularioFaleConosco);
+ router.post('/faleconosco', contatoController.create);
+ 
 
 
 

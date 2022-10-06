@@ -35,8 +35,6 @@ router.get('/telaPrincipalUsuario',(req, res) => {
 //   res.render('carrinhoDeCompras');
 // });
 
-
-
 /*router.get('/telaDeJogo',(req, res) => {
   res.render('telaDeJogo');
 });*/
