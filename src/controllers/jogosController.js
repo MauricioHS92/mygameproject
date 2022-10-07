@@ -6,6 +6,7 @@ const jogosController = {
         try {
             const jogos = await Jogo.findAll();
             res.render('telaGradeDeJogos', { jogos });
+            console.log(jogos)
         } catch (error) {
             console.log(error)
         }
@@ -16,7 +17,7 @@ const jogosController = {
     escolherJogo: async (req, res) => {
         try{
             const {id} = req.params;
-            const jogo = await Jogo.findById(id);
+            const jogo = await Jogo.findByPk(id);
             res.render('telaDeJogo', {jogo});
         } catch ( error ) {
             console.log( error )
