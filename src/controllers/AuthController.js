@@ -23,42 +23,40 @@ const UserController = {
 
       // Verifica se o usuário existe
       if (!usuario) {
+        console.log("usuario nao encontrado")
         // Se não existir, renderiza a página de login com erro
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
-        //res.send("Email ou senha inválido")
+      
       }
 
       // Verifica se a senha informada é a mesma que a senha criptografada no db
-      const senhaValida = await User.findOne({ where: { senha: senha } });
+      const senhaValida = bcrypt.compareSync(senha, usuario.senha);
 
       // Verifica se a senha é válida
       if (!senhaValida) {
+        console.log("senhainvalida")
         // Se a senha for inválida, renderiza a página de login com erro
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
-        // res.send("Email ou senha inválido")
+       
       }
-      //console.log('Login deu certo')
-      
-
       // Se o email e a senha forem válidos, cria uma sessão para o usuário
       // Salvando o email e o id do usuário na sessão
-      // req.session.user = { email: usuario.email, id: usuario.id };
+      req.session.user = { email: usuario.email, id: usuario.id_usuario };
 
       // Redireciona para a página restrita
-      // return res.redirect('/restrito');
+      return res.redirect('/telaPrincipalUsuario');
     } catch (error) {
       console.log(error);
     }
-    return res.render("telaPrincipalUsuario");
   },
 
-  //logout: (req, res) => {
+  logout: (req, res) => {
     // Destroi a sessão do usuário
-    //req.session.destroy();
+    req.session.destroy();
 
     // Redireciona para a página inicial
-    //return res.redirect("/");
-  //}
-};
+    return res.redirect("/home");
+  }
+}
 
 module.exports = UserController;

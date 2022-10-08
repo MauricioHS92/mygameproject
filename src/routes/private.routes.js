@@ -1,5 +1,5 @@
 const express = require("express");
-const UserController = require("../controllers/AuthController");
+const UserController = require("../controllers/UserController");
 
 const AuthController = require("../controllers/AuthController");
 
@@ -13,10 +13,9 @@ const router = express.Router();
 // ==================
 
 // Rota para fazer o logout do usuário
-//router.post("/logout", AuthController.logout);
+router.post("/logout", AuthController.logout);
 
 //ROTA PARA COMPRAS
-
 router.get("/checkout", comprasController.checkout);
 router.get("/carrinho", comprasController.carrinho);
 //rota que deleta um jogo na página de checkout
@@ -24,6 +23,6 @@ router.delete("/checkout/deletar", comprasController.deletarJogo);
 //rota que deleta um jogo na página de carrinho
 router.delete("/carrinhoDeCompras/deletar", comprasController.deletarJogo);
 
-//router.get('/login', AuthController.login)
+router.get("/telaPrincipalUsuario", UserController.userPerfil);
 
 module.exports = router;

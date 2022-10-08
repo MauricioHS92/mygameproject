@@ -27,9 +27,9 @@ router.get('/telaCheckout',(req, res) => {
   res.render('telaCheckout');
 });
 
-router.get('/telaPrincipalUsuario',(req, res) => {
-  res.render('telaPrincipalUsuario');
-});
+//router.get('/telaPrincipalUsuario',(req, res) => {
+//  res.render('telaPrincipalUsuario');
+//});
 
 // router.get('/carrinhoDeCompras',(req, res) => {
 //   res.render('carrinhoDeCompras');

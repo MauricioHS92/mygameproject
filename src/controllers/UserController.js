@@ -49,6 +49,10 @@ const UserController = {
       res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
   },
 
+    userPerfil: (req, res) => {
+      res.render("telaPrincipalUsuario");
+  },
+
  };
 
 module.exports = UserController;
