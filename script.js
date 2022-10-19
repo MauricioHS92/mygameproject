@@ -82,16 +82,16 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement
-    const small = form.Control.querySelector("small")
+    const small = formControl.querySelector("small")
     small.innerText = message
-    formControl.className = "input-error"
+    formControl.className = "form-control error"
 }
 
 function setSucessFor(input) {
     const formControl = input.parentElement
-    const small = form.Control.querySelector("small")
+    const small = formControl.querySelector("small")
     small.innerText = message
-    formControl.className = "input success"
+    formControl.className = "form-control success"
 }
 
 
