@@ -26,29 +26,29 @@
 
                     <div>
                         <section class="campo1">
-                            <form method="post" action="/create">
+                            <form id="form" class="form" method="post" action="/create">
                                 <div class="flexdirectioncolumn">
                                     <div class="input">
                                         <label for="email">E-mail: </label>
-                                        <input type="email" id="email" placeholder="digite seu e-mail" name="email" required />
+                                        <input type="email" id="email" placeholder="digite seu e-mail" name="email">
                                         <small>Mensagem de erro</small>
                                     </div>
 
                                     <div class="input">
                                         <label for="email">E-mail: </label>
-                                        <input type="email" id="email" placeholder="digite seu e-mail novamente" name="confirmarEmail" required />
+                                        <input type="email" id="email-confirmation" placeholder="digite seu e-mail novamente" name="confirmarEmail">
                                         <small>Mensagem de erro</small>
                                     </div>
 
                                     <div class="input">
                                         <label for="password">Senha: </label>
-                                        <input type="password" id="password" placeholder="digite a senha" name="senha" required />
+                                        <input type="password" id="password" placeholder="digite a senha" name="senha">
                                         <small>Mensagem de erro</small>
                                     </div>
 
                                     <div class="input">
                                         <label for="password">Senha: </label>
-                                        <input type="password" id="password" placeholder="digite a senha novamente" name="confirmarSenha" />
+                                        <input type="password" id="password-confirmation" placeholder="digite a senha novamente" name="confirmarSenha">
                                         <small>Mensagem de erro</small>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@
                                 <div class="container2">
                                     <div class="input2">
                                         <label for="nome">Nome: </label>
-                                        <input type="name" id="nome" placeholder="digite seu nome" name="nome" required />
+                                        <input type="name" id="nome" placeholder="digite seu nome" name="nome">
                                         <small>Mensagem de erro</small>
                                     </div>
 
@@ -87,7 +87,7 @@
         </main>
 
         <%- include('./partials/footer') %>
-
+        <script src="../../script.js"></script>
 </body>
 
 </html>

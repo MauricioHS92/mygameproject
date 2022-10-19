@@ -1,70 +1,102 @@
-/*const form = document.getElementById("form")
-const username = document.getElementById("username")
+const form = document.getElementById("form")
+const username = document.getElementById("nome")
 const email = document.getElementById("email")
+const emailConfirmation = document.getElementById("email-confirmation")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation")
+const cpf = document.getElementById("cpf")
+const telefone = document.getElementById("telefone")
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
     checkInputs()
 })
 
-function checkInputs(){
+function checkInputs() {
 
-    const usernameValue = username.value 
+    const usernameValue = username.value
     const emailValue = email.value
+    const emailConfirmationValue = emailConfirmation.value
     const passwordValue = password.value
     const passwordConfirmationValue = passwordConfirmation.value
+    const cpfValue = cpf.value
+    const telefoneValue = telefone.value
 
-    if(usernameValue === ""){
-        setErrorFor(username,"O nome de usuário é obrigatório")
-    }else{
+    //verificação do nome
+    if (usernameValue === "") {
+        setErrorFor(username, "O nome de usuário é obrigatório")
+    } else {
         setSucessFor(username)
     }
-
-    if(emailValue === ""){ 
+    //verificação do email
+    if (emailValue === "") {
         setErrorFor(email, "O email é obrigatório")
-    }else if(!checkEmail(emailValue)){
-        setErrorFor(email,"Por favor, digite um email válido")
-    }else{
+    } else if (!checkEmail(emailValue)) {
+        setErrorFor(email, "Por favor, digite um email válido")
+    } else {
         setSucessFor(email)
     }
-
-    if(passwordValue === ""){
-        setErrorFor(password,"A senha é obrigatória")
-    }else if(passwordValue.length < 7){
+    //confirmação de email
+    if (emailConfirmationValue === "") {
+        setErrorFor(emailConfirmation, "O email é obrigatório")
+    } else if (!checkEmail(emailValue)) {
+        setErrorFor(emailConfirmation, "Por favor, digite um email válido")
+    } else if (emailConfirmationValue !== emailValue) {
+        setErrorFor(emailConfirmation, "Emails não conferem")
+    } else {
+        setSucessFor(email)
+    }
+    //verificação da senha
+    if (passwordValue === "") {
+        setErrorFor(password, "A senha é obrigatória")
+    } else if (passwordValue.length < 7) {
         setErrorFor(password, "A senha precisa ter no mínimo 7 caracteres")
-    }else{
+    } else {
         setSucessFor(password)
     }
-
-    if(passwordConfirmationValue === ""){
-        setErrorFor(passwordConfirmation,"A confirmação da senha é obrigatório")
-    }else if(passwordConfirmationValue !== passwordValue){
-        setErrorFor(passwordConfirmationValue,"Senhas não conferem")
-    }else{
+    //verificação da confirmação de senha
+    if (passwordConfirmationValue === "") {
+        setErrorFor(passwordConfirmation, "A confirmação da senha é obrigatório")
+    } else if (passwordConfirmationValue !== passwordValue) {
+        setErrorFor(passwordConfirmationValue, "Senhas não conferem")
+    } else {
         setSucessFor(passwordConfirmation)
+    }
+    //verificação do cpf
+    if (cpfValue === "") {
+        setErrorFor(cpf, "O CPF é obrigatório")
+    } else if (cpfValue < 11) {
+        setErrorFor(cpf, "CPF inválido")
+    } else {
+        setSucessFor(cpf)
+    }
+    //verificação do telefone
+    if (telefoneValue === "") {
+        setErrorFor(telefone, "Informe um número para contato")
+    } else if (telefoneValue < 11) {
+        setErrorFor(telefone, "Número inválido")
+    } else {
+        setSucessFor(telefone)
     }
 }
 
-function setErrorFor(input,message){
+function setErrorFor(input, message) {
     const formControl = input.parentElement
     const small = form.Control.querySelector("small")
     small.innerText = message
-    formControl.className = "input2 error"
+    formControl.className = "input-error"
 }
 
-function setSucessFor(input){
+function setSucessFor(input) {
     const formControl = input.parentElement
     const small = form.Control.querySelector("small")
     small.innerText = message
-    formControl.className = "input2 success"
+    formControl.className = "input success"
 }
 
 
 function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      email
+        email
     )
 }
-*/
