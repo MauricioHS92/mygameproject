@@ -59,26 +59,37 @@ main {
 .input input {
     margin: -20px 0px 0px 0px;
     width: 381px;
-    height: 61px
+    height: 35px;
+    border-radius: 8px;
 }
 
 .input label {
     margin: 0px 0px -20px 0px;
     width: 381px;
-    height: 61px
+    height: 61px;
+    padding: 7px 0 0 3px;
 }
 
 .input2 input {
     margin: -20px 0px 0px 0px;
     width: 381px;
-    height: 61px
+    height: 35px;
+    border-radius: 8px;
+    
 }
 
 .input2 label {
     margin: 0px 0px -20px 0px;
     width: 381px;
-    height: 61px
+    height: 61px;
+    padding: 7px 0 0 3px;
 }
+
+.input2 small, .input small {
+    color: white;  
+    padding: 7px 0 0 3px;  
+}
+
 /* terminar a copia aqui*/
 .botao-voltar {
     margin: 27px 100px 100px 800px;
