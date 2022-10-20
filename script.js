@@ -100,3 +100,11 @@ function checkEmail(email) {
         email
     )
 }
+
+function checkNameLoginUser("login"){
+    if(username == "usuario esta logado") {
+        return "id:nome";
+    }
+}
+
+document.getElementById("login").onclick = "busque no title o valor e alterar para" ("Ola" ${id:nome});
