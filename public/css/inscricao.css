@@ -103,7 +103,7 @@ main {
     border-color: #e74c3c;
 }
 
-.input.error small{
+.input-error small{
     visibility: visible;
     color: #e74c3c
 }
