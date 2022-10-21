@@ -6,8 +6,7 @@ const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation")
 const cpf = document.getElementById("cpf")
 const telefone = document.getElementById("telefone")
-const loginText = document.getElementById("login")
-const loginNamevalue = loginText.value
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -101,11 +100,3 @@ function checkEmail(email) {
         email
     )
 }
-
-function changeNameLogin(){
-    if(req.session.user) {
-        return loginNamevalue.innerText == "validar o email -> pegar id de usuario -> pegar o nome -> retornar para o header";
-    }
-}
-
-//document.getElementById("login").onclick = "busque no title o valor e alterar para" ("Ola" ${id:nome});

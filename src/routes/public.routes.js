@@ -18,7 +18,7 @@ router.get("/inscricao", UserController.formularioCriacao);
 //router.get('/sign-up', UserController.renderFormCadastro);
 
 // Rota para cadastrar um novo usuário
-router.post("/cadastro", UserController.create);
+router.post("/create", UserController.create);
 
 // Renderiza a página inicial de login
 // Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado

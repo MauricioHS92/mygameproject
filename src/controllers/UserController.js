@@ -18,6 +18,7 @@ const UserController = {
   },
 
   create: async (req, res) => {
+    console.log("aqui create");
     // Pega os dados do usuário do corpo da requisição
     const { email, senha, nome, cpf, telefone } = req.body;
 

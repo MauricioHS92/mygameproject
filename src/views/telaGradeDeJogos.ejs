@@ -20,7 +20,7 @@
       <div class="div-principal">
         <h1 class="p">PLAY</h1>
 
-        <% jogos.map(jogo => { %>
+        <% jogos.map(jogo=> { %>
           <div class="jg">
             <a href="/jogos/<%=jogo.id_jogo%>">
               <img class="img" src="/assets/images/<%=jogo.imagem%>" alt="<%=jogo.nome%>">
@@ -29,16 +29,13 @@
               <span>R$<%=jogo.preco %></span>
               <img src="/assets/images/carrinhocompra.png" alt="Carrinho De Compra">
             </div>
-            <!-- <form action="/jogos/salvar " method="POST">
-              <button type="submit" name="">Adicionar ao carrinho</button>
-            </form> -->
-            
+            <button type="submit" name="" <%=`onclick="addItemCart(${jogo})"`%>>Adicionar ao carrinho</button>
           </div>
           <% }) %>
-                  
+
       </div>
     </main>
-
+    <script src="/js/scriptCarrinho.js"></script>
     <%- include('./partials/footer') %>
 
 </body>
