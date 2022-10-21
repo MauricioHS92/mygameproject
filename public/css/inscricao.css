@@ -50,7 +50,7 @@ main {
     
 }
 
-.input2 {
+.input {
     margin: 24px 691px;
     width: 381px;
     height: 61px
@@ -70,7 +70,7 @@ main {
     padding: 7px 0 0 3px;
 }
 
-.input2 input {
+.input input {
     margin: -20px 0px 0px 0px;
     width: 381px;
     height: 35px;
@@ -78,14 +78,14 @@ main {
     
 }
 
-.input2 label {
+.input label {
     margin: 0px 0px -20px 0px;
     width: 381px;
     height: 61px;
     padding: 7px 0 0 3px;
 }
 
-.input2 small, .input small {
+.input small {
     color: white;  
     padding: 7px 0 0 3px;  
 }
@@ -99,7 +99,7 @@ main {
     border-color: #2ecc71;
 }
 
-.input.error {
+.input-error {
     border-color: #e74c3c;
 }
 

@@ -11,7 +11,7 @@ const telefone = document.getElementById("telefone")
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     checkInputs()
-})
+});
 
 function checkInputs() {
 
@@ -79,20 +79,21 @@ function checkInputs() {
     } else {
         setSucessFor(telefone)
     }
-}
+};
 
 function setErrorFor(input, message) {
-    const formControl = input.classList.remove('msg-error')
+    const formControl = input.parentElement
+    formControl.classList.remove('input')
     formControl.classList.add('input-error')
     small.innerText = message
-}
+};
 
 function setSucessFor(input) {
     const formControl = input.parentElement
-    const small = formControl.querySelector("small")
+    formControl.classList.remove("input")
+    formControl.classList.add('input-succes')
     small.innerText = message
-    formControl.className = "form-control success"
-}
+};
 
 
 function checkEmail(email) {
