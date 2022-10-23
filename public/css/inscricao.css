@@ -138,11 +138,11 @@ header {
     visibility: hidden;
 }
 
-.input.success {
+.input-success input {
     border-color: #2ecc71;
 }
 
-.input-error {
+.input-error input {
     border-color: #e74c3c;
 }
 
