@@ -17,77 +17,66 @@
 
     <%- include('./partials/header') %>
 
-        <main>
-            <div class="principal">
-                <div class="container">
-                    <div class="base">
-                        <h1 class="inscreva-se">INSCREVA-SE</h1>
+        <section class="principal">
+            <h1>Inscreva-se</h1>
+            <div class="box-sign-in">
+
+                <form id="form" class="form" method="post" action="/create">
+                    <div class="left-box">
+
+                        <div class="input">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail" name="email">
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <div class="input">
+                            <label for="email">Confirme seu e-mail: </label>
+                            <input type="email" id="email-confirmation" placeholder="Digite seu e-mail novamente"
+                                name="confirmarEmail">
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <div class="input">
+                            <label for="password">Senha: </label>
+                            <input type="password" id="password" placeholder="Digite a senha" name="senha">
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <div class="input">
+                            <label for="password">Confirme sua senha: </label>
+                            <input type="password" id="password-confirmation" placeholder="Digite a senha novamente"
+                                name="confirmarSenha">
+                            <small>Mensagem de erro</small>
+                        </div>
                     </div>
 
-                    <div>
-                        <section class="campo1">
-                            <form id="form" class="form" method="post" action="/create">
-                                <div class="flexdirectioncolumn">
-                                    <div class="input">
-                                        <label for="email">E-mail: </label>
-                                        <input type="email" id="email" placeholder="digite seu e-mail" name="email">
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <div class="input">
-                                        <label for="email">E-mail: </label>
-                                        <input type="email" id="email-confirmation" placeholder="digite seu e-mail novamente" name="confirmarEmail">
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <div class="input">
-                                        <label for="password">Senha: </label>
-                                        <input type="password" id="password" placeholder="digite a senha" name="senha">
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <div class="input">
-                                        <label for="password">Senha: </label>
-                                        <input type="password" id="password-confirmation" placeholder="digite a senha novamente" name="confirmarSenha">
-                                        <small>Mensagem de erro</small>
-                                    </div>
-                                </div>
-
-                                <div class="container2">
-                                    <div class="input">
-                                        <label for="nome">Nome: </label>
-                                        <input type="name" id="nome" placeholder="digite seu nome" name="nome">
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <div class="input">
-                                        <label for="text">Digite seu CPF: </label>
-                                        <input type="text" name="cpf" id="cpf" placeholder="CPF - Apenas Números" name="cpf" required />
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <div class="input">
-                                        <label for="telefone">Telefone </label>
-                                        <input type="text" id="telefone" maxlength="11" placeholder="(xx) xxxxx-xxxx" name="telefone" required/>
-                                        <small>Mensagem de erro</small>
-                                    </div>
-
-                                    <button class="botao-salvar" type="submit" value="Salvar">Salvar</button>
-                                    <!-- <label class="form-label">Imagem de Perfil:</label>
-                                    <input type="file" name="avatar"> -->
-                                    <a href="http://127.0.0.1:5500/pages/home/index.html"><button class="botao-voltar"
-                                            type="button" value="Voltar">Voltar</button></a>
-                                </div>
-                            </form>
-                        </section>
+                    <div class="right-box">
+                        <div class="input">
+                            <label for="nome">Nome: </label>
+                            <input type="name" id="nome" placeholder="Digite seu nome" name="nome">
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <div class="input">
+                            <label for="text">Digite seu CPF: </label>
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF - Apenas Números" name="cpf"
+                                required />
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <div class="input">
+                            <label for="telefone">Telefone </label>
+                            <input type="text" id="telefone" maxlength="11" placeholder="(xx) xxxxx-xxxx"
+                                name="telefone" required />
+                            <small>Mensagem de erro</small>
+                        </div>
+                        <button class="botao-salvar" type="submit" value="Salvar">Salvar</button>
+                        <button class="botao-voltar" type="button" value="Voltar">Voltar</button>
                     </div>
-                </div>
+                </form>
+            </div>
 
 
-        </main>
+        </section>
 
         <%- include('./partials/footer') %>
-        <script src="/js/script.js"></script>
+            <!-- <script src="/js/script.js"></script> -->
 </body>
 
 </html>
