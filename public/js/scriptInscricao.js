@@ -1,6 +1,29 @@
-const username = document.querySelector("#nome");
-const usernameValue = username.value
-console.log(usernameValue)
+window.onload = function() {
+    
+    
+    //focus
+    let fieldSenha = document.getElementById('password')
+    //'escutando' o evento e aplicando uma ação
+    fieldSenha.addEventListener('focus', () => {
+        passwordInstruction()
+    })
+    function passwordInstruction() {
+        let fieldInput = document.querySelector('#password-msg')
+        fieldInput.innerText = 'Mínimo 6 caracteres'
+        fieldInput.style.visibility = 'visible'
+    }
+   
+}
+
+// let fieldInput = document.querySelector('.password')
+//         fieldInput.style.borderColor = 'green'
+
+
+
+
+// const username = document.getElementById("nome");
+// const usernameValue = username.value
+// console.log(username)
 
 // form.addEventListener('submit', (e) => {
 //     e.preventDefault()
@@ -137,3 +160,4 @@ console.log(usernameValue)
 //         email
 //     )
 // }
+
