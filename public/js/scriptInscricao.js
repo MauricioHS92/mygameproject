@@ -1,19 +1,33 @@
-window.onload = function() {
+
+    //focus -- instruções para os campos telefone e senha
+    let fieldPassword = document.getElementById('password')
+    let fieldPhone = document.getElementById('telefone')
     
-    
-    //focus
-    let fieldSenha = document.getElementById('password')
-    //'escutando' o evento e aplicando uma ação
-    fieldSenha.addEventListener('focus', () => {
+    //'escutando' os eventos e aplicando uma ação
+    fieldPassword.addEventListener('focus', () => {
         passwordInstruction()
+        
     })
+    fieldPhone.addEventListener('focus', () => {
+        phoneInstruction()
+    })
+
+
     function passwordInstruction() {
         let fieldInput = document.querySelector('#password-msg')
         fieldInput.innerText = 'Mínimo 6 caracteres'
+        fieldInput.style.color = 'black'
         fieldInput.style.visibility = 'visible'
     }
+
+    function phoneInstruction() {
+        let fieldPhoneInput = document.querySelector('#telefone-msg')
+        fieldPhoneInput.innerText = 'Não esqueça o código da área'
+        fieldPhoneInput.style.color = 'black'
+        fieldPhoneInput.style.visibility = 'visible'
+    }
    
-}
+
 
 // let fieldInput = document.querySelector('.password')
 //         fieldInput.style.borderColor = 'green'
