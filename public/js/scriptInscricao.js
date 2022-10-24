@@ -26,7 +26,46 @@
         fieldPhoneInput.style.color = 'black'
         fieldPhoneInput.style.visibility = 'visible'
     }
-   
+    
+    //focus para manipular as bordas
+    // let fields = document.getElementById('form')
+    let password = document.getElementById('password')
+    // let fields = document.getElementsByClassName('input-field')
+
+    password.addEventListener('focus', (e) => {
+        e.preventDefault()
+        userDatas()
+        
+    })
+
+    
+
+    function userDatas() {
+        let passwordValue = password.value
+
+        if(passwordValue.length <= 5) {
+            setFieldError()
+        } else{
+            setFieldSucces()
+        }
+
+
+    }
+
+    function setFieldError() {
+        // const fieldControl = input.parentElement
+        // fieldControl.classList.replace('input', 'field-error')
+        let fieldPasswordError = document.querySelector('#password')
+        fieldPasswordError.style.borderColor = 'red'
+    }
+
+    function setFieldSucces() {
+        // const fieldControl = input.parentElement
+        // fieldControl.classList.replace('input', 'field-succes')
+        let fieldPasswordSucces = document.querySelector('#password')
+        fieldPasswordSucces.style.borderColor = 'green'
+    }
+
 
 
 // let fieldInput = document.querySelector('.password')

@@ -135,7 +135,7 @@ header {
 
 }
 
-.form small{
+.form small {
     position: absolute;
     visibility: hidden;
 }
@@ -148,9 +148,17 @@ header {
     border-color: #e74c3c;
 }
 
-.input-error small{
+.input-error small {
     visibility: visible;
     color: #e74c3c
+}
+
+.field-succes input {
+    border-color: green;
+}
+
+.field-error input {
+    border-color: red;
 }
 
 
