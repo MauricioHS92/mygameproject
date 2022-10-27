@@ -1,7 +1,10 @@
 const email = document.querySelector(".email");
+const validator = document.querySelector(".div-pai")
 
-email.addEventListener("submit", () => {
+validator.addEventListener("submit", (e) => {
+    preventDefault(e)
     checkValues()
+    
 });
 
 function checkValues() {
