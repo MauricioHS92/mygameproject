@@ -75,7 +75,6 @@ div#slide figure {
 */
 body{
     justify-content: center;
-    
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +87,7 @@ main {
     justify-content: center;
     padding: 0 30px;
     flex-direction: column;
-}
+    }
 
 /* #sider relacionado a minha página inteira */
 #slider {
@@ -97,6 +96,9 @@ main {
     height: 250vw;
     max-height: 350px;
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 /* #sider relacionado a minha imagem */
 #slider img{
