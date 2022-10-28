@@ -14,11 +14,19 @@ form.addEventListener("submit", (e) => {
 
 function checkValues() {
     let userEmailValue = email.value
+    let userNameValue = name.value
+
     if (userEmailValue === "" || !userEmailValue) {
         showEmailError()
         return false
     }
-    return true
+
+    
+    if (userNameValue === "" || !userNameValue) {
+        showNameError()
+        return false
+    }
+        return true
 };
 
 function showEmailError() {
@@ -26,22 +34,7 @@ function showEmailError() {
     emailError.innerText = "Campo Obrigatório"
 };
 
-
-
-
-
-/*
-input.onblur = function() {
-    if (!input.value.includes('@')) {
-    input.classList.add('invalid');
-    error.innerHTML = "Insira um e-mail válido."
-    }
-};
-
-input.onfocus = function() {
-    if (this.classList.contains("invalid")) {
-    this.classList.remove("invalid");
-    error.innerHTML = "";
-    }
-};
-*/
+function showNameError() {
+    name.style.borderColor = "red"
+    nameError.innerText = "Campo Obrigatório"
+}
