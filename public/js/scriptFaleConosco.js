@@ -1,23 +1,32 @@
-const email = document.querySelector(".email");
-const validator = document.querySelector(".div-pai")
+const { formatNamedParameters } = require("sequelize/types/utils");
 
-validator.addEventListener("submit", (e) => {
-    preventDefault(e)
-    checkValues()
-    
+const email = document.querySelector("#email");
+const name = document.querySelector("#name");
+const emailError = document.querySelector("#email-error");
+const nameError = document.querySelector("#name-error");
+const form = document.querySelector(".formulario");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const result = checkValues() 
+    if (result) form.submit()
 });
 
 function checkValues() {
     let userEmailValue = email.value
-    if (userEmailValue === "") {
-        fieldError()
+    if (userEmailValue === "" || !userEmailValue) {
+        showEmailError()
+        return false
     }
+    return true
 };
 
-function fieldError() {
-    let fieldEmail = document.getElementById("email")
-    fieldEmail.style.borderColor = "red"
+function showEmailError() {
+    email.style.borderColor = "red"
+    emailError.innerText = "Campo Obrigatório"
 };
+
+
 
 
 
