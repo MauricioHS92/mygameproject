@@ -2,12 +2,16 @@
 
 let time = 2000, //o tempo que eu quero de rotação
     currentImageIndex = 0, // a primeira imagem é zero
-    images = document.querySelectorAll("#slider img"); // pegas as imagens
-    max = images.length; // máximo de imagens que existe pra mim 
+    images1 = document.querySelectorAll("#slider1 img"), // pegas as imagens
+    images2 = document.querySelectorAll("#slider2 img"), // pegas as imagens
+    images3 = document.querySelectorAll("#slider3 img"), // pegas as imagens
+    max = images1.length; // máximo de imagens que existe pra mim 
 
 function nextImage() { //ele vai puxar a próxima imagem
 
-    images[currentImageIndex].classList.remove("selected");
+    images1[currentImageIndex].classList.remove("selected");
+    images2[currentImageIndex].classList.remove("selected");
+    images3[currentImageIndex].classList.remove("selected");
     //remover a classe do elemento atual , para as outras imagens
     //irem adicionando 
     currentImageIndex++; //incrementamos uma imagem para ela ir trocando
@@ -17,7 +21,9 @@ function nextImage() { //ele vai puxar a próxima imagem
     //eu reseto ele, e ele volta para a sua posição 0
     //(e então nosso banner fica rotativo)
         currentImageIndex = 0;
-    images[currentImageIndex].classList.add("selected");
+    images1[currentImageIndex].classList.add("selected");
+    images2[currentImageIndex].classList.add("selected");
+    images3[currentImageIndex].classList.add("selected");
 }
 
 function start() { 
@@ -30,8 +36,8 @@ function start() {
 
 window.addEventListener("load", start);
 
-function changingClassName() {
+function changingClassName(selector) {
 
-    let variavelNova = document.querySelector('#slider')
+    let variavelNova = document.querySelector(selector)
     variavelNova.classList.add('zoomSlider');
 }
