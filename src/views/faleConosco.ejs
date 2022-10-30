@@ -21,14 +21,20 @@
                 <div class="div-principal">
                     <h1>Fale Conosco</h1>
                     <div class="nameemail">
-                    <form class="formulario" action="/faleconosco" method="post">
+                    <form class="formulario" id="formulario" action="/faleconosco" method="post">
                         <div class="name">
                             <label for="name">Nome: </label>
-                            <input type="text" id="name" placeholder="Digite seu nome" name="nome"required/>
+                            <div>
+                                <input type="text" id="name" placeholder="Digite seu nome" name="nome">
+                                <span id="name-error"></span>
+                            </div>
                         </div>
                         <div class="email">
                             <label for="email">Email: </label>
-                            <input type="text" id="email" placeholder="Digite seu email" name="email"required/>
+                            <div>
+                                <input type="text" id="email" placeholder="Digite seu email" name="email">
+                                <span id="email-error"></span>
+                            </div>
                         </div>
                     </div>
                         <textarea maxlength="1000" minlength="30" placeholder="Escreva Aqui..." name="msg"class="textarea"></textarea>
@@ -43,7 +49,7 @@
         </section>
     </main>
     <%- include('./partials/footer') %>
-
+    <script src="/js/scriptFaleConosco.js"></script>
 </body>
 
 </html>
