@@ -2,35 +2,24 @@
     //focus -- instruções para os campos telefone e senha
     let fieldPassword = document.getElementById('password')
     let fieldPhone = document.getElementById('telefone')
+    let password = document.getElementById('password')
+    let form = document.getElementById('form')
+    let email = document.getElementById('email')
     
     //'escutando' os eventos e aplicando uma ação
     fieldPassword.addEventListener('focus', () => {
         passwordInstruction()
         
     })
+
     fieldPhone.addEventListener('focus', () => {
         phoneInstruction()
     })
 
-
-    function passwordInstruction() {
-        let fieldInput = document.querySelector('#password-msg')
-        fieldInput.innerText = 'Mínimo 6 caracteres'
-        fieldInput.style.color = 'black'
-        fieldInput.style.visibility = 'visible'
-    }
-
-    function phoneInstruction() {
-        let fieldPhoneInput = document.querySelector('#telefone-msg')
-        fieldPhoneInput.innerText = 'Não esqueça o código da área'
-        fieldPhoneInput.style.color = 'black'
-        fieldPhoneInput.style.visibility = 'visible'
-    }
-    
-    //focus para manipular as bordas
-    // let fields = document.getElementById('form')
-    let password = document.getElementById('password')
-    // let fields = document.getElementsByClassName('input-field')
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        checkDatas()
+    })
 
     password.addEventListener('focus', (e) => {
         e.preventDefault()
@@ -38,33 +27,66 @@
         
     })
 
-    
+    //mensagem de instrução de senha
+    function passwordInstruction() {
+        let fieldInput = document.querySelector('#password-msg')
+        fieldInput.innerText = 'Mínimo 6 caracteres'
+        fieldInput.style.color = 'black'
+        fieldInput.style.visibility = 'visible'
+    }
+    //mensagem de instrução de telefone
+    function phoneInstruction() {
+        let fieldPhoneInput = document.querySelector('#telefone-msg')
+        fieldPhoneInput.innerText = 'Não esqueça o código da área'
+        fieldPhoneInput.style.color = 'black'
+        fieldPhoneInput.style.visibility = 'visible'
+    }
 
+    //validação de caracteres do campo senha - retorna de bordas vermelhas ou verdes
     function userDatas() {
         let passwordValue = password.value
 
-        if(passwordValue.length <= 5) {
-            setFieldError()
-        } else{
-            setFieldSucces()
+        if( passwordValue.length <= 5 ) {
+            let fieldPasswordError = document.querySelector('#password')
+            fieldPasswordError.style.borderColor = 'red'
+        } else {
+            let fieldPasswordSucces = document.querySelector('#password')
+            fieldPasswordSucces.style.borderColor = 'green'
         }
 
 
     }
 
-    function setFieldError() {
-        // const fieldControl = input.parentElement
-        // fieldControl.classList.replace('input', 'field-error')
-        let fieldPasswordError = document.querySelector('#password')
-        fieldPasswordError.style.borderColor = 'red'
+    function checkDatas() {
+        const emailValue = email.value
+
+        if( !emailValue.includes('@') ) {
+            setErrorEvent(email, "Email inválido")
+        }
+
+        if( !emailValue == '' ) {
+            
+        }
     }
 
-    function setFieldSucces() {
-        // const fieldControl = input.parentElement
-        // fieldControl.classList.replace('input', 'field-succes')
-        let fieldPasswordSucces = document.querySelector('#password')
-        fieldPasswordSucces.style.borderColor = 'green'
+    function setErrorEvent(input, message) {
+        const formControl = input.parentElement
+        const errorMessage = formControl.querySelector('small')
+        errorMessage.innerText = message
+        formControl.className = 'datas error'
     }
+
+    // function setFieldError() {
+    //     // const fieldControl = input.parentElement
+    //     // fieldControl.classList.replace('input', 'field-error')
+        
+    // }
+
+    // function setFieldSucces() {
+    //     // const fieldControl = input.parentElement
+    //     // fieldControl.classList.replace('input', 'field-succes')
+        
+    // }
 
 
 
