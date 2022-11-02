@@ -145,6 +145,10 @@ header {
     color: red;
 }
 
+.datas.error input {
+    border-color: red;
+}
+
 .input-success input {
     border-color: #2ecc71;
 }

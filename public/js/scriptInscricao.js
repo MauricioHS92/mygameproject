@@ -1,18 +1,22 @@
 
     //focus -- instruções para os campos telefone e senha
-    let fieldPassword = document.getElementById('password')
-    let fieldPhone = document.getElementById('telefone')
-    let password = document.getElementById('password')
-    let form = document.getElementById('form')
-    let email = document.getElementById('email')
+    const fieldPassword = document.getElementById('password')
+    const fieldPhone = document.getElementById('telefone')
+    const password = document.getElementById('password')
+    const passwordConfirmation = document.getElementById("password-confirmation")
+    const form = document.getElementById('form')
+    const email = document.getElementById('email')
+    const username = document.getElementById('name')
     
     //'escutando' os eventos e aplicando uma ação
-    fieldPassword.addEventListener('focus', () => {
+    fieldPassword.addEventListener('focus', (e) => {
+        e.preventDefault()
         passwordInstruction()
         
     })
 
-    fieldPhone.addEventListener('focus', () => {
+    fieldPhone.addEventListener('focus', (e) => {
+        e.preventDefault()
         phoneInstruction()
     })
 
@@ -59,13 +63,29 @@
 
     function checkDatas() {
         const emailValue = email.value
+        const passwordConfirmationValue = passwordConfirmation.value
+        const passwordValue = password.value
+        const nameValue = username.value
 
-        if( !emailValue.includes('@') ) {
-            setErrorEvent(email, "Email inválido")
+        if( emailValue === "" ) {
+            setErrorEvent(email, "Email é obrigatório")
         }
 
-        if( !emailValue == '' ) {
-            
+        else if( !emailValue.includes('@') ) {
+            setErrorEvent(email, "Email inválido")
+        }
+        //confirmação de senha
+        if( passwordConfirmationValue === "" ) {
+            setErrorEvent(passwordConfirmation, "Confirme sua senha")
+        }
+
+        else if( passwordConfirmationValue !== passwordValue ) {
+            setErrorEvent(passwordConfirmation, "Senhas não conferem")
+        }
+        
+        //nome
+        if ( nameValue === "" ) {
+            setErrorEvent(username, "Nome é obrigatório")
         }
     }
 
