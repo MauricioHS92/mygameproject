@@ -7,6 +7,9 @@
     const form = document.getElementById('form')
     const email = document.getElementById('email')
     const username = document.getElementById('name')
+    const emailConfirmation = document.getElementById('email-confirmation')
+    const userCpf = document.getElementById('cpf')
+    const phone = document.getElementById('telefone')
     
     //'escutando' os eventos e aplicando uma ação
     fieldPassword.addEventListener('focus', (e) => {
@@ -25,12 +28,6 @@
         checkDatas()
     })
 
-    password.addEventListener('focus', (e) => {
-        e.preventDefault()
-        userDatas()
-        
-    })
-
     //mensagem de instrução de senha
     function passwordInstruction() {
         let fieldInput = document.querySelector('#password-msg')
@@ -46,33 +43,31 @@
         fieldPhoneInput.style.visibility = 'visible'
     }
 
-    //validação de caracteres do campo senha - retorna de bordas vermelhas ou verdes
-    function userDatas() {
-        let passwordValue = password.value
-
-        if( passwordValue.length <= 5 ) {
-            let fieldPasswordError = document.querySelector('#password')
-            fieldPasswordError.style.borderColor = 'red'
-        } else {
-            let fieldPasswordSucces = document.querySelector('#password')
-            fieldPasswordSucces.style.borderColor = 'green'
-        }
-
-
-    }
-
     function checkDatas() {
         const emailValue = email.value
         const passwordConfirmationValue = passwordConfirmation.value
         const passwordValue = password.value
         const nameValue = username.value
+        const emailConfirmationValue = emailConfirmation.value
+        const cpfValue = userCpf.value
+        const phoneValue = phone.value
 
+
+        //email
         if( emailValue === "" ) {
             setErrorEvent(email, "Email é obrigatório")
         }
 
         else if( !emailValue.includes('@') ) {
             setErrorEvent(email, "Email inválido")
+        }
+        //confirmação de email
+        if( emailConfirmationValue === "" ){
+            setErrorEvent(emailConfirmation, "Confirme seu email")
+        }
+        //senha
+        if ( passwordValue === "" || passwordValue <= 5 ) {
+            setErrorEvent(password, "Mínimo 6 caracteres")
         }
         //confirmação de senha
         if( passwordConfirmationValue === "" ) {
@@ -82,10 +77,17 @@
         else if( passwordConfirmationValue !== passwordValue ) {
             setErrorEvent(passwordConfirmation, "Senhas não conferem")
         }
-        
         //nome
         if ( nameValue === "" ) {
             setErrorEvent(username, "Nome é obrigatório")
+        }
+        //cpf
+        if( cpfValue === "" || cpfValue <= 10 ) {
+            setErrorEvent(userCpf, "CPF inválido")
+        }
+        //telefone
+        if( phoneValue === "" || phoneValue <= 10) {
+            setErrorEvent(phone, "Telefone é obrigatório")
         }
     }
 
