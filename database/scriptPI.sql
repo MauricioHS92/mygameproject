@@ -47,7 +47,8 @@ create table jogos_compras (
 id_jogos int not null,
 foreign key(id_jogos) references jogos(id_jogo),
 id_compras int not null,
-foreign key(id_compras) references compras(id_compra)
+foreign key(id_compras) references compras(id_compra),
+preco int not null
 );
 
 create table contato(
