@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataType) => {
     //Const compras será usada no controller
-    const Compras = sequelize.define('Compras', {
+    const Compra = sequelize.define('Compra', {
         //abaixo as colunas e suas configurações
         id_compra: {
             type: DataType.INTEGER,
@@ -9,17 +9,17 @@ module.exports = (sequelize, DataType) => {
         },
         id_usuario: {
             type: DataType.INTEGER,
-            primaryKey: true,
+            foreignKey: true,
             autoIncrement: true
         },
 
         data_compra: DataType.DATE,
-        status_compra: DataType.FLOAT,
+        status_compra: DataType.STRING,
 
     },{
         tableName: 'compras',
         timestamps: false
     })
 
-    return Compras
+    return Compra
 }
