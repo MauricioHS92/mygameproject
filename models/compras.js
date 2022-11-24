@@ -10,7 +10,7 @@ module.exports = (sequelize, DataType) => {
         id_usuario: {
             type: DataType.INTEGER,
             foreignKey: true,
-            autoIncrement: true
+            autoIncrement: false
         },
 
         data_compra: DataType.DATE,
