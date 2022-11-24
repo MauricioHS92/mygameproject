@@ -3,6 +3,7 @@ const router = express.Router();
 
 const comprasController = require('../controllers/comprasController');
 const jogosController = require('../controllers/jogosController');
+const consolesController = require('../controllers/consolesController');
 
 
 router.get('/checkout', comprasController.checkout);
@@ -16,6 +17,10 @@ router.delete('/carrinhoDeCompras/deletar', comprasController.deletarJogo);
 router.get('/jogos', jogosController.trazerJogos);
 //rota para renderizar em uma tela individual o jogo escolhido
 //router.get('/jogos/:id', jogosController.selecionarJogo);
+
+router.get('/consoles', consolesController.trazerConsoles);
+
+
 
 module.exports = router;
 
