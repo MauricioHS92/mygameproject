@@ -2,7 +2,7 @@ body {
     min-height: 100%;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(180deg, #169eda 0%, #0d0d0d 100%); 
+    background-image: linear-gradient(180deg, #0d0d0d 20%, #169eda 50%, #0d0d0d 78%);    
 }
 
 header {
@@ -15,7 +15,6 @@ header {
     width: 100%;
     max-width: 70%;
     height: 500px;
-    background-color: #0d0d0d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +33,7 @@ header {
 }
 
 .box-sign-in {
-    width: 70%;
+    width: 90%;
     height: 500px;
     font-size: 50px;
     background-color: #0d0d0d;

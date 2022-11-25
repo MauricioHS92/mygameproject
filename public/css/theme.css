@@ -276,7 +276,8 @@ footer {
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 300ms ease-in-out;
-    border: none;
+    border-radius: 5px;
+    margin-top: 2px;
 }
 
 .fourth:hover {
