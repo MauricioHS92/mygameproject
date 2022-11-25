@@ -80,13 +80,25 @@
                     <div class="area-pix">
                         <div class="title-pix">PIX</div>
                         <img class="qr-code" src="../../assets/images/imagesCheckout/frame.jpeg" alt="Qr-Code PIX">
-                        <button class="title-scan">Escaneie o código</button>
+                        
+                        <button class="btn-dom">Escaneie o código</button>
+                        <div class="popup-wrapper">
+                            <div class="popup">
+                                <div class="popup-close">x</div>
+                                <div class="popup-content">
+                                    <h2>My New Game agradeçe a preferência!</h2>
+                                    <p>Código do PIX foi copiado! Utilize para efetuar seu pagamento utilizando seu APP de qualquer banco!</p>
+                                    <a class="popup-link" href="/jogos"> Opa! Faltou um jogo!</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <%- include('./partials/footer') %>  
+    <script src="/js/scriptCheckout.js"></script>
 </body>
 
 </html>
