@@ -1,35 +1,11 @@
-body {
-    justify-content: center;
-    
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-end;
-}
-
 main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 30px;
 }
 .principal {
-    /*classe principal que eh pai das classes de containers*/
-    width: 1216px;
-    height: 730px;
-    background-color: #0d0d0d;
-    margin: 160px 112px 160px 112px;
+    margin: 160px 0 160px 0;
+    padding-top: 250px;
 }
-.base {
-    margin: 51px 388px 0px 130px;
-    
-}
-.inscreva-se {
-    width: 320px;
-    height: 120px;
-    font-size: 50px;
-    color: #FFD760;
-}
+
 .tenho-conta{
     width: 320px;
     height: 120px;
@@ -41,14 +17,8 @@ main {
     margin: -300px 388px 0px 635px;
 }
 .container2 {
-    /*classe container que eh pai das classes de input*/
+    width: 400px;
     margin: -190px 0px 0px 0px;
-}
-
-.input {
-    margin: 24px 100px;
-    width: 381px;
-    height: 61px
 }
 
 .input2 {
@@ -57,98 +27,22 @@ main {
     height: 61px
 }
 
-.input input {
-    margin: -20px 0px 0px 0px;
-    width: 381px;
-    height: 61px
-}
-
-.input label {
-    margin: 0px 0px -20px 0px;
-    width: 381px;
-    height: 61px
-}
-
 .input2 input {
     margin: -20px 0px 0px 0px;
     width: 381px;
-    height: 61px
+    height: 61px;
 }
 
 .input2 label {
     margin: 0px 0px -20px 0px;
     width: 381px;
-    height: 61px
-}
-
-.botao-continuar {
-    margin: 27px 10px 10px 300px;
-}
-
-.botao-salvar {
-    margin: 27px 0px 0px 800px;
+    height: 61px;
+    color: #FFD760;
 }
 
 .botao-esqueci-a-senha{
-    margin: 27px 0px 0px 800px;
+    margin: 27px 0px 0px 710px;
 }
 .botao-entrar{
-    margin: 27px 0px 0px 800px;
+    margin: 27px 0px 0px 710px;
 }
-
-.jogos {
-    display: inline-flex;
-}
-
-.descricao-jogos {
-    display: inline-flex;
-}
-
-h2 {
-    text-align: left;
-    font-size: larger;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.descricao {
-    width: 388px;
-    height: 383px;
-    background-color: #D9D9D9;
-    margin: 34px 54px 0px 0px;
-    text-align: left;
-    font-size: 30px;
-}
-
-.img {
-    width: 388px;
-    height: 484px;
-    background-color: #25262C;
-    border-radius: 10px;
-    margin: 0px 54px 0px 0px;
-    margin-left: 0px;
-}
-
-.indicacao-jogos {
-    margin: 390px 0px 0px 150px;
-}
-
-/* tentativa add dom 
-.input2.success i.fa-check-circle{
-    border-color: #2ecc71;
-    visibility: visible;
-}
-.input2.error i.fa-exclamation-circle{
-    border-color: #e74c3c;
-    visibility: visible;
-}
-.input2.error small{
-    visibility: visible;
-    color: #e74c3c;
-}
-.form-control.success input{
-    border-color: #2ecc71;
-}
-.form-control.error input{
-    border-color: #e74c3c;
-}*/
