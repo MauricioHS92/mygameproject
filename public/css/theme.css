@@ -2,7 +2,7 @@
 
 .faixa {
     margin-right: 300px;
-    background-color: #25262C;
+    background-color: #0d0d0d;
     margin-bottom: 2px;
     height: 60px;
     display: flex;
@@ -94,7 +94,7 @@
 /* CARRINHO DE COMPRAS */
 
 #carrinho {
-    background-color: #FFD760;
+    background-color: #f2f2f2;
     border-radius: 12.2791px;
     margin: 16px 30px 16px 30px;
     width: 50px;
@@ -104,10 +104,10 @@
 /* FAIXA AMARELA */
 
 .segundafaixa {
-    background-color: #25262C;
+    background-color: #0d0d0d;
     margin-bottom: 2px;
     margin-top: 100px;
-    border-top: solid 2px #FFD760;
+    border-top: solid 2px #169eda;
 
 }
 
@@ -117,7 +117,13 @@
     justify-content: space-evenly;
     list-style-type: none;
     margin-bottom: -2px;
-    border-bottom: solid 1px #25262C;
+    border-bottom: solid 1px #0d0d0d;
+    color: #0d0d0d;
+
+}
+
+.principal {
+    border-radius: 50px;
 }
 
 html {
@@ -136,23 +142,23 @@ body {
 header {
     font-family: 'Inter', 'roboto' sans-serif;
     width: 100%;
-    background-color: #25262C;
+    background-color: #0d0d0d;
 }
 
 main {
     font-family: 'Inter', 'roboto' sans-serif;
     width: 100%;
-    background: linear-gradient(180deg, #FFD760 0%, #B32424 100%);    
+    background-image: linear-gradient(180deg, #0d0d0d 0%, #169eda 50%, #0d0d0d 100%);    
 }
 
 footer {
     font-family: 'Inter', 'roboto' sans-serif;
     width: 100%;
-    background-color: #25262C;
+    background-color: #0d0d0d;
 }
 
 .base {
-    background-color: #25262C;
+    background-color: #0d0d0d;
 }
 
 .destaques {
@@ -161,13 +167,13 @@ footer {
 
 .inscreva-se {
     font-family: 'Inter', 'roboto' sans-serif;
-    color: #FFD760;
+    color: #f2f2f2;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tenho-conta {
     font-family: 'Inter', 'roboto' sans-serif;
-    color: #FFD760;
+    color: #f2f2f2;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -236,11 +242,11 @@ footer {
 }
 
 .input label {
-    color: #FFD760;
+    color: #f2f2f2;
     text-shadow: white;
 }
 .input2 label {
-    color: #FFD760;
+    color: #f2f2f2;
     text-shadow: white;
 }
 
@@ -252,7 +258,7 @@ footer {
     height: 30px;
     text-align: center;
     font-size: 15px;
-    background-color: #FFD760;
+    background-color: #f2f2f2;
     font-weight: bold;
     border-top: none;
     display: flex;
@@ -262,23 +268,25 @@ footer {
 
 /*estilização dos botões do menu*/
 .fourth {
-    border-color: #f1c40f;
-    color: #fff;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    border-color: #ffcd39;
+    color: #0d0d0d;
+    background-image: -webkit-linear-gradient(45deg, #ffcd39 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #ffcd39 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 300ms ease-in-out;
+    border: none;
 }
 
 .fourth:hover {
     background-position: 0;
+    color: #f2f2f2;
 }
 
 .fourth a {
     text-decoration: none;
-    color: #25262C;
+    color: #0d0d0d;
 }
 
 /* estilo do botao fale-conosco e cadastro/login */
@@ -343,21 +351,21 @@ footer {
 
 .sobre {
     font-size: 15px;
-    color: white;
+    color: #f2f2f2;
 }
 
 .titulos {
     font-size: 20px;
-    color: white;
+    color: #ffcd39;
 }
 
 .desenvolvedores {
-    color: white;
+    color: #f2f2f2;
 }
 
 .lista-desenvolvedores a {
     text-decoration: none;
-    color: white;
+    color: #f2f2f2;
     font-size: 15px;
 }
 
@@ -365,6 +373,7 @@ footer {
     width: 384px;
     height: 200px;
     display: inline-block;
+    color: #0d0d0d;
 }
 
 .logodh {
@@ -376,11 +385,13 @@ footer {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    color: #0d0d0d;
 }
 
 .icones-redessociais {
     display: flex;
     justify-content: space-around;
+    color: #0d0d0d;
 }
 
 .redes-sociais img {
@@ -390,7 +401,7 @@ footer {
 }
 
 .textoredesocial {
-    color: white;
+    color: #0d0d0d;
     font-size: 15px;
     width: 62px;
     height: 19px;
@@ -466,6 +477,7 @@ footer {
     }
     .box-1 {
         display:none;
+        color: #0d0d0d;
     }
     
     .sobre {
@@ -497,13 +509,14 @@ footer {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
+        color: #0d0d0d;
     }
     
     .icones-redessociais {
         display: flex;
         justify-content: space-around;
         margin-bottom: 25px;
-        border: 1px solid #FFD760;
+        border: 1px solid #0d0d0d;
         padding: 0px 0px 4px 0px;
         border-radius: 5px;
     }
@@ -515,7 +528,7 @@ footer {
     }
     
     .textoredesocial {
-        color: white;
+        color: #0d0d0d;
         font-size: 15px;
         width: 62px;
         height: 19px;

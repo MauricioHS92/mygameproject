@@ -17,7 +17,7 @@ main {
     /*classe principal que eh pai das classes de containers*/
     width: 1216px;
     height: 730px;
-    background-color: #25262C;
+    background-color: #0d0d0d;
     margin: 160px 112px 160px 112px;
 }
 .base {

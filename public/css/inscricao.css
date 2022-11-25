@@ -2,6 +2,7 @@ body {
     min-height: 100%;
     width: 100%;
     justify-content: center;
+    background: linear-gradient(180deg, #169eda 0%, #0d0d0d 100%); 
 }
 
 header {
@@ -10,10 +11,11 @@ header {
 
 .principal {
     /*classe principal que eh pai das classes de containers*/
+    margin: 13.5%;
     width: 100%;
-    max-width: 100%;
-    height: 730px;
-    background-color: #25262C;
+    max-width: 70%;
+    height: 500px;
+    background-color: #0d0d0d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +23,8 @@ header {
 }
 
 .principal h1 {
-    color: white;
+    padding-top: 5px;
+    color: #ffffff;
 }
 
 .form {
@@ -34,7 +37,7 @@ header {
     width: 70%;
     height: 500px;
     font-size: 50px;
-    background-color: #FFD760;
+    background-color: #0d0d0d;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +46,7 @@ header {
 
 .box-sign-in .datas {
     font-size: 16px;
+    color: #169eda;
 }
 
 .left-box, .right-box {
@@ -84,6 +88,7 @@ header {
     color: rgb(0, 0, 0);
     padding-left: 3px;
     margin-bottom: 0;
+    color: #ffcd39;
     
 }
 
