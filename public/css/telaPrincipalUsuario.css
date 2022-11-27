@@ -4,13 +4,16 @@ main {
 }
 
 .div-pai {
-    width: 1297px;
-    height: 732px;
+    margin: 150px 0 120px 500px;
+    height: 550px;
+    width: 500px;
     display: inline-flex;
+    background-color: black;
+    border-radius: 50px;
 }
 
 .perfil-usuario {
-    padding-left: 530px;
+    margin-left: 15px;
 }
 
 .paragrafo {                            /*Título dos dados*/
@@ -21,8 +24,10 @@ main {
     text-shadow: 2px 2px #000000;
     padding-left: 80px;
     padding-top: 50px;
-    margin: 35px 67.5px 86px 58px; /*249px 72px 1599px 71px;*/
     display: inline-flex;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    text-align: center;
 }
 
 .meus-dados {                           /*Campo dos meus dados*/
