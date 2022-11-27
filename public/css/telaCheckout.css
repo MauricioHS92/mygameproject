@@ -27,9 +27,7 @@ header{
     width: 1200px;
     max-width: 89%;
     height: 550px;
-    background-color: #25262C;
     mix-blend-mode: hard-light;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 45px;
     display: flex;
     flex-direction: row;
@@ -38,15 +36,15 @@ header{
 }
 
 .itens {
-    background-color: rgb(207, 196, 196);
+    background-color: #000000;
     border-radius: 30px;
-    width: 800px;
     max-width: 60%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
+    justify-items: center;
 }
 
 .pix {
@@ -126,7 +124,14 @@ header{
 }
 
 .voltar button {
-    background-color: rgba(197, 178, 6, 0.945);
+    background-color: #ffcd39;
+    width: 190px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.confirmar button {
+    background-color: rgba(0, 255, 25, 1);
     width: 190px;
     height: 30px;
     margin-top: 10px;
@@ -141,9 +146,9 @@ button {
 .area-pix{
     width: 300px;
     height: 50vh;
-    background-color: #25262C;
+    background-color: #000000;
     mix-blend-mode: hard-light;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
     border-radius: 45px;
     display: flex;
     flex-direction: column;
@@ -155,7 +160,7 @@ button {
     width: 200px;
     height: 10vh;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
     margin: 20px 55px 0px 55px;
     padding-top: 5px;
     display: flex;
@@ -219,4 +224,41 @@ button {
     top: 5px;
     right: 5px;
     cursor: pointer;
+}
+
+/* Implementacao da tabela abaixo */
+
+.tabela {
+    color: #ffffff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 650px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+table td,
+table th {
+    border: 1px solid #ffcd39;
+    padding: 5px;
+    text-align: left;
+}
+
+table caption {
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+tfoot td,
+table th {
+    background: #169eda;
+}
+
+tfoot {
+    font-style: italic;
 }

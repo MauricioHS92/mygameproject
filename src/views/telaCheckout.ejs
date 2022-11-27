@@ -15,16 +15,16 @@
 
 <body>
     <%- include('./partials/header') %>
-    
 
-    <main>
 
-        <section class="checkout-pai">
+        <main>
 
-            <div class="item-list-checkout">
-                <div class="itens"> 
-                    
-                    <div class="linha1">
+            <section class="checkout-pai">
+
+                <div class="item-list-checkout">
+                    <div class="itens">
+
+                        <!-- <div class="linha1">
                         <div id="item1"><p>Item 1</p></div>
                         <div id="botao-pedido1">
                             <button type="submit">-</button></form>
@@ -68,37 +68,128 @@
                             </form>
                         </div>
                     </div>
+                    -->
 
-                    <div class="botoes">
-                        <div class="total"><p>Total</p></div>
-                        <div class="voltar">
-                                <form action=""method=""><button type="submit"><p>Voltar</p></button></form>
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Excluir</th>
+                                    <!-- link de onde tirei a implementacao do deletar
+                                    https://cursos.alura.com.br/forum/topico-removendo-com-o-clique-em-um-botao-remover-62746-->
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item</td>
+                                    <td> <input type="number" id="number" name="number" min="0" max="99" step="1"
+                                            required>
+                                    </td>
+                                    <td>
+                                        <button class="remocao" data-ref="linha-1">Remover</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                <tr>
+                                    <td colspan="2" rowspan="2"></td>
+                                    <td>TOTAL: </td>
+                                </tr>
+                                <tr>
+                                    <td>R$ </td>
+                                </tr>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+
+                        <div class="botoes">
+                            <!--<div class="total">
+                                <p>Total</p>
+                            </div>-->
+                            <form class="confirmar" action="" method=""><button type="submit">
+                                <p>Confirmar</p>
+                            </button></form>
+                            <div class="voltar">
+                                <form action="" method=""><button type="submit">
+                                        <p>Voltar</p>
+                                    </button></form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pix">
-                    <div class="area-pix">
-                        <div class="title-pix">PIX</div>
-                        <img class="qr-code" src="../../assets/images/imagesCheckout/frame.jpeg" alt="Qr-Code PIX">
-                        
-                        <button class="btn-dom">Escaneie o código</button>
-                        <div class="popup-wrapper">
-                            <div class="popup">
-                                <div class="popup-close">x</div>
-                                <div class="popup-content">
-                                    <h2>My New Game agradeçe a preferência!</h2>
-                                    <p>Código do PIX foi copiado! Utilize para efetuar seu pagamento utilizando seu APP de qualquer banco!</p>
-                                    <a class="popup-link" href="/jogos"> Opa! Faltou um jogo!</a>
+                    <div class="pix">
+                        <div class="area-pix">
+                            <div class="title-pix">PIX</div>
+                            <img class="qr-code" src="../../assets/images/imagesCheckout/frame.jpeg" alt="Qr-Code PIX">
+
+                            <button class="btn-dom">Escaneie o código</button>
+                            <div class="popup-wrapper">
+                                <div class="popup">
+                                    <div class="popup-close">x</div>
+                                    <div class="popup-content">
+                                        <h2>My New Game agradeçe a preferência!</h2>
+                                        <p>Código do PIX foi copiado! Utilize para efetuar seu pagamento utilizando seu
+                                            APP de qualquer banco!</p>
+                                        <a class="popup-link" href="/jogos"> Opa! Faltou um jogo!</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <%- include('./partials/footer') %>  
-    <script src="/js/scriptCheckout.js"></script>
+            </section>
+        </main>
+        <%- include('./partials/footer') %>
+            <script src="/js/scriptCheckout.js"></script>
 </body>
 
 </html>
