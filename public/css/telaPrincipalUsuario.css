@@ -6,7 +6,7 @@ main {
 .div-pai {
     width: 1297px;
     height: 732px;
-    display: inline-flex;   
+    display: inline-flex;
 }
 
 .perfil-usuario {
@@ -18,6 +18,7 @@ main {
     height: 120px;
     font-size: 50px;
     color: #ffcd39;
+    text-shadow: 2px 2px #000000;
     padding-left: 80px;
     padding-top: 50px;
     margin: 35px 67.5px 86px 58px; /*249px 72px 1599px 71px;*/

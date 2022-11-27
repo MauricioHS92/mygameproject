@@ -128,7 +128,7 @@
 
 html {
     width: 100%;
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     
@@ -136,23 +136,33 @@ html {
 
 body {    
     width: 100%;
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     background-color: #0d0d0d;
 }
 
 main {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
-    background-image: linear-gradient(180deg, #0d0d0d 0%, #169eda 50%, #0d0d0d 100%);    
+    background-image: radial-gradient(
+      at 88% 0%,
+      hsla(327, 67%, 64%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 63% 46%, hsla(307, 76%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 95% 53%, hsla(89, 91%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 83%, hsla(170, 86%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 74% 93%, hsla(71, 93%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 13%, hsla(110, 83%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 30% 80%, hsla(263, 79%, 66%, 1) 0px, transparent 50%);
 }
 
 footer {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     background-color: #0d0d0d;
 }
@@ -162,17 +172,17 @@ footer {
 }
 
 .destaques {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .inscreva-se {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #f2f2f2;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tenho-conta {
-    font-family: 'Inter', 'roboto' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #f2f2f2;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

@@ -2,9 +2,10 @@ main {
     display: flex;
 }
 .principal {
-    margin: 160px 0 160px 0;
     padding-top: 250px;
 }
+
+
 
 .tenho-conta{
     width: 320px;
@@ -14,21 +15,24 @@ main {
     color: #FFD760;
 }
 .base2 {
-    margin: -300px 388px 0px 635px;
+    margin: -300px 388px 0px 90px;
 }
+
 .container2 {
-    width: 400px;
-    margin: -190px 0px 0px 0px;
+    margin: 150px 0 100px 500px;
+    height: 550px;
+    width: 500px;
+    background-color: black;
+    border-radius: 50px;
 }
 
 .input2 {
-    margin: 24px 600px;
+    margin: 50px;
     width: 381px;
     height: 61px
 }
 
 .input2 input {
-    margin: -20px 0px 0px 0px;
     width: 381px;
     height: 61px;
 }
@@ -45,8 +49,8 @@ main {
 }
 
 .botao-esqueci-a-senha{
-    margin: 27px 0px 0px 710px;
+    margin: 27px 0px 0px 170px;
 }
 .botao-entrar{
-    margin: 27px 0px 0px 710px;
+    margin: 27px 0px 0px 170px;
 }

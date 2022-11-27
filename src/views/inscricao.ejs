@@ -17,7 +17,7 @@
 
     <%- include('./partials/header') %>
 
-        <section class="principal">
+        <!-- <section class="principal">
             <h1>Inscreva-se</h1>
             <div class="box-sign-in">
 
@@ -70,6 +70,23 @@
             </div>
 
 
+        </section> -->
+
+        <section class="principal">
+            <div class="card">
+                <img class="logo" src="/assets/images/logo.png" />
+                <h2>Cire sua conta</h2>
+                <form class="form">
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Senha" />
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <footer>
+                    Ja possui cadastro?
+                    <a href="#">Clique Aqui</a>
+                </footer>
+            </div>
         </section>
 
         <%- include('./partials/footer') %>
