@@ -10,7 +10,7 @@ const { User } = require("../../models");
 const AuthController = {
   //renderiza a tela de login
   formularioLogin: (req, res) => {
-    res.render("telaLogin");
+    res.render("telaLogin", { error: null });
   },
 
   login: async (req, res) => {
@@ -23,7 +23,6 @@ const AuthController = {
 
       // Verifica se o usuário existe
       if (!usuario) {
-        console.log("usuario nao encontrado")
         // Se não existir, renderiza a página de login com erro
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
       

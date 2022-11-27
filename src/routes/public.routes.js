@@ -13,10 +13,6 @@ const router = express.Router();
 //Rota para renderizar o formulario de inscricao
 router.get("/inscricao", UserController.formularioCriacao);
 
-// Renderiza a página de cadastro de usuário
-// Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado
-//router.get('/sign-up', UserController.renderFormCadastro);
-
 // Rota para cadastrar um novo usuário
 router.post("/create", UserController.create);
 

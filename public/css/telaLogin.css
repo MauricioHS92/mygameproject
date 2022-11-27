@@ -40,6 +40,10 @@ main {
     color: #FFD760;
 }
 
+.input2 small {
+    visibility: hidden;
+}
+
 .botao-esqueci-a-senha{
     margin: 27px 0px 0px 710px;
 }
