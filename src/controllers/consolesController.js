@@ -4,9 +4,6 @@ const consolesController = {
     trazerConsoles: async (req, res) => {
       try {
         const consoles = await Console.findAll();
-        const consolesDatabase = consoles.map(console => {
-          console.id_console, console.nome, console.imagem, console.preco;
-        });
         res.render("telaGradeDeConsoles", { consoles });
         console.log(consoles);
       } catch (error) {
