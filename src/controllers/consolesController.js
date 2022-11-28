@@ -11,6 +11,7 @@ const consolesController = {
       }
     },
 
+    
     //Criando método de selecionar o console
   escolherConsole: async (req, res) => {
     try {
