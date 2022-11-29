@@ -9,8 +9,7 @@ module.exports = (sequelize, DataType) => {
         },
         id_usuario: {
             type: DataType.INTEGER,
-            autoIncrement: false
-        },
+            },
 
         data_compra: DataType.DATE,
         status_compra: DataType.STRING,
