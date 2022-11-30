@@ -10,7 +10,12 @@ const { User } = require("../../models");
 const AuthController = {
   //renderiza a tela de login
   formularioLogin: (req, res) => {
-    res.render("telaLogin", { error: null });
+    //verifica se o usuário está logado
+    if (req.session.user != undefined) {
+      return res.redirect('/telaPrincipalUsuario')
+    }
+
+    return res.render("telaLogin", { error: null });
   },
 
   login: async (req, res) => {
@@ -33,7 +38,6 @@ const AuthController = {
 
       // Verifica se a senha é válida
       if (!senhaValida) {
-        console.log("senhainvalida")
         // Se a senha for inválida, renderiza a página de login com erro
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
        
