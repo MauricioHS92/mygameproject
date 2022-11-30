@@ -31,7 +31,7 @@ header {
     max-width: 100%;
 }
 
-/*
+
 .principal {
     
     margin: 13.5%;
@@ -154,8 +154,8 @@ header {
 .field-error input {
     border-color: red;
 }
-*/
 
+/*
 .card {
     overflow: hidden;
     position: relative;
