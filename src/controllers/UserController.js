@@ -50,14 +50,7 @@ const UserController = {
       res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
   },
 
-    userPerfil: async (req, res) => {
-      try {
-        const user = req.session.user
-        res.render("telaPrincipalUsuario", { user })
-      } catch (error) {
-        console.log(error)
-      }
-  },
+    
 
  };
 

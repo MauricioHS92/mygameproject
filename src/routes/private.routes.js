@@ -23,6 +23,6 @@ router.delete("/checkout/deletar", comprasController.deletarJogo);
 //rota que deleta um jogo na página de carrinho
 router.delete("/carrinhoDeCompras/deletar", comprasController.deletarJogo);
 
-router.get("/telaPrincipalUsuario", UserController.userPerfil);
+router.get("/telaPrincipalUsuario", AuthController.userPerfil);
 
 module.exports = router;

@@ -29,6 +29,7 @@ const AuthController = {
       // Verifica se o usuário existe
       if (!usuario) {
         // Se não existir, renderiza a página de login com erro
+        
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
       
       }
@@ -44,8 +45,9 @@ const AuthController = {
       }
       // Se o email e a senha forem válidos, cria uma sessão para o usuário
       // Salvando o email e o id do usuário na sessão
-      console.log("aqui")
+      
       req.session.user = { email: usuario.email, id: usuario.id_usuario };
+      
 
       // Redireciona para a página restrita
       return res.redirect('/telaPrincipalUsuario');
@@ -60,7 +62,16 @@ const AuthController = {
 
     // Redireciona para a página inicial
     return res.redirect("/home");
-  }
+  },
+
+  userPerfil: async (req, res) => {
+    try {
+      const user = req.session.user
+      res.render("telaPrincipalUsuario", { user })
+    } catch (error) {
+      console.log(error)
+    }
+}
 }
 
 module.exports = AuthController;
