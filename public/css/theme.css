@@ -327,7 +327,7 @@ footer {
     transform: scale(0.5, 0.5);
 }
 
-.btn-three::after {
+/* .btn-three::after {
     content: '';
     position: absolute;
     top: 0;
@@ -340,7 +340,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 11px;
     transform: scale(1.2, 1.2);
-}
+} */
 
 .btn-three:hover::after {
     opacity: 1;
