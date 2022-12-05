@@ -13,6 +13,10 @@ const usuario = require('../models/usuario')
 const saltRounds = 10;
 
 const UserController = {
+  home: (req, res) => {
+    res.render('home')
+  },
+  
   formularioCriacao: (req, res) => {
     res.render("inscricao");
   },

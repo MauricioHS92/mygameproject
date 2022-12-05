@@ -10,6 +10,9 @@ const router = express.Router();
 // (Usuários não logados)
 // ======================
 
+//Rota para página inicial
+router.get("/home", UserController.home)
+
 //Rota para renderizar o formulario de inscricao
 router.get("/inscricao", UserController.formularioCriacao);
 

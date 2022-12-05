@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page. */
-router.get('/home',(req, res) => {
-  res.render('home');
-});
+
 
 router.get('/perfilDoUsuarioHistoricoDePedidos',(req, res) => {
   res.render('perfilDoUsuarioHistoricoDePedidos');
@@ -23,9 +20,9 @@ router.get('/perfilDoUsuarioMeusDados',(req, res) => {
 //   res.render('telaGradeDeJogos');
 // });
 
-router.get('/telaCheckout',(req, res) => {
-  res.render('telaCheckout');
-});
+// router.get('/telaCheckout',(req, res) => {
+//   res.render('telaCheckout');
+// });
 
 //router.get('/telaPrincipalUsuario',(req, res) => {
 //  res.render('telaPrincipalUsuario');
