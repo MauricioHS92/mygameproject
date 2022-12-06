@@ -22,12 +22,13 @@ const UserController = {
   },
 
   create: async (req, res) => {
-    console.log("aqui create");
+   
     // Pega os dados do usuário do corpo da requisição
     const { email, senha, nome, cpf, telefone } = req.body;
 
     // Faz a criptografia da senha
-    const hash = bcrypt.hashSync(senha, saltRounds);
+    const passwordToString = senha.toString()
+    const hash = bcrypt.hashSync(passwordToString, saltRounds);
 
     // Chama a model para criar um novo usuário
     // Passando o email e a senha criptografada

@@ -25,6 +25,7 @@ const AuthController = {
 
       // Chama a model para buscar um usuário pelo email
       const usuario = await User.findOne({ where: { email: email } });
+      console.log(usuario)
 
       // Verifica se o usuário existe
       if (!usuario) {
@@ -36,18 +37,21 @@ const AuthController = {
 
       // Verifica se a senha informada é a mesma que a senha criptografada no db
       const senhaValida = bcrypt.compareSync(senha, usuario.senha);
+      console.log(senhaValida)
 
       // Verifica se a senha é válida
       if (!senhaValida) {
         // Se a senha for inválida, renderiza a página de login com erro
+        console.log('Senha inválida')
         return res.render("telaLogin", { error: "Email ou senha inválidos" });
+        
        
       }
       // Se o email e a senha forem válidos, cria uma sessão para o usuário
       // Salvando o email e o id do usuário na sessão
       
       req.session.user = { email: usuario.email, id: usuario.id_usuario };
-      
+      console.log('saiu')
 
       // Redireciona para a página restrita
       return res.redirect('/telaPrincipalUsuario');
