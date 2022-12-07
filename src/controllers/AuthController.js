@@ -22,6 +22,8 @@ const AuthController = {
     try {
       // Pega os dados do usuário do corpo da requisição
       const { email, senha } = req.body;
+      console.log(email, senha)
+
 
       // Chama a model para buscar um usuário pelo email
       const usuario = await User.findOne({ where: { email: email } });
@@ -36,7 +38,8 @@ const AuthController = {
       }
 
       // Verifica se a senha informada é a mesma que a senha criptografada no db
-      const senhaValida = bcrypt.compareSync(senha, usuario.senha);
+      // const senhaValida = bcrypt.compareSync(senha, usuario.senha);
+      const senhaValida = usuario.senha === senha
       console.log(senhaValida)
 
       // Verifica se a senha é válida

@@ -4,13 +4,13 @@
 // ========================================================
 
 const bcrypt = require("bcrypt");
-
+const saltRounds = 10;
 const { User } = require("../../models");
 
 const usuario = require('../models/usuario')
 
 
-const saltRounds = 10;
+
 
 const UserController = {
   home: (req, res) => {
@@ -27,14 +27,15 @@ const UserController = {
     const { email, senha, nome, cpf, telefone } = req.body;
 
     // Faz a criptografia da senha
-    const passwordToString = senha.toString()
-    const hash = bcrypt.hashSync(passwordToString, saltRounds);
+    // const passwordToString = senha.toString()
+    console.log(senha)
+    // const hash = bcrypt.hashSync(senha, saltRounds);
 
     // Chama a model para criar um novo usuário
     // Passando o email e a senha criptografada
       await User.create({
       email: email,
-      senha: hash,
+      senha: senha,
       nome: nome,
       cpf: cpf,
       telefone: telefone,
