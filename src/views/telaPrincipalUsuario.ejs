@@ -21,21 +21,23 @@
             <div class="perfil-usuario">
                 <div class="paragrafo">
                     <h1>PERFIL DO USUÁRIO</h1>
-                </div>
-                <div class="meus-dados">
-                    <P class="paragrafos-perfilusuario">Meus dados</P>
-                </div>
-                <div class="meu-endereço">
-                    <p class="paragrafos-perfilusuario">Meu endereço</P>
-                </div>
-                <div class="historico-pedido">
-                    <P class="paragrafos-perfilusuario">Hitórico de pedidos</P>
-                </div>
+                </div>  
                 <button class="botao-salvar" type="submit">Salvar</button>
+                <button class="botao-editar" type="submit">Editar</button>
                 <button class="botao-voltar" type="submit">Voltar</button>
                 
             </div>
             <div class="formulario">
+                <div class="atualizar-dados">
+                    <P class="paragrafos-perfilusuario">Atualizar dados</P>
+                </div>
+                <div class="meus-dados">
+                    <P class="paragrafos-perfilusuario"><b>Nome:</b> <%=userLogin.nome%></P>
+                    <p class="paragrafos-perfilusuario"><b>E-mail:</b> <%=userLogin.email%></P>
+                    <P class="paragrafos-perfilusuario"><b>CPF:</b> <%=userLogin.cpf%></P>
+                    <p class="paragrafos-perfilusuario"><b>Telefone:</b> <%=userLogin.telefone%></P>
+                </div>
+                
                 <div class="area-cadastro"></div>
             </div>
         </div>

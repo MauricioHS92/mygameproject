@@ -74,7 +74,8 @@ const AuthController = {
   userPerfil: async (req, res) => {
     try {
       const user = req.session.user
-      res.render("telaPrincipalUsuario", { user })
+      const userLogin = await User.findOne({where:{email:user.email}})
+      res.render("telaPrincipalUsuario", { user, userLogin })
     } catch (error) {
       console.log(error)
     }
