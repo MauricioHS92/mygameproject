@@ -4,14 +4,16 @@
     max-width: 100%;
     display: flex;
     justify-content: center;
+    padding: 50px 0 50px 0;
+
 }
 
 .carrinho-de-compras {
-    background-color: #25262C;
+    background: #000000;
     mix-blend-mode: hard-light;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 45px;
-    width: 1200px;
+    width: 1100px;
     height: 580px;
     max-width: 89%;
     display: inline-flex;
@@ -30,39 +32,10 @@
 }
 
 .left h1 {
-    color: rgb(209, 209, 80);
+    color: #ffcd39;
     height: 12vh;
-}
-
-#meu-carrinho {
-    background-color: rgb(209, 209, 80);
-    width: 150px;
-    max-width: 54%;
-    height: 8vh;
     text-align: center;
-    padding-top: 8px;
-    border-radius: 12px;
-}
-
-#voltar {
-    height: 5vh;
-    width: 100px;
-    /* max-width: 28.57%; */
-    
-}
-
-#voltar form {
-    height: auto;
-    width: 100%;
-    padding: 10px;
-   
-}
-
-#voltar button {
-    height: auto;
-    width: 100%;
-    border-radius: 12px;
-    padding-top: 10px;
+    text-transform: uppercase;
 }
 
 #comprar-mais button p, #finalizar-compra button p, #voltar button p  {
@@ -76,12 +49,28 @@
     width: 650px;
     max-width: 54.16%;
     height: 70vh;
-    background-color: rgb(207, 196, 196);
-    display: flex;
+    background-image: radial-gradient(
+        at 88% 0%,
+        hsla(327, 67%, 64%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 63% 46%, hsla(307, 76%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 95% 53%, hsla(89, 91%, 67%, 1) 0px, transparent 50%),
+      radial-gradient(at 79% 83%, hsla(170, 86%, 65%, 1) 0px, transparent 50%),
+      radial-gradient(at 74% 93%, hsla(71, 93%, 75%, 1) 0px, transparent 50%),
+      radial-gradient(at 52% 13%, hsla(110, 83%, 72%, 1) 0px, transparent 50%),
+      radial-gradient(at 30% 80%, hsla(263, 79%, 66%, 1) 0px, transparent 50%);
+      display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-self: center;
+    border-radius: 25px;
+}
+
+.right div {
+    border-radius: 10px;
+    text-align: center;
 }
 
 .linha1, .linha2, .linha3 {
@@ -92,7 +81,7 @@
     justify-content: space-between;
 }
 
-.linha4, .linha5, .linha6, .linha7 {
+.linha4 {
     width: 520px;
     /* max-width: 74,61%; */
     display: inline-flex;
@@ -101,26 +90,30 @@
     /* justify-content: flex-start; */
 }
 
+.linha5, .linha6, .linha7 {
+    display: flex;
+    justify-content: center;
+}
 
 #produto1, #produto2, #produto3 {
     width: 200px;
     max-width: 38%;
     flex-grow: 0.38;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
 
 #quantidade1, #quantidade2, #quantidade3 {
     width: 104px;
     max-width: 20%;
     flex-grow: 0.2;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
 
 #valor-item1, #valor-item2, #valor-item3 {
     width: 104px;
     max-width: 20%;
     flex-grow: 0.2;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
 
 #lixeira1, #lixeira2, #lixeira3 {
@@ -132,36 +125,39 @@
 
 #lixeira1 button, #lixeira2 button, #lixeira3 button {
     border: none;
-    background-color: whitesmoke;
+    cursor: pointer;
 }
 
 #calculo-frete {
     width: 320px;
     max-width: 65,97%;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
 
 #valor-frete {
     width: 100px;
     /* max-width: 19.23%; */
     margin-left: 26px;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
-
-/* .linha5, .linha6, .linha7 {
-    width: 520px;
-    max-width: 80%;
-    display: inline-flex;
-    justify-content: flex-end;
-} */
 
 #total {
+    height: 60px;
     width: 200px;
     max-width: 50%;
-    background-color: whitesmoke;
+    background: #ffffff;
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+button p {
+    display: flex;
+    padding-top: 7px;
+}
 
 #comprar-mais button {
     background-color: rgb(34, 161, 61);
@@ -171,7 +167,7 @@
 }
 
 #finalizar-compra button {
-    background-color: rgb(209, 209, 80);
+    background: #ffcd39;
     border: none;
     border-radius: 10px;
     padding-top: 2px;

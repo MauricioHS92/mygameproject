@@ -1,8 +1,7 @@
-.jogo{
+.jogo {
     padding: 50px 100px 50px 0px;
-    height: 653px;
-    width: 978px;
 }
+
 .painel {
     display: flex;
     flex-direction: row;
@@ -14,14 +13,14 @@
     display: flex;
     flex-direction: column;
     width: 320px;
-    height: 550px;
-    background-color: rgba(80, 80, 80, 0.6);
+    height: 450px;
+    background: #000000;
     margin-right: 28px;
     border-radius: 45px;
 }
 
 h4 {
-    color: #000;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bolder;
     margin: 90px 0px 0px 40px;
@@ -36,9 +35,19 @@ h4 {
     color: #000;
     font-weight: bold;
     padding: 15px 7px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: #ffffff;
     margin-bottom: 40px;
+    border-radius: 15px;
 }
+
+a:link {
+    text-decoration: none;
+   }
+   
+   a:hover {
+    text-decoration: none;
+    color: #000000;
+   }
 
 .btnscheckout {
     display: flex;
@@ -46,9 +55,9 @@ h4 {
     align-items: center;
     width: 224px;
     height: 38px;
-    background: #B8B79C;
+    background: rgba(0, 255, 26, 0.68);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    margin: 29px 0 0 48px;
+    margin: 50px 0 0 48px;
     font-weight: bold;
 }
