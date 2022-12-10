@@ -14,6 +14,15 @@ const jogosController = {
     }
   },
 
+  acao: async (req, res) => {
+    try { 
+      const jogosAcao = await Jogo.findAll({ where: { genero : 'Ação' }})
+      res.render('jogosAcao', { jogosAcao })
+    } catch (error) {
+      console.log(error)
+    }
+  }, 
+
   //Criando método de selecionar jogo
   escolherJogo: async (req, res) => {
     try {

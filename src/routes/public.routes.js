@@ -2,6 +2,8 @@ const express = require("express");
 
 const UserController = require("../controllers/UserController");
 const AuthController = require("../controllers/AuthController");
+const jogosController = require("../controllers/jogosController");
+
 
 const router = express.Router();
 
@@ -27,10 +29,12 @@ router.get("/login", AuthController.formularioLogin);
 router.post("/login", AuthController.login);
 
 //ROTAS PARA JOGOS
-const jogosController = require("../controllers/jogosController");
+
 
 router.get("/jogos", jogosController.trazerJogos);
 router.get("/jogos/:id", jogosController.escolherJogo);
+
+router.get('/acao', jogosController.acao )
 //rota que irá receber os jogos
 //router.get('/:id', jogosController.selecionarJogo);
 
