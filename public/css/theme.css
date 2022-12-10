@@ -40,7 +40,18 @@
     border-radius: 11px;
     margin: 16px 30px 16px 30px;
     height: 50px;
-    width: 115px;
+    width: 215px;
+}
+
+#login-cadastro{
+    width: 250px;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 13px;
 }
 
 #fale-conosco {
@@ -48,10 +59,9 @@
     height: 40px;
     color: #ffffff;
     display: flex;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    padding: 15px 9px 19px 9px;
+    justify-content: center;
     text-decoration: none;
+    align-items: center;
     font-size: 13px;
 }
 
@@ -80,17 +90,12 @@
 }
 
 .btn-three {
-    width: 250px;
-    height: 80px;
-    color: #ffffff;
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    flex-direction: row-reverse;
     padding: 6px 9px 15px 9px;
-    /* text-decoration: none; */
     font-size: 14px;
-    /* text-align: center; */
 }
-
 
 /* CARRINHO DE COMPRAS */
 
@@ -309,43 +314,13 @@ footer {
     cursor: pointer;
 }
 
-.btn-three::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(49, 43, 43, 0.1);
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 11px;
+a:link {
+    text-decoration: none;
+    color: #ffffff;
 }
-
-.btn-three:hover::before {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-}
-
-/* .btn-three::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 11px;
-    transform: scale(1.2, 1.2);
-} */
-
-.btn-three:hover::after {
-    opacity: 1;
-    transform: scale(1, 1);
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
@@ -474,9 +449,6 @@ footer {
     #carrinho{
         width: 40px;
         height: 40px;
-        padding:0px;
-        margin:0px;
-
     }
 
     /*Footer */
