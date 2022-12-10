@@ -16,8 +16,8 @@ id_usuario int not null primary key auto_increment,
 email varchar(45) not null unique,
 senha varchar(45) not null,
 nome varchar(45) not null,
-cpf varchar(45) not null unique,
-telefone varchar(45) not null unique,
+cpf varchar(45) not null,
+telefone varchar(45) not null,
 foto_usuario varchar(45)
 );
 
