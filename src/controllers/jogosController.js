@@ -23,6 +23,24 @@ const jogosController = {
     }
   }, 
 
+  esportes: async (req, res) => {
+    try { 
+      const jogosEsportes = await Jogo.findAll({ where: { genero : 'Esportes' }})
+      res.render('jogosEsportes', { jogosEsportes })
+    } catch (error) {
+      console.log(error)
+    }
+  },
+
+  aventura: async (req, res) => {
+    try { 
+      const jogosAventura = await Jogo.findAll({ where: { genero : 'Aventura' }})
+      res.render('jogosAventura', { jogosAventura })
+    } catch (error) {
+      console.log(error)
+    }
+  },
+
   //Criando método de selecionar jogo
   escolherJogo: async (req, res) => {
     try {

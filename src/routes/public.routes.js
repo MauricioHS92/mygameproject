@@ -35,6 +35,9 @@ router.get("/jogos", jogosController.trazerJogos);
 router.get("/jogos/:id", jogosController.escolherJogo);
 
 router.get('/acao', jogosController.acao )
+router.get('/esportes', jogosController.esportes)
+router.get('/aventura', jogosController.aventura)
+
 //rota que irá receber os jogos
 //router.get('/:id', jogosController.selecionarJogo);
 
