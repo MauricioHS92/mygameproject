@@ -16,7 +16,8 @@ main {
     margin-left: 15px;
 }
 
-.paragrafo {                            /*Título dos dados*/
+.paragrafo {
+    /*Título dos dados*/
     width: 320px;
     height: 120px;
     font-size: 50px;
@@ -30,7 +31,8 @@ main {
     text-align: center;
 }
 
-.meus-dados {                           /*Campo dos meus dados*/
+.meus-dados {
+    /*Campo dos meus dados*/
     width: 381px;
     height: 200px;
     background-color: white;
@@ -42,7 +44,8 @@ main {
     border: none;
 }
 
-.atualizar-dados {                         /*Campo do histórico de pedidos*/
+.atualizar-dados {
+    /*Campo do histórico de pedidos*/
     width: 381px;
     height: 61px;
     background-color: white;
@@ -54,13 +57,24 @@ main {
     font-weight: bold;
 }
 
-.formulario {                           /*Caixa cinxa*/
+.formulario {
+    /*Caixa cinxa*/
     width: 759px;
     height: 633px;
     margin: 49.5px 48px 49.5px 48px;
 }
 
-.botao-salvar {                         /*Botão salvar*/
+.imagem-perfil {
+    display: flex;
+    margin: -320px 0 0 550px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.botao-salvar {
+    /*Botão salvar*/
     display: flex;
     justify-content: center;
     width: 200px;
@@ -70,28 +84,46 @@ main {
     background-color: #00FF19;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 136px;
+    transition: .2s;
+
 }
 
-.botao-editar {                         /*Botão salvar*/
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: block;
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 136px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
     width: 200px;
     height: 30px;
     font-size: 15px;
-    border-radius: 8px;
-    background-color: #eeff00;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 136px;
+    background: #0089d9;
+	color: #000000;
+	border-color: #0089d9;
+    transition: .2s;
 }
 
-.botao-voltar {                         /*Botão voltar*/
-    width: 200px;
-    height: 30px;
-    font-size: 15px;
-    border-radius: 8px;
-    background-color: #FF0000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 10px;
-    margin-left: 136px;
+label:hover {
+    color: #000000;
+    background: #ffffff;
+}
+.botao-salvar:hover {
+    color: #000000;
+    background: #ffffff;
+}
+.botao-voltar:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
 }

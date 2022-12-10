@@ -24,5 +24,6 @@ router.delete("/checkout/deletar", comprasController.deletarJogo);
 router.delete("/carrinhoDeCompras/deletar", comprasController.deletarJogo);
 
 router.get("/telaPrincipalUsuario", AuthController.userPerfil);
+router.post("/", AuthController.userPerfil);
 
 module.exports = router;
