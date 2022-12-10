@@ -29,21 +29,21 @@
                 </div>
                 <div class="formulario">
                     <div class="area-cadastro">
-                        <form action="perfil/editar_method=PUT" method="post">
+                        <form action="editar" method="PUT">
                             <label for="nome"></label>
-                            <input class="campos-formulario" value="<%=userLogin.nome%>" type="text" name="nome" id="nome"
+                            <input class="campos-formulario" value="<%=userLogin.nome%>" type="text" name="put_nome" id="nome"
                                 placeholder="Nome Usuário">
 
                             <label for="cpf"></label>
-                            <input class="campos-formulario" value="<%=userLogin.cpf%>" type="text" name="cpf" id="cpf"
+                            <input class="campos-formulario" value="<%=userLogin.cpf%>" type="text" name="put_cpf" id="cpf"
                                 placeholder="CPF Usuário">
                                 
                             <label for="telefone"></label>
-                            <input class="campos-formulario" value="<%=userLogin.telefone%>" type="text" name="telefone" id="telefone"
+                            <input class="campos-formulario" value="<%=userLogin.telefone%>" type="text" name="put_telefone" id="telefone"
                                 placeholder="Telefone Usuário">
 
                             <label for="email"></label>
-                            <input class="campos-formulario" value="<%=userLogin.email%>"  type="email" name="email" id="email"
+                            <input class="campos-formulario" value="<%=userLogin.email%>"  type="email" name="put_email" id="email"
                                 placeholder="E-mail Usuário">
                             <br><br>
                             <button class="botao-voltar"> Voltar</button>
