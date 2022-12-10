@@ -45,10 +45,10 @@ const UserController = {
     res.redirect("/login");
   },
 
-    meusDados: (req, res) => {
-      const { id } = req.params;
-      const userDados = usuario.findById(id);
-      res.render('perfilDoUsuarioMeusDados', { userDados });
+    meusDados: async (req, res) => {
+      const user = req.session.user
+      const userLogin = await User.findOne({where:{email:user.email}})
+      res.render('perfilDoUsuarioMeusDados', {user, userLogin});
   },
     meuEndereco: (req, res) => {
       const { id } = req.params;
@@ -56,8 +56,17 @@ const UserController = {
       res.render('perfilDoUsuarioMeuEndereco', { userEndereco });
   },
 
-    
+    editarDados: async (req, res) => {
+      const user = req.session.user
+      const {nome, cpf, telefone, email} = req.body;
 
+      await User.update(
+        { nome, cpf, telefone, email },
+    { where: { email: user.email }
+  });
+
+   res.render('telaPrincipalUsuario');
+  }
  };
 
 module.exports = UserController;

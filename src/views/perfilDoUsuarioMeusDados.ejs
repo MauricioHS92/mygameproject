@@ -25,29 +25,25 @@
                         <a
                             href="#"><button
                                 class="meus-dados" placeholder="Meus dados">Meus Dados</button></a>
-                        <a
-                            href="#"><button
-                                class="meu-endereço" placeholder="Meu endereço"> Meu endereço</button>
-                            <a
-                                href="#"><button
-                                    class="historico-pedido" placeholder="Histórico de pedidos"> Histórico de
-                                    pedidos</button></a>
                     </div>
                 </div>
                 <div class="formulario">
                     <div class="area-cadastro">
-                        <form action="rota que será processada" method="método GET ou POST">
+                        <form action="perfil/editar_method=PUT" method="post">
                             <label for="nome"></label>
-                            <input class="campos-formulario" value="<%= userDados.nome %>" type="text" name="nome" id="nome"
+                            <input class="campos-formulario" value="<%=userLogin.nome%>" type="text" name="nome" id="nome"
                                 placeholder="Nome Usuário">
+
                             <label for="cpf"></label>
-                            <input class="campos-formulario" value="<%= userDados.cpf %>" type="text" name="cpf" id="cpf"
+                            <input class="campos-formulario" value="<%=userLogin.cpf%>" type="text" name="cpf" id="cpf"
                                 placeholder="CPF Usuário">
+                                
                             <label for="telefone"></label>
-                            <input class="campos-formulario" value="<%= userDados.telefone %>" type="text" name="telefone" id="telefone"
+                            <input class="campos-formulario" value="<%=userLogin.telefone%>" type="text" name="telefone" id="telefone"
                                 placeholder="Telefone Usuário">
+
                             <label for="email"></label>
-                            <input class="campos-formulario" value="<%= userDados.email %>"  type="email" name="email" id="email"
+                            <input class="campos-formulario" value="<%=userLogin.email%>"  type="email" name="email" id="email"
                                 placeholder="E-mail Usuário">
                             <br><br>
                             <button class="botao-voltar"> Voltar</button>
